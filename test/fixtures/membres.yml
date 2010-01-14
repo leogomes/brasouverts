@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  foyer: 
+  nom: MyString
+  prenom: MyString
+  date_de_naissance: 2009-12-11
+
+two:
+  foyer: 
+  nom: MyString
+  prenom: MyString
+  date_de_naissance: 2009-12-11

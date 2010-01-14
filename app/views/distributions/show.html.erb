@@ -1,0 +1,32 @@
+<% form_for( [@foyer, @distribution] ) do |f| %>
+<%= f.error_messages %>
+<fieldset>
+  <legend>Distributions pour <%=@foyer.chef_prenom %> <%=@foyer.chef_nom %></legend>
+
+  <table >
+    <tr>
+      <th>Date</th>
+      <th>Element distribué</th>
+      <th>Prix</th>
+      <th>Dette</th>
+      <th>Donation?</th>
+      <th colspan="2" />
+    </tr>
+
+    <% @foyer.distributions.each do |d| %>
+      <tr>
+        <td><%=h d.date %></td>
+        <td><%=h Element.find(d.element_id).description %></td>
+        <td><%=h d.prix %></td>
+        <td><%=h d.dette %></td>
+        <td><%=h d.donation_bras_ouverts %></td>
+
+        <td><%= link_to 'Éditez', edit_foyer_distribution_path(@foyer, d) %></td>
+        <td><%= link_to 'Suprimez', foyer_distribution_path(@foyer, d),
+          :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+
+</fieldset>
+<% end %>

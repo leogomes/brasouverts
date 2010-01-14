@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+
+    <title>Bras Ouverts</title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+
+    <%= stylesheet_link_tag 'screen' %>
+
+  </head>
+  <body>
+
+    <!-- header starts-->
+    <div id="header-wrap"><div id="header" class="container_16">
+
+        <p><%= flash[:notice] %></p>
+
+        <!-- navigation -->
+        <div  id="nav">
+          <ul>
+            <li id="current" ><a href="index.html">Accueil</a></li>
+            <li><a href="style.html">Distribution</a></li>
+            <li><a href="blog.html">Foyers</a></li>
+            <li><a href="index.html">Contrôle</a></li>
+            <li><a href="index.html">Balance</a></li>
+            <li><a href="index.html">Aide</a></li>
+          </ul>
+        </div>
+
+        <form id="quick-search" action="index.html" method="get" >
+          <p>
+            <label for="qsearch">Search:</label>
+            <input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
+            <input class="btn" alt="Search" type="image" name="searchsubmit" title="Search" src="images/search.gif" />
+
+          </p>
+        </form>
+
+        <!-- header ends here -->
+      </div></div>
+
+    <!-- content starts -->
+    <div id="content-outer">
+      <div id="content-wrapper" class="container_16">
+
+        <!-- main -->
+        <div id="main" class="grid_8">
+
+          <%= yield %>
+
+
+          <!-- main ends -->
+        </div>
+        <!-- end left-columns -->
+      </div>
+
+      <!-- contents end here -->
+    </div>
+    <!-- footer starts here -->
+    <div id="footer-wrapper" class="container_16">
+
+      <div id="footer-bottom">
+
+        <p class="bottom-left">
+          &nbsp; &copy;2009 Association Bras Ouverts &nbsp; &nbsp;
+			Design by : <a href="http://www.styleshout.com/">styleshout</a>
+        </p>
+
+      </div>
+
+    </div>
+    <!-- footer ends here -->
+
+  </body>
+</html>

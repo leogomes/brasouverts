@@ -1,0 +1,104 @@
+<h1>Editing foyer</h1>
+
+<% form_for(@foyer) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :chef_nom %><br />
+    <%= f.text_field :chef_nom %>
+  </p>
+  <p>
+    <%= f.label :chef_prenom %><br />
+    <%= f.text_field :chef_prenom %>
+  </p>
+  <p>
+    <%= f.label :chef_date_naissance %><br />
+    <%= f.date_select :chef_date_naissance %>
+  </p>
+  <p>
+    <%= f.label :nbr_membres %><br />
+    <%= f.text_field :nbr_membres %>
+  </p>
+  <p>
+    <%= f.label :nbr_membres_adultes %><br />
+    <%= f.text_field :nbr_membres_adultes %>
+  </p>
+  <p>
+    <%= f.label :nbr_membres_enfants %><br />
+    <%= f.text_field :nbr_membres_enfants %>
+  </p>
+  <p>
+    <%= f.label :nbr_colis_a_distribuer %><br />
+    <%= f.text_field :nbr_colis_a_distribuer %>
+  </p>
+  <p>
+    <%= f.label :inscription_complete %><br />
+    <%= f.check_box :inscription_complete %>
+  </p>
+  <p>
+    <%= f.label :dette_cumule %><br />
+    <%= f.text_field :dette_cumule %>
+  </p>
+  <p>
+    <%= f.label :adresse_numero %><br />
+    <%= f.text_field :adresse_numero %>
+  </p>
+  <p>
+    <%= f.label :adresse_rue %><br />
+    <%= f.text_field :adresse_rue %>
+  </p>
+  <p>
+    <%= f.label :adresse_additionel %><br />
+    <%= f.text_field :adresse_additionel %>
+  </p>
+  <p>
+    <%= f.label :adresse_chez %><br />
+    <%= f.text_field :adresse_chez %>
+  </p>
+  <p>
+    <%= f.label :adresse_code_postal %><br />
+    <%= f.text_field :adresse_code_postal %>
+  </p>
+  <p>
+    <%= f.label :telephone_portable %><br />
+    <%= f.text_field :telephone_portable %>
+  </p>
+  <p>
+    <%= f.label :telephone_fixe %><br />
+    <%= f.text_field :telephone_fixe %>
+  </p>
+  <p>
+    <%= f.label :sdf %><br />
+    <%= f.check_box :sdf %>
+  </p>
+  <p>
+    <%= f.label :demandeur_asile %><br />
+    <%= f.check_box :demandeur_asile %>
+  </p>
+  <p>
+    <%= f.label :handicape %><br />
+    <%= f.check_box :handicape %>
+  </p>
+  <p>
+    <%= f.label :diabetique %><br />
+    <%= f.check_box :diabetique %>
+  </p>
+  <p>
+    <%= f.label :hallal %><br />
+    <%= f.check_box :hallal %>
+  </p>
+  <p>
+    <%= f.label :sans_porc %><br />
+    <%= f.check_box :sans_porc %>
+  </p>
+  <p>
+    <%= f.label :lettre_AS %><br />
+    <%= f.check_box :lettre_AS %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @foyer %> |
+<%= link_to 'Back', foyers_path %>

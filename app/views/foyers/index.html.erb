@@ -1,0 +1,35 @@
+<%= render :partial => "nav" %>
+
+<table >
+  <tr>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Date de Naissance</th>
+    <th colspan="4" />
+
+  </tr>
+
+  <% @foyers.each do |f| %>
+
+    <tr>
+      <td><%=f.chef_nom %></td>
+      <td><%=f.chef_prenom %></td>
+      <td><%=f.chef_date_naissance %></td>
+
+      <td><%= link_to 'Distribuez un colis', new_foyer_distribution_path(f) %></td>
+      <td><%= link_to 'Listez les colis', foyer_distributions_path(f) %></td>
+      <td><%= link_to 'Éditez', edit_foyer_path(f) %></td>
+      <td><%= link_to 'Suprimez', foyer_path(f),
+        :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+
+
+    </tr>
+
+
+
+  <% end %>
+
+</table>
+
+<br />
+

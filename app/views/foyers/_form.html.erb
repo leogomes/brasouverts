@@ -1,0 +1,135 @@
+<%= render :partial => "nav" %>
+
+<% form_for(@foyer) do |f| %>
+  <%= f.error_messages %>
+  <fieldset>
+    <legend>Responsable</legend>
+
+    <%= f.label 'Nom:' %>
+    <%= f.text_field :chef_nom %><br />
+
+    <%= f.label 'Prenom:' %>
+    <%= f.text_field :chef_prenom %><br />
+
+    <%= f.label 'Sexe:' %>
+    <%= f.enum_select :chef_sex %><br />
+
+    <%= f.label 'Date de Naissance:' %>
+    <%= f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) %><br />
+
+    <%= f.label 'Situation Familiale:' %>
+    <%= f.enum_select :situation_familiale %><br />
+
+    <%= f.label :adresse_numero %>
+    <%= f.text_field :adresse_numero %><br />
+
+    <%= f.label :adresse_rue %>
+    <%= f.text_field :adresse_rue %><br />
+
+    <%= f.label :adresse_additionel %>
+    <%= f.text_field :adresse_additionel %><br />
+
+    <%= f.label :adresse_chez %>
+    <%= f.text_field :adresse_chez %><br />
+
+    <%= f.label :adresse_code_postal %>
+    <%= f.text_field :adresse_code_postal %><br />
+
+    <%= f.label :telephone_portable %>
+    <%= f.text_field :telephone_portable %><br />
+
+    <%= f.label :telephone_fixe %>
+    <%= f.text_field :telephone_fixe %><br />
+
+  </fieldset>
+  <br />
+  <fieldset>
+    <legend>Informations</legend>
+
+    <%= f.label 'Nombre d\'Adultes' %>
+    <%= f.text_field :nbr_membres_adultes %><br />
+
+    <%= f.label 'Nombre d\'Enfants' %>
+    <%= f.text_field :nbr_membres_enfants %><br />
+
+    <%= f.label :nbr_colis_a_distribuer %>
+    <%= f.text_field :nbr_colis_a_distribuer %><br />
+
+    <%= f.label :dette_cumule %>
+    <%= f.text_field :dette_cumule %><br />
+
+
+    <%= f.label :inscription_complete %>
+    <%= f.check_box :inscription_complete %><br />
+
+  </fieldset>
+  <br />
+  <fieldset>
+    <p>
+      <%= f.label :sdf %>
+      <%= f.check_box :sdf %>
+    </p>
+
+    <p>
+      <%= f.label :demandeur_asile %>
+      <%= f.check_box :demandeur_asile %>
+    </p>
+    <p>
+      <%= f.label :handicape %>
+      <%= f.check_box :handicape %>
+    </p>
+    <p>
+      <%= f.label :diabetique %>
+      <%= f.check_box :diabetique %><br />
+    </p>
+    <p>
+      <%= f.label :hallal %>
+      <%= f.check_box :hallal %><br />
+    </p>
+    <p>
+      <%= f.label :sans_porc %>
+      <%= f.check_box :sans_porc %><br />
+    </p>
+    <p>
+      <%= f.label :lettre_AS %>
+      <%= f.check_box :lettre_AS %><br />
+    </p>
+  </fieldset>
+
+  <br />
+  <fieldset>
+    <legend>Membres additionels</legend>
+
+    <table >
+      <tr>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Relation</th>
+        <th>Sexe</th>
+        <th>Date de Naissance</th>
+        <th colspan="2" />
+      </tr>
+
+      <% @foyer.membres.each do |membre| %>
+        <tr>
+          <td><%=h membre.nom %></td>
+          <td><%=h membre.prenom %></td>
+          <td><%=h membre.relation %></td>
+          <td><%=h membre.sexe %></td>
+          <td><%=h membre.date_de_naissance %></td>
+
+          <td><%= link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) %></td>
+          <td><%= link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+            :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+
+        </tr>
+      <% end %>
+    </table>
+
+  </fieldset>
+
+  <br />
+  <%= f.submit 'Ok' %>
+<% end %>
+
+

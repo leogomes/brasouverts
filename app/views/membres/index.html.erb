@@ -1,0 +1,29 @@
+<h1>Membres</h1>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Relation</th>
+    <th colspan="3" />
+  </tr>
+
+  <% @membres.each do |membre| %>
+    <tr>
+      <td><%=h membre.nom %></td>
+      <td><%=h membre.prenom %></td>
+      <td><%=h membre.relation %></td>
+
+
+      <td><%= link_to 'Détails', foyer_membre_path(@foyer, membre) %></td>
+      <td><%= link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) %></td>
+      <td><%= link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+        :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to 'Rajouter un nouveau membre', new_foyer_membre_path(@foyer) %>

@@ -1,0 +1,18 @@
+<p>
+  <b>Nom:</b>
+  <%=h @membre.nom %>
+</p>
+
+<p>
+  <b>Prenom:</b>
+  <%=h @membre.prenom %>
+</p>
+
+<p>
+  <b>Date de naissance:</b>
+  <%=h @membre.date_de_naissance %>
+</p>
+
+
+<%= link_to 'Edit', edit_foyer_membre_path(@foyer,@membre) %> |
+<%= link_to 'Back', foyer_membres_path %>

@@ -1,0 +1,51 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  chef_nom: MyString
+  chef_prenom: MyString
+  chef_date_naissance: 2009-12-10
+  nbr_membres: 1
+  nbr_membres_adultes: 1
+  nbr_membres_enfants: 1
+  nbr_colis_a_distribuer: 1
+  inscription_complete: false
+  dette_cumule: 1.5
+  adresse_numero: MyString
+  adresse_rue: MyString
+  adresse_additionel: MyString
+  adresse_chez: MyString
+  adresse_code_postal: MyString
+  telephone_portable: MyString
+  telephone_fixe: MyString
+  sdf: false
+  demandeur_asile: false
+  handicape: false
+  diabetique: false
+  hallal: false
+  sans_porc: false
+  lettre_AS: false
+
+two:
+  chef_nom: MyString
+  chef_prenom: MyString
+  chef_date_naissance: 2009-12-10
+  nbr_membres: 1
+  nbr_membres_adultes: 1
+  nbr_membres_enfants: 1
+  nbr_colis_a_distribuer: 1
+  inscription_complete: false
+  dette_cumule: 1.5
+  adresse_numero: MyString
+  adresse_rue: MyString
+  adresse_additionel: MyString
+  adresse_chez: MyString
+  adresse_code_postal: MyString
+  telephone_portable: MyString
+  telephone_fixe: MyString
+  sdf: false
+  demandeur_asile: false
+  handicape: false
+  diabetique: false
+  hallal: false
+  sans_porc: false
+  lettre_AS: false

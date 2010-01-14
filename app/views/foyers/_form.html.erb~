@@ -1,0 +1,105 @@
+<% form_for(@foyer) do |f| %>
+  <%= f.error_messages %>
+  <fieldset>
+  <legend>Responsable du Foyer</legend> 
+
+    <%= f.label 'Nom:' %>
+    <%= f.text_field :chef_nom %><br />
+
+    <%= f.label 'Prenom:' %>
+    <%= f.text_field :chef_prenom %><br />
+
+    <%= f.label 'Sexe:' %>
+    <%= f.enum_select :chef_sex %><br />
+
+    <%= f.label 'Date de Naissance:' %>
+    <%= f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995) %><br />
+
+    <%= f.label 'Situation Familiale:' %>
+    <%= f.enum_select :situation_familiale %>
+  </fieldset>
+
+  <p>
+    <%= f.label :nbr_membres %><br />
+    <%= f.text_field :nbr_membres %>
+  </p>
+  <p>
+    <%= f.label :nbr_membres_adultes %><br />
+    <%= f.text_field :nbr_membres_adultes %>
+  </p>
+  <p>
+    <%= f.label :nbr_membres_enfants %><br />
+    <%= f.text_field :nbr_membres_enfants %>
+  </p>
+  <p>
+    <%= f.label :nbr_colis_a_distribuer %><br />
+    <%= f.text_field :nbr_colis_a_distribuer %>
+  </p>
+  <p>
+    <%= f.label :inscription_complete %><br />
+    <%= f.check_box :inscription_complete %>
+  </p>
+  <p>
+    <%= f.label :dette_cumule %><br />
+    <%= f.text_field :dette_cumule %>
+  </p>
+  <p>
+    <%= f.label :adresse_numero %><br />
+    <%= f.text_field :adresse_numero %>
+  </p>
+  <p>
+    <%= f.label :adresse_rue %><br />
+    <%= f.text_field :adresse_rue %>
+  </p>
+  <p>
+    <%= f.label :adresse_additionel %><br />
+    <%= f.text_field :adresse_additionel %>
+  </p>
+  <p>
+    <%= f.label :adresse_chez %><br />
+    <%= f.text_field :adresse_chez %>
+  </p>
+  <p>
+    <%= f.label :adresse_code_postal %><br />
+    <%= f.text_field :adresse_code_postal %>
+  </p>
+  <p>
+    <%= f.label :telephone_portable %><br />
+    <%= f.text_field :telephone_portable %>
+  </p>
+  <p>
+    <%= f.label :telephone_fixe %><br />
+    <%= f.text_field :telephone_fixe %>
+  </p>
+  <p>
+    <%= f.label :sdf %><br />
+    <%= f.check_box :sdf %>
+  </p>
+  <p>
+    <%= f.label :demandeur_asile %><br />
+    <%= f.check_box :demandeur_asile %>
+  </p>
+  <p>
+    <%= f.label :handicape %><br />
+    <%= f.check_box :handicape %>
+  </p>
+  <p>
+    <%= f.label :diabetique %><br />
+    <%= f.check_box :diabetique %>
+  </p>
+  <p>
+    <%= f.label :hallal %><br />
+    <%= f.check_box :hallal %>
+  </p>
+  <p>
+    <%= f.label :sans_porc %><br />
+    <%= f.check_box :sans_porc %>
+  </p>
+  <p>
+    <%= f.label :lettre_AS %><br />
+    <%= f.check_box :lettre_AS %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

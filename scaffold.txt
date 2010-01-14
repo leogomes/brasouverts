@@ -1,0 +1,6 @@
+#Foyer
+
+script/generate scaffold Foyer chefNom:string chefPrenom:string chefDateNaissance:date nbrMembres:integer nbrMembresAdultes:integer nbrMembresEnfants:integer nbrColisADistribuer:integer inscriptionComplete:boolean detteCumule:float adresseNumero:string adressRue:string adressAdditionel:string adressChez:string adressCodepostal:string telephonePortable:string telephoneFixe:string sdf:boolean demandeurAsile:boolean handicape:boolean diabetique:boolean hallal:boolean sansPorc:boolean lettreAS:boolean
+
+
+

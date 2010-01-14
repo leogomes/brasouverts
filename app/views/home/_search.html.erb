@@ -1,0 +1,19 @@
+<br/>
+<form id="quick-search" action="/foyers" method="get" >
+  <p>
+    <label for="qsearch">Search:</label>
+    <%=  text_field_with_auto_complete :foyer, :chef_nom, {:class => :tbox, :title => "Entrez un nom de famille"}, { :url => foyers_path(:js), :method => :get, :with => "'foyer[chef_nom]=' + element.value"} %>
+    <!--input class="tbox" id="qsearch" type="text" name="qsearch" title="Entrez un nom de famille" /-->
+    <input class="btn" alt="Search" type="image" title="Search" src="images/search.gif" />
+    <span id ="qsearch">Recherchez un foyer existant par nom</span>
+  </p>
+
+</form>
+<p/>
+<br/>
+<br/>
+<div class="main-links">
+  <p id ="search"/>
+  <p id="search"><%= link_to 'Listez l\'ensemble de foyers', foyers_path %></p>
+  <p id="search"><%= link_to 'Créez un nouveau foyer', new_foyer_path %></p>
+</div>

@@ -1,0 +1,9 @@
+<%= render :partial => "nav" %>
+<% form_tag distributions_path, :method => 'get' do %>
+  <fieldset>
+    <legend>Recherchez par date</legend>
+    <%= select_date %>
+    <%=submit_tag "Search", :name => nil %>
+  </fieldset>
+<% end %>
+<p/>
