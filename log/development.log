@@ -30879,3 +30879,2128 @@ Rendering home/index
 Rendered home/_nav (0.7ms)
 Rendered home/_search (4.7ms)
 Completed in 37ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (228.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (28.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-01-20 22:25:22) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (1.7ms)
+Rendered home/_search (26.3ms)
+Completed in 159ms (View: 148, DB: 258) | 200 OK [http://localhost/]
+  [4;36;1mSQL (24.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index to js (for 127.0.0.1 at 2010-01-20 22:25:26) [GET]
+  Parameters: {"foyer"=>{"chef_nom"=>"b"}}
+  [4;36;1mFoyer Load (120.5ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%b%') ORDER BY chef_nom ASC[0m
+Rendering foyers/index
+  [4;35;1mFoyer Columns (248.5ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 473ms (View: 24, DB: 393) | 200 OK [http://localhost/foyers.js?foyer%5Bchef_nom%5D=b]
+  [4;36;1mSQL (15.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-01-20 22:25:29) [GET]
+  Parameters: {"x"=>"18", "y"=>"10", "foyer"=>{"chef_nom"=>"BARTOLD"}}
+  [4;36;1mFoyer Load (4.9ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%BARTOLD%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (1.2ms)
+  [4;35;1mFoyer Columns (3.1ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 128ms (View: 108, DB: 23) | 200 OK [http://localhost/foyers?foyer%5Bchef_nom%5D=BARTOLD&x=18&y=10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-01-20 22:25:38) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.2ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-01-20 22:25:40) [GET]
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.3ms)
+  [4;35;1mFoyer Columns (21.2ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 112ms (View: 78, DB: 22) | 200 OK [http://localhost/foyers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#search (for 127.0.0.1 at 2010-01-20 22:25:44) [GET]
+Rendering template within layouts/brasouverts
+Rendering distributions/search
+Rendered distributions/_nav (1.0ms)
+Completed in 284ms (View: 280, DB: 0) | 200 OK [http://localhost/distributions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#search (for 127.0.0.1 at 2010-01-20 22:25:46) [GET]
+  Parameters: {"date"=>{"month"=>"1", "day"=>"20", "year"=>"2010"}}
+  [4;36;1mDistribution Load (269.5ms)[0m   [0;1mSELECT * FROM `distributions` WHERE (date = '2010-1-20') ORDER BY foyer_id ASC[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/byDate
+Completed in 304ms (View: 23, DB: 270) | 200 OK [http://localhost/distributions?date%5Byear%5D=2010&date%5Bmonth%5D=1&date%5Bday%5D=20]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#search (for 127.0.0.1 at 2010-01-20 22:25:50) [GET]
+Rendering template within layouts/brasouverts
+Rendering distributions/search
+Rendered distributions/_nav (0.3ms)
+Completed in 18ms (View: 15, DB: 1) | 200 OK [http://localhost/distributions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#search (for 127.0.0.1 at 2010-01-20 22:25:54) [GET]
+  Parameters: {"date"=>{"month"=>"1", "day"=>"3", "year"=>"2010"}}
+  [4;35;1mDistribution Load (25.1ms)[0m   [0mSELECT * FROM `distributions` WHERE (date = '2010-1-3') ORDER BY foyer_id ASC[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/byDate
+  [4;36;1mDistribution Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+  [4;35;1mElement Columns (1.8ms)[0m   [0mSHOW FIELDS FROM elements[0m
+  [4;36;1mElement Load (0.1ms)[0m   [0;1mSELECT * FROM `elements` WHERE (`elements`.`id` = 1) [0m
+  [4;35;1mFoyer Columns (2.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+  [4;35;1mElement Load (0.2ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 2) [0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 2) [0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 2) [0m
+  [4;36;1mFoyer Load (0.1ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 2) [0m
+  [4;36;1mFoyer Load (0.1ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 10) [0m
+Completed in 101ms (View: 56, DB: 35) | 200 OK [http://localhost/distributions?date%5Byear%5D=2010&date%5Bmonth%5D=1&date%5Bday%5D=3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-01-20 22:26:00) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.1ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-20 22:26:02) [GET]
+  [4;35;1mFoyer Columns (2.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.4ms)
+Rendered foyers/_form (107.4ms)
+Completed in 219ms (View: 124, DB: 2) | 200 OK [http://localhost/foyers/new]
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-01-31 14:11:39) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (14.3ms)
+Rendered home/_search (29.8ms)
+Completed in 213ms (View: 206, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:11:52) [GET]
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (8.1ms)
+Rendered foyers/_form (470.7ms)
+Completed in 602ms (View: 518, DB: 2) | 200 OK [http://localhost/foyers/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:14:31) [GET]
+  [4;35;1mFoyer Columns (3.8ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+ERROR: compiling _run_erb_app47views47foyers47_form46html46erb_locals_form_object RAISED compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:102: syntax error, unexpected ')', expecting kTHEN or ':' or '\n' or ';'
+... if @foyer.membres.size > 0  ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47foyers47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( render :partial => "nav" ).to_s); @output_buffer.concat "\n\n"
+
+;  form_for(@foyer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <fieldset>\n    <legend>Responsable</legend>\n\n    "
+
+
+
+; @output_buffer.concat(( f.label 'Nom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_nom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Prenom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_prenom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Sexe:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :chef_sex ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Date de Naissance:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Situation Familiale:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :situation_familiale ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_numero ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_numero ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_rue ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_rue ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_additionel ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_additionel ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_chez ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_chez ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_code_postal ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_code_postal ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_portable ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_portable ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_fixe ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_fixe ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <legend>Informations</legend>\n\n    "
+
+
+
+
+
+
+; @output_buffer.concat(( f.label 'Nombre d\'Adultes' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_adultes ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Nombre d\'Enfants' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_enfants ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :dette_cumule ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :dette_cumule ).to_s); @output_buffer.concat "<br />\n\n\n    "
+
+
+; @output_buffer.concat(( f.label :inscription_complete ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.check_box :inscription_complete ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <p>\n      "
+
+
+
+
+
+; @output_buffer.concat(( f.label :sdf ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sdf ).to_s); @output_buffer.concat "\n    </p>\n\n    <p>\n      "
+
+
+
+; @output_buffer.concat(( f.label :demandeur_asile ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :demandeur_asile ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :handicape ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :handicape ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :diabetique ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :diabetique ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :hallal ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :hallal ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :sans_porc ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sans_porc ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :lettre_AS ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :lettre_AS ).to_s); @output_buffer.concat "<br />\n    </p>\n  </fieldset>\n\n  <br />\n  <fieldset>\n    <legend>Membres additionels</legend>\n    "
+
+
+
+
+
+
+; @output_buffer.concat(( if @foyer.membres.size > 0  ).to_s); @output_buffer.concat "\n    <table >\n      <tr>\n        <th>Nom</th>\n        <th>Prenom</th>\n        <th>Relation</th>\n        <th>Sexe</th>\n        <th>Date de Naissance</th>\n        <th colspan=\"2\" />\n      </tr>\n\n      "
+
+
+
+
+
+
+
+
+
+
+;  @foyer.membres.each do |membre| ; @output_buffer.concat "\n        <tr>\n          <td>"
+
+; @output_buffer.concat((h membre.nom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.prenom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.relation ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.sexe ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.date_de_naissance ).to_s); @output_buffer.concat "</td>\n\n          <td>"
+
+; @output_buffer.concat(( link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat(( link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+            :confirm => 'Vous êtes sûr ?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\n        </tr>\n      "
+
+
+;  end ; @output_buffer.concat "\n    </table>\n\n  </fieldset>\n\n  <br />\n  "
+
+
+
+
+
+; @output_buffer.concat(( f.submit 'Ok' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:139:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/leo/ruby/rails/brasouverts/app/views/foyers/new.html.erb:3:in `_run_erb_app47views47foyers47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/leo/ruby/rails/brasouverts/app/controllers/foyers_controller.rb:54:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:102: syntax error, unexpected ')', expecting kTHEN or ':' or '\n' or ';'
+... if @foyer.membres.size > 0  ).to_s); @output_buffer.concat ...
+                              ^) on line #102 of app/views/foyers/_form.html.erb:
+99:   <br />
+100:   <fieldset>
+101:     <legend>Membres additionels</legend>
+102:     <%= if @foyer.membres.size > 0  %>
+103:     <table >
+104:       <tr>
+105:         <th>Nom</th>
+
+    app/views/foyers/_form.html.erb:139:in `compile!'
+    app/views/foyers/new.html.erb:3
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:15:03) [GET]
+  [4;36;1mFoyer Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+ERROR: compiling _run_erb_app47views47foyers47_form46html46erb_locals_form_object RAISED compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47foyers47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( render :partial => "nav" ).to_s); @output_buffer.concat "\n\n"
+
+;  form_for(@foyer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <fieldset>\n    <legend>Responsable</legend>\n\n    "
+
+
+
+; @output_buffer.concat(( f.label 'Nom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_nom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Prenom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_prenom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Sexe:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :chef_sex ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Date de Naissance:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Situation Familiale:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :situation_familiale ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_numero ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_numero ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_rue ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_rue ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_additionel ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_additionel ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_chez ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_chez ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_code_postal ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_code_postal ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_portable ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_portable ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_fixe ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_fixe ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <legend>Informations</legend>\n\n    "
+
+
+
+
+
+
+; @output_buffer.concat(( f.label 'Nombre d\'Adultes' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_adultes ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Nombre d\'Enfants' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_enfants ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :dette_cumule ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :dette_cumule ).to_s); @output_buffer.concat "<br />\n\n\n    "
+
+
+; @output_buffer.concat(( f.label :inscription_complete ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.check_box :inscription_complete ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <p>\n      "
+
+
+
+
+
+; @output_buffer.concat(( f.label :sdf ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sdf ).to_s); @output_buffer.concat "\n    </p>\n\n    <p>\n      "
+
+
+
+; @output_buffer.concat(( f.label :demandeur_asile ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :demandeur_asile ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :handicape ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :handicape ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :diabetique ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :diabetique ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :hallal ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :hallal ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :sans_porc ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sans_porc ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :lettre_AS ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :lettre_AS ).to_s); @output_buffer.concat "<br />\n    </p>\n  </fieldset>\n\n  <br />\n  <fieldset>\n    <legend>Membres additionels</legend>\n    "
+
+
+
+
+
+
+;  if @foyer.membres.size > 0  ; @output_buffer.concat "\n    <table >\n      <tr>\n        <th>Nom</th>\n        <th>Prenom</th>\n        <th>Relation</th>\n        <th>Sexe</th>\n        <th>Date de Naissance</th>\n        <th colspan=\"2\" />\n      </tr>\n\n      "
+
+
+
+
+
+
+
+
+
+
+;  @foyer.membres.each do |membre| ; @output_buffer.concat "\n        <tr>\n          <td>"
+
+; @output_buffer.concat((h membre.nom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.prenom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.relation ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.sexe ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.date_de_naissance ).to_s); @output_buffer.concat "</td>\n\n          <td>"
+
+; @output_buffer.concat(( link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat(( link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+            :confirm => 'Vous êtes sûr ?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\n        </tr>\n      "
+
+
+;  end ; @output_buffer.concat "\n    </table>\n    "
+
+;  endif ; @output_buffer.concat "\n\n  </fieldset>\n\n  <br />\n  "
+
+
+
+
+; @output_buffer.concat(( f.submit 'Ok' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/leo/ruby/rails/brasouverts/app/views/foyers/new.html.erb:3:in `_run_erb_app47views47foyers47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/leo/ruby/rails/brasouverts/app/controllers/foyers_controller.rb:54:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND) on line #138 of app/views/foyers/_form.html.erb:
+0
+    app/views/foyers/_form.html.erb:140:in `compile!'
+    app/views/foyers/new.html.erb:3
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:15:31) [GET]
+  [4;35;1mFoyer Columns (1.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+ERROR: compiling _run_erb_app47views47foyers47_form46html46erb_locals_form_object RAISED compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47foyers47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( render :partial => "nav" ).to_s); @output_buffer.concat "\n\n"
+
+;  form_for(@foyer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <fieldset>\n    <legend>Responsable</legend>\n\n    "
+
+
+
+; @output_buffer.concat(( f.label 'Nom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_nom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Prenom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_prenom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Sexe:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :chef_sex ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Date de Naissance:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Situation Familiale:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :situation_familiale ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_numero ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_numero ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_rue ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_rue ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_additionel ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_additionel ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_chez ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_chez ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_code_postal ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_code_postal ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_portable ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_portable ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_fixe ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_fixe ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <legend>Informations</legend>\n\n    "
+
+
+
+
+
+
+; @output_buffer.concat(( f.label 'Nombre d\'Adultes' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_adultes ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Nombre d\'Enfants' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_enfants ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :dette_cumule ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :dette_cumule ).to_s); @output_buffer.concat "<br />\n\n\n    "
+
+
+; @output_buffer.concat(( f.label :inscription_complete ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.check_box :inscription_complete ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <p>\n      "
+
+
+
+
+
+; @output_buffer.concat(( f.label :sdf ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sdf ).to_s); @output_buffer.concat "\n    </p>\n\n    <p>\n      "
+
+
+
+; @output_buffer.concat(( f.label :demandeur_asile ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :demandeur_asile ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :handicape ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :handicape ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :diabetique ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :diabetique ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :hallal ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :hallal ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :sans_porc ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sans_porc ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :lettre_AS ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :lettre_AS ).to_s); @output_buffer.concat "<br />\n    </p>\n  </fieldset>\n\n  <br />\n  <fieldset>\n    <legend>Membres additionels</legend>\n    "
+
+
+
+
+
+
+;  if(@foyer.membres.size > 0)  ; @output_buffer.concat "\n    <table >\n      <tr>\n        <th>Nom</th>\n        <th>Prenom</th>\n        <th>Relation</th>\n        <th>Sexe</th>\n        <th>Date de Naissance</th>\n        <th colspan=\"2\" />\n      </tr>\n\n      "
+
+
+
+
+
+
+
+
+
+
+;  @foyer.membres.each do |membre| ; @output_buffer.concat "\n        <tr>\n          <td>"
+
+; @output_buffer.concat((h membre.nom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.prenom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.relation ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.sexe ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.date_de_naissance ).to_s); @output_buffer.concat "</td>\n\n          <td>"
+
+; @output_buffer.concat(( link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat(( link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+            :confirm => 'Vous êtes sûr ?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\n        </tr>\n      "
+
+
+;  end ; @output_buffer.concat "\n    </table>\n    "
+
+;  endif ; @output_buffer.concat "\n\n  </fieldset>\n\n  <br />\n  "
+
+
+
+
+; @output_buffer.concat(( f.submit 'Ok' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/leo/ruby/rails/brasouverts/app/views/foyers/new.html.erb:3:in `_run_erb_app47views47foyers47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/leo/ruby/rails/brasouverts/app/controllers/foyers_controller.rb:54:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND) on line #138 of app/views/foyers/_form.html.erb:
+0
+    app/views/foyers/_form.html.erb:140:in `compile!'
+    app/views/foyers/new.html.erb:3
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (175.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:17:08) [GET]
+  [4;36;1mFoyer Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+ERROR: compiling _run_erb_app47views47foyers47_form46html46erb_locals_form_object RAISED compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47foyers47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( render :partial => "nav" ).to_s); @output_buffer.concat "\n\n"
+
+;  form_for(@foyer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <fieldset>\n    <legend>Responsable</legend>\n\n    "
+
+
+
+; @output_buffer.concat(( f.label 'Nom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_nom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Prenom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_prenom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Sexe:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :chef_sex ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Date de Naissance:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Situation Familiale:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :situation_familiale ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_numero ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_numero ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_rue ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_rue ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_additionel ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_additionel ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_chez ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_chez ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_code_postal ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_code_postal ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_portable ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_portable ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_fixe ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_fixe ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <legend>Informations</legend>\n\n    "
+
+
+
+
+
+
+; @output_buffer.concat(( f.label 'Nombre d\'Adultes' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_adultes ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Nombre d\'Enfants' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_enfants ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :dette_cumule ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :dette_cumule ).to_s); @output_buffer.concat "<br />\n\n\n    "
+
+
+; @output_buffer.concat(( f.label :inscription_complete ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.check_box :inscription_complete ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <p>\n      "
+
+
+
+
+
+; @output_buffer.concat(( f.label :sdf ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sdf ).to_s); @output_buffer.concat "\n    </p>\n\n    <p>\n      "
+
+
+
+; @output_buffer.concat(( f.label :demandeur_asile ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :demandeur_asile ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :handicape ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :handicape ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :diabetique ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :diabetique ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :hallal ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :hallal ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :sans_porc ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sans_porc ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :lettre_AS ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :lettre_AS ).to_s); @output_buffer.concat "<br />\n    </p>\n  </fieldset>\n\n  <br />\n  <fieldset>\n    <legend>Membres additionels</legend>\n    "
+
+
+
+
+
+
+;  if(@foyer.membres.size != 0)  ; @output_buffer.concat "\n    <table >\n      <tr>\n        <th>Nom</th>\n        <th>Prenom</th>\n        <th>Relation</th>\n        <th>Sexe</th>\n        <th>Date de Naissance</th>\n        <th colspan=\"2\" />\n      </tr>\n\n      "
+
+
+
+
+
+
+
+
+
+
+;  @foyer.membres.each do |membre| ; @output_buffer.concat "\n        <tr>\n          <td>"
+
+; @output_buffer.concat((h membre.nom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.prenom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.relation ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.sexe ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.date_de_naissance ).to_s); @output_buffer.concat "</td>\n\n          <td>"
+
+; @output_buffer.concat(( link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat(( link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+            :confirm => 'Vous êtes sûr ?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\n        </tr>\n      "
+
+
+;  end ; @output_buffer.concat "\n    </table>\n    "
+
+;  endif ; @output_buffer.concat "\n\n  </fieldset>\n\n  <br />\n  "
+
+
+
+
+; @output_buffer.concat(( f.submit 'Ok' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/leo/ruby/rails/brasouverts/app/views/foyers/new.html.erb:3:in `_run_erb_app47views47foyers47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/leo/ruby/rails/brasouverts/app/controllers/foyers_controller.rb:54:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND) on line #138 of app/views/foyers/_form.html.erb:
+0
+    app/views/foyers/_form.html.erb:140:in `compile!'
+    app/views/foyers/new.html.erb:3
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:18:28) [GET]
+  [4;35;1mFoyer Columns (2.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+ERROR: compiling _run_erb_app47views47foyers47_form46html46erb_locals_form_object RAISED compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47foyers47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( render :partial => "nav" ).to_s); @output_buffer.concat "\n\n"
+
+;  form_for(@foyer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <fieldset>\n    <legend>Responsable</legend>\n\n    "
+
+
+
+; @output_buffer.concat(( f.label 'Nom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_nom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Prenom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_prenom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Sexe:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :chef_sex ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Date de Naissance:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Situation Familiale:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :situation_familiale ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_numero ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_numero ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_rue ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_rue ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_additionel ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_additionel ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_chez ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_chez ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_code_postal ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_code_postal ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_portable ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_portable ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_fixe ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_fixe ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <legend>Informations</legend>\n\n    "
+
+
+
+
+
+
+; @output_buffer.concat(( f.label 'Nombre d\'Adultes' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_adultes ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Nombre d\'Enfants' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_enfants ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :dette_cumule ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :dette_cumule ).to_s); @output_buffer.concat "<br />\n\n\n    "
+
+
+; @output_buffer.concat(( f.label :inscription_complete ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.check_box :inscription_complete ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <p>\n      "
+
+
+
+
+
+; @output_buffer.concat(( f.label :sdf ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sdf ).to_s); @output_buffer.concat "\n    </p>\n\n    <p>\n      "
+
+
+
+; @output_buffer.concat(( f.label :demandeur_asile ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :demandeur_asile ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :handicape ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :handicape ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :diabetique ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :diabetique ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :hallal ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :hallal ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :sans_porc ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sans_porc ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :lettre_AS ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :lettre_AS ).to_s); @output_buffer.concat "<br />\n    </p>\n  </fieldset>\n\n  <br />\n  <fieldset>\n    <legend>Membres additionels</legend>\n    "
+
+
+
+
+
+
+;  if(@foyer.membres.length != 0)  ; @output_buffer.concat "\n    <table >\n      <tr>\n        <th>Nom</th>\n        <th>Prenom</th>\n        <th>Relation</th>\n        <th>Sexe</th>\n        <th>Date de Naissance</th>\n        <th colspan=\"2\" />\n      </tr>\n\n      "
+
+
+
+
+
+
+
+
+
+
+;  @foyer.membres.each do |membre| ; @output_buffer.concat "\n        <tr>\n          <td>"
+
+; @output_buffer.concat((h membre.nom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.prenom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.relation ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.sexe ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.date_de_naissance ).to_s); @output_buffer.concat "</td>\n\n          <td>"
+
+; @output_buffer.concat(( link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat(( link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+            :confirm => 'Vous êtes sûr ?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\n        </tr>\n      "
+
+
+;  end ; @output_buffer.concat "\n    </table>\n    "
+
+;  endif ; @output_buffer.concat "\n\n  </fieldset>\n\n  <br />\n  "
+
+
+
+
+; @output_buffer.concat(( f.submit 'Ok' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/leo/ruby/rails/brasouverts/app/views/foyers/new.html.erb:3:in `_run_erb_app47views47foyers47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/leo/ruby/rails/brasouverts/app/controllers/foyers_controller.rb:54:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND) on line #138 of app/views/foyers/_form.html.erb:
+0
+    app/views/foyers/_form.html.erb:140:in `compile!'
+    app/views/foyers/new.html.erb:3
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:20:50) [GET]
+  [4;36;1mFoyer Columns (6.1ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+ERROR: compiling _run_erb_app47views47foyers47_form46html46erb_locals_form_object RAISED compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47foyers47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( render :partial => "nav" ).to_s); @output_buffer.concat "\n\n"
+
+;  form_for(@foyer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <fieldset>\n    <legend>Responsable</legend>\n\n    "
+
+
+
+; @output_buffer.concat(( f.label 'Nom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_nom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Prenom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_prenom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Sexe:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :chef_sex ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Date de Naissance:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Situation Familiale:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :situation_familiale ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_numero ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_numero ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_rue ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_rue ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_additionel ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_additionel ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_chez ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_chez ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_code_postal ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_code_postal ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_portable ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_portable ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_fixe ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_fixe ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <legend>Informations</legend>\n\n    "
+
+
+
+
+
+
+; @output_buffer.concat(( f.label 'Nombre d\'Adultes' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_adultes ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Nombre d\'Enfants' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_enfants ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :dette_cumule ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :dette_cumule ).to_s); @output_buffer.concat "<br />\n\n\n    "
+
+
+; @output_buffer.concat(( f.label :inscription_complete ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.check_box :inscription_complete ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <p>\n      "
+
+
+
+
+
+; @output_buffer.concat(( f.label :sdf ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sdf ).to_s); @output_buffer.concat "\n    </p>\n\n    <p>\n      "
+
+
+
+; @output_buffer.concat(( f.label :demandeur_asile ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :demandeur_asile ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :handicape ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :handicape ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :diabetique ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :diabetique ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :hallal ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :hallal ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :sans_porc ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sans_porc ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :lettre_AS ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :lettre_AS ).to_s); @output_buffer.concat "<br />\n    </p>\n  </fieldset>\n\n  <br />\n  <fieldset>\n    <legend>Membres additionels</legend>\n    "
+
+
+
+
+
+
+;  if(@foyer.membres)  ; @output_buffer.concat "\n    <table >\n      <tr>\n        <th>Nom</th>\n        <th>Prenom</th>\n        <th>Relation</th>\n        <th>Sexe</th>\n        <th>Date de Naissance</th>\n        <th colspan=\"2\" />\n      </tr>\n\n      "
+
+
+
+
+
+
+
+
+
+
+;  @foyer.membres.each do |membre| ; @output_buffer.concat "\n        <tr>\n          <td>"
+
+; @output_buffer.concat((h membre.nom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.prenom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.relation ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.sexe ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.date_de_naissance ).to_s); @output_buffer.concat "</td>\n\n          <td>"
+
+; @output_buffer.concat(( link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat(( link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+            :confirm => 'Vous êtes sûr ?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\n        </tr>\n      "
+
+
+;  end ; @output_buffer.concat "\n    </table>\n    "
+
+;  endif ; @output_buffer.concat "\n\n  </fieldset>\n\n  <br />\n  "
+
+
+
+
+; @output_buffer.concat(( f.submit 'Ok' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/leo/ruby/rails/brasouverts/app/views/foyers/new.html.erb:3:in `_run_erb_app47views47foyers47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/leo/ruby/rails/brasouverts/app/controllers/foyers_controller.rb:54:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND) on line #138 of app/views/foyers/_form.html.erb:
+0
+    app/views/foyers/_form.html.erb:140:in `compile!'
+    app/views/foyers/new.html.erb:3
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:20:52) [GET]
+  [4;35;1mFoyer Columns (2.1ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+ERROR: compiling _run_erb_app47views47foyers47_form46html46erb_locals_form_object RAISED compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47foyers47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( render :partial => "nav" ).to_s); @output_buffer.concat "\n\n"
+
+;  form_for(@foyer) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <fieldset>\n    <legend>Responsable</legend>\n\n    "
+
+
+
+; @output_buffer.concat(( f.label 'Nom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_nom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Prenom:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :chef_prenom ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Sexe:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :chef_sex ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Date de Naissance:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Situation Familiale:' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.enum_select :situation_familiale ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_numero ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_numero ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_rue ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_rue ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_additionel ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_additionel ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_chez ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_chez ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :adresse_code_postal ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :adresse_code_postal ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_portable ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_portable ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :telephone_fixe ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :telephone_fixe ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <legend>Informations</legend>\n\n    "
+
+
+
+
+
+
+; @output_buffer.concat(( f.label 'Nombre d\'Adultes' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_adultes ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label 'Nombre d\'Enfants' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_membres_enfants ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :nbr_colis_a_distribuer ).to_s); @output_buffer.concat "<br />\n\n    "
+
+; @output_buffer.concat(( f.label :dette_cumule ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :dette_cumule ).to_s); @output_buffer.concat "<br />\n\n\n    "
+
+
+; @output_buffer.concat(( f.label :inscription_complete ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.check_box :inscription_complete ).to_s); @output_buffer.concat "<br />\n\n  </fieldset>\n  <br />\n  <fieldset>\n    <p>\n      "
+
+
+
+
+
+; @output_buffer.concat(( f.label :sdf ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sdf ).to_s); @output_buffer.concat "\n    </p>\n\n    <p>\n      "
+
+
+
+; @output_buffer.concat(( f.label :demandeur_asile ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :demandeur_asile ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :handicape ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :handicape ).to_s); @output_buffer.concat "\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :diabetique ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :diabetique ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :hallal ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :hallal ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :sans_porc ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :sans_porc ).to_s); @output_buffer.concat "<br />\n    </p>\n    <p>\n      "
+
+
+; @output_buffer.concat(( f.label :lettre_AS ).to_s); @output_buffer.concat "\n      "
+; @output_buffer.concat(( f.check_box :lettre_AS ).to_s); @output_buffer.concat "<br />\n    </p>\n  </fieldset>\n\n  <br />\n  <fieldset>\n    <legend>Membres additionels</legend>\n    "
+
+
+
+
+
+
+;  if(@foyer.membres)  ; @output_buffer.concat "\n    <table >\n      <tr>\n        <th>Nom</th>\n        <th>Prenom</th>\n        <th>Relation</th>\n        <th>Sexe</th>\n        <th>Date de Naissance</th>\n        <th colspan=\"2\" />\n      </tr>\n\n      "
+
+
+
+
+
+
+
+
+
+
+;  @foyer.membres.each do |membre| ; @output_buffer.concat "\n        <tr>\n          <td>"
+
+; @output_buffer.concat((h membre.nom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.prenom ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.relation ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.sexe ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat((h membre.date_de_naissance ).to_s); @output_buffer.concat "</td>\n\n          <td>"
+
+; @output_buffer.concat(( link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) ).to_s); @output_buffer.concat "</td>\n          <td>"
+; @output_buffer.concat(( link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+            :confirm => 'Vous êtes sûr ?', :method => :delete ).to_s); @output_buffer.concat "</td>\n\n        </tr>\n      "
+
+
+;  end ; @output_buffer.concat "\n    </table>\n    "
+
+;  endif ; @output_buffer.concat "\n\n  </fieldset>\n\n  <br />\n  "
+
+
+
+
+; @output_buffer.concat(( f.submit 'Ok' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/leo/ruby/rails/brasouverts/app/views/foyers/new.html.erb:3:in `_run_erb_app47views47foyers47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/leo/ruby/rails/brasouverts/app/controllers/foyers_controller.rb:54:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:138: syntax error, unexpected kENSURE, expecting kEND
+/home/leo/ruby/rails/brasouverts/app/views/foyers/_form.html.erb:140: syntax error, unexpected $end, expecting kEND) on line #138 of app/views/foyers/_form.html.erb:
+0
+    app/views/foyers/_form.html.erb:140:in `compile!'
+    app/views/foyers/new.html.erb:3
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:21:09) [GET]
+  [4;36;1mFoyer Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+Rendered foyers/_form (62.8ms)
+Completed in 88ms (View: 73, DB: 4) | 200 OK [http://localhost/foyers/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:22:57) [GET]
+  [4;35;1mFoyer Columns (2.3ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.4ms)
+Rendered foyers/_form (58.6ms)
+Completed in 84ms (View: 69, DB: 2) | 200 OK [http://localhost/foyers/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:24:16) [GET]
+  [4;36;1mFoyer Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+Rendered foyers/_form (165.8ms)
+Completed in 201ms (View: 185, DB: 3) | 200 OK [http://localhost/foyers/new]
+  [4;35;1mSQL (1.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:24:30) [GET]
+  [4;35;1mFoyer Columns (1.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+Rendered foyers/_form (60.9ms)
+Completed in 89ms (View: 71, DB: 4) | 200 OK [http://localhost/foyers/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-01-31 14:24:42) [GET]
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.4ms)
+Rendered foyers/_form (64.8ms)
+Completed in 103ms (View: 87, DB: 3) | 200 OK [http://localhost/foyers/new]

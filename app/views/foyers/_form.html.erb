@@ -99,7 +99,7 @@
   <br />
   <fieldset>
     <legend>Membres additionels</legend>
-
+    <% if @foyer.membres.size > 0 %>
     <table >
       <tr>
         <th>Nom</th>
@@ -125,6 +125,10 @@
         </tr>
       <% end %>
     </table>
+    <% else %>
+    Aucun membre additionel.
+    <% end  %>
+
 
   </fieldset>
 
