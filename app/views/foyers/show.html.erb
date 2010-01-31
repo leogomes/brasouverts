@@ -37,22 +37,23 @@
     <%= f.label :telephone_fixe %>
     <%= f.text_field :telephone_fixe, :disabled => true  %><br />
 
+    <%= f.label 'Email' %>
+    <%= f.text_field :chef_email, :disabled => true %><br />
+
+
   </fieldset>
   <br />
   <fieldset>
     <legend>Informations</legend>
 
-    <%= f.label 'Nombre d\'Adultes' %>
-    <%= f.text_field :nbr_membres_adultes, :disabled => true  %><br />
-
     <%= f.label 'Nombre d\'Enfants' %>
-    <%= f.text_field :nbr_membres_enfants, :disabled => true  %><br />
+    <%= f.text_field :nombre_enfants, :disabled => true  %><br />
 
     <%= f.label :nbr_colis_a_distribuer %>
     <%= f.text_field :nbr_colis_a_distribuer, :disabled => true  %><br />
 
-    <%= f.label :dette_cumule %>
-    <%= f.text_field :dette_cumule, :disabled => true  %><br />
+    <%= f.label 'Dette cumulée' %>
+    <%= f.text_field :dette_cumulee, :disabled => true  %><br />
 
 
     <%= f.label :inscription_complete %>

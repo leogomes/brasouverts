@@ -8,7 +8,7 @@ class CreateElements < ActiveRecord::Migration
 
     # Insert the initial elements
     Element.create(:elementDistribue => "Colis Alimentaire", :description => "Colis Alimentaire")
-    Element.create(:elementDistribue => "Lait", :description => "3 litres de lait")
+    Element.create(:elementDistribue => "Lait", :description => "1L de lait")
 
   end
 

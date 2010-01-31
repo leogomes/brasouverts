@@ -5,6 +5,8 @@ class CreateMembres < ActiveRecord::Migration
       t.string :nom
       t.string :prenom
       t.date :date_de_naissance
+      t.string :ville_de_naissance
+      t.references :pays #pays de naissance
       t.column :sexe, :enum, :limit => [:M, :F], :null => false
       t.column :relation, :enum, :limit =>  
                         [:Epoux, :Epouse, :Fils, :Fille, :Parent, :Autre],

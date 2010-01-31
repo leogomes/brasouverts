@@ -7,13 +7,12 @@ class CreateFoyers < ActiveRecord::Migration
       t.string :chef_prenom, :null => false 
       t.column :chef_sex, :enum, :limit => [:M, :F], :null => false
       t.date :chef_date_naissance
-      t.column :situation_familiale, :enum, :limit => [:celibataire, :divorce, :marie, :veuf, :concubinage], :null => false
-      t.integer :nbr_membres
-      t.integer :nbr_membres_adultes
-      t.integer :nbr_membres_enfants
+      t.string :chef_ville_de_naissance
+      t.references :pays #pays de naissance
+      t.string :chef_email
+      t.column :situation_familiale, :enum, :limit => [:Celibataire, :Marie, :Veuf, :Divorce, :Separe, :Concubinage], :null => false
       t.integer :nbr_colis_a_distribuer
       t.boolean :inscription_complete
-      t.float :dette_cumule
       t.string :adresse_numero
       t.string :adresse_rue
       t.string :adresse_additionel
