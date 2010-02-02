@@ -55,6 +55,9 @@
     <%= f.label 'Dette cumulée' %>
     <%= f.text_field :dette_cumulee, :disabled => true  %><br />
 
+    <%= f.label 'Remarques' %>
+    <%= f.text_area :information_additionnelle, :cols => 28, :rows => 5, :disabled => true %><br />
+
 
     <%= f.label :inscription_complete %>
     <%= f.check_box :inscription_complete, :disabled => true  %><br />
@@ -93,38 +96,49 @@
     </p>
   </fieldset>
   <br />
+  
   <fieldset>
     <legend>Membres additionels</legend>
-
-    <table >
-      <tr>
-        <th>Nom</th>
-        <th>Prenom</th>
-        <th>Relation</th>
-        <th>Sexe</th>
-        <th>Date de Naissance</th>
-      </tr>
-
-      <% @foyer.membres.each do |membre| %>
+    <% if @foyer.membres.size > 0 %>
+      <table >
         <tr>
-          <td><%=h membre.nom %></td>
-          <td><%=h membre.prenom %></td>
-          <td><%=h membre.relation %></td>
-          <td><%=h membre.sexe %></td>
-          <td><%=h membre.date_de_naissance %></td>
-
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th>Relation</th>
+          <th>Sexe</th>
+          <th>Date de Naissance</th>
+          <th colspan="2" />
         </tr>
-      <% end %>
-    </table>
+
+        <% @foyer.membres.each do |membre| %>
+          <tr>
+            <td><%=h membre.nom %></td>
+            <td><%=h membre.prenom %></td>
+            <td><%=h membre.relation %></td>
+            <td><%=h membre.sexe %></td>
+            <td><%=h membre.date_de_naissance %></td>
+
+            <td><%= link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) %></td>
+            <td><%= link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+              :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+
+          </tr>
+        <% end %>
+      </table>
+    <% else %>
+      Aucun membre additionel.
+    <% end  %>
+
   </fieldset>
 
 
   <br />
 
   <%= link_to 'Éditez', edit_foyer_path(@foyer) %> |
-  <%= link_to 'Rajoutez un membre', new_foyer_membre_path(@foyer) %>
-
-
+  <%= link_to 'Rajoutez un membre', new_foyer_membre_path(@foyer) %><br />
+  <br />
+  --<br />
+  Dernière mise à jour: <%=  @foyer.updated_at.strftime('%d %b %Y - %Hh%M') %>
 <% end %>
 
 

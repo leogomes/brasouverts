@@ -59,9 +59,13 @@
     <%= f.label 'Dette cumulée' %>
     <%= f.text_field :dette_cumulee, :disabled => true  %><br />
 
+    <%= f.label 'Remarques' %>
+    <%= f.text_area :information_additionnelle, :cols => 28, :rows => 5 %><br />
+
 
     <%= f.label :inscription_complete %>
     <%= f.check_box :inscription_complete %><br />
+
 
   </fieldset>
   <br />

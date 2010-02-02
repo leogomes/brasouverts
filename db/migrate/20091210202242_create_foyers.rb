@@ -3,6 +3,7 @@
 class CreateFoyers < ActiveRecord::Migration
   def self.up
     create_table :foyers do |t|
+      
       t.string :chef_nom, :null => false 
       t.string :chef_prenom, :null => false 
       t.column :chef_sex, :enum, :limit => [:M, :F], :null => false
@@ -13,6 +14,7 @@ class CreateFoyers < ActiveRecord::Migration
       t.column :situation_familiale, :enum, :limit => [:Celibataire, :Marie, :Veuf, :Divorce, :Separe, :Concubinage], :null => false
       t.integer :nbr_colis_a_distribuer
       t.boolean :inscription_complete
+
       t.string :adresse_numero
       t.string :adresse_rue
       t.string :adresse_additionel
@@ -20,6 +22,8 @@ class CreateFoyers < ActiveRecord::Migration
       t.string :adresse_code_postal
       t.string :telephone_portable
       t.string :telephone_fixe
+      t.string :information_additionnelle
+      
       t.boolean :sdf
       t.boolean :demandeur_asile
       t.boolean :handicape

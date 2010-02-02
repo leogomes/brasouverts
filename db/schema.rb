@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20100102154535) do
   create_table "distributions", :force => true do |t|
     t.integer  "element_id"
     t.integer  "foyer_id",                                        :null => false
-    t.date     "date",                  :default => '2010-01-31'
+    t.date     "date",                  :default => '2010-02-02'
     t.integer  "nombre_distribue"
     t.float    "prix",                                            :null => false
     t.float    "dette"
@@ -31,17 +31,14 @@ ActiveRecord::Schema.define(:version => 20100102154535) do
   end
 
   create_table "foyers", :force => true do |t|
-    t.string   "chef_nom",                                                                                          :null => false
-    t.string   "chef_prenom",                                                                                       :null => false
-    t.enum     "chef_sex",                :limit => [:M, :F],                                                       :null => false
+    t.string   "chef_nom",                                                                                            :null => false
+    t.string   "chef_prenom",                                                                                         :null => false
+    t.enum     "chef_sex",                  :limit => [:M, :F],                                                       :null => false
     t.date     "chef_date_naissance"
     t.string   "chef_ville_de_naissance"
     t.integer  "pays_id"
     t.string   "chef_email"
-    t.enum     "situation_familiale",     :limit => [:Celibataire, :Marie, :Veuf, :Divorce, :Separe, :Concubinage], :null => false
-    t.integer  "nbr_membres"
-    t.integer  "nbr_membres_adultes"
-    t.integer  "nbr_membres_enfants"
+    t.enum     "situation_familiale",       :limit => [:Celibataire, :Marie, :Veuf, :Divorce, :Separe, :Concubinage], :null => false
     t.integer  "nbr_colis_a_distribuer"
     t.boolean  "inscription_complete"
     t.string   "adresse_numero"
@@ -51,6 +48,7 @@ ActiveRecord::Schema.define(:version => 20100102154535) do
     t.string   "adresse_code_postal"
     t.string   "telephone_portable"
     t.string   "telephone_fixe"
+    t.string   "information_additionnelle"
     t.boolean  "sdf"
     t.boolean  "demandeur_asile"
     t.boolean  "handicape"
