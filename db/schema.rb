@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20100102154535) do
   create_table "distributions", :force => true do |t|
     t.integer  "element_id"
     t.integer  "foyer_id",                                        :null => false
-    t.date     "date",                  :default => '2010-02-02'
+    t.date     "date",                  :default => '2010-02-03'
     t.integer  "nombre_distribue"
     t.float    "prix",                                            :null => false
     t.float    "dette"
