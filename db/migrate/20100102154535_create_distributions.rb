@@ -7,7 +7,7 @@ class CreateDistributions < ActiveRecord::Migration
       t.date :date, :default => Time.now
       t.integer :nombre_distribue
       t.float :prix, :null => false
-      t.float :dette
+      t.float :dette,  :default => 0
       t.boolean :donation_bras_ouverts
       t.timestamps
     end

@@ -23,7 +23,10 @@ class CreateFoyers < ActiveRecord::Migration
       t.string :telephone_portable
       t.string :telephone_fixe
       t.string :information_additionnelle
-      
+
+      t.decimal :revenu_impossable
+      t.boolean :mis_a_jour
+      t.boolean :sans_papier
       t.boolean :sdf
       t.boolean :demandeur_asile
       t.boolean :handicape

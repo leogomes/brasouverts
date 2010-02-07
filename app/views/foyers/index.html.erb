@@ -1,12 +1,12 @@
 <%= render :partial => "nav" %>
 
 <table >
+
   <tr>
     <th>Nom</th>
     <th>Prenom</th>
     <th>Date de Naissance</th>
     <th colspan="4" />
-
   </tr>
 
   <% @foyers.each do |f| %>
@@ -21,15 +21,8 @@
       <td><%= link_to 'Éditez', edit_foyer_path(f) %></td>
       <td><%= link_to 'Suprimez', foyer_path(f),
         :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
-
-
     </tr>
-
-
-
+    
   <% end %>
-
 </table>
-
 <br />
-

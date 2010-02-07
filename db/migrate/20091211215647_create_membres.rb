@@ -9,7 +9,7 @@ class CreateMembres < ActiveRecord::Migration
       t.references :pays #pays de naissance
       t.column :sexe, :enum, :limit => [:M, :F], :null => false
       t.column :relation, :enum, :limit =>  
-                        [:Epoux, :Epouse, :Fils, :Fille, :Parent, :Autre],
+                        [:Epoux, :Epouse, :Fils, :Fille, :Parent, 'Petit fils', 'Petite fille', :Autre],
                :null => false  
 
       t.timestamps

@@ -1,5 +1,7 @@
 <%= render :partial => "nav" %>
 
+
+
 <% form_for(@foyer) do |f| %>
   <%= f.error_messages %>
   <fieldset>
@@ -45,6 +47,7 @@
     <%= f.text_field :chef_email %><br />
 
 
+
   </fieldset>
   <br />
   <fieldset>
@@ -59,32 +62,59 @@
     <%= f.label 'Dette cumulée' %>
     <%= f.text_field :dette_cumulee, :disabled => true  %><br />
 
+    <%= f.label 'Revenu impossable' %>
+    <%= f.text_field :revenu_impossable %><br />
+
+
     <%= f.label 'Remarques' %>
     <%= f.text_area :information_additionnelle, :cols => 28, :rows => 5 %><br />
 
-
-    <%= f.label :inscription_complete %>
-    <%= f.check_box :inscription_complete %><br />
-
+    <p>
+      <%= f.label 'Inscription complète' %>
+      <%= f.check_box :inscription_complete %><br />
+    </p>
+    <p>
+      <%= f.label 'Inscription mise à jour' %>
+      <%= f.check_box :mis_a_jour %><br />
+    </p>
 
   </fieldset>
   <br />
   <fieldset>
+    <legend>Situation Sociale</legend>
     <p>
       <%= f.label :sdf %>
       <%= f.check_box :sdf %>
     </p>
 
     <p>
-      <%= f.label :demandeur_asile %>
-      <%= f.check_box :demandeur_asile %>
-    </p>
-    <p>
       <%= f.label :handicape %>
       <%= f.check_box :handicape %>
     </p>
+
+
     <p>
-      <%= f.label :diabetique %>
+      <%= f.label :demandeur_asile %>
+      <%= f.check_box :demandeur_asile %>
+    </p>
+
+    <p>
+      <%= f.label 'Lettre Assistante Sociale' %>
+      <%= f.check_box :lettre_AS %><br />
+    </p>
+
+        <p>
+      <%= f.label 'Sans papier' %>
+      <%= f.check_box :sans_papier %><br />
+    </p>
+
+
+  </fieldset>
+  <br />
+  <fieldset>
+    <legend>Préparation de colis</legend>
+    <p>
+      <%= f.label 'Diabétique' %>
       <%= f.check_box :diabetique %><br />
     </p>
     <p>
@@ -95,43 +125,39 @@
       <%= f.label :sans_porc %>
       <%= f.check_box :sans_porc %><br />
     </p>
-    <p>
-      <%= f.label :lettre_AS %>
-      <%= f.check_box :lettre_AS %><br />
-    </p>
   </fieldset>
 
   <br />
   <fieldset>
     <legend>Membres additionels</legend>
     <% if @foyer.membres.size > 0 %>
-    <table >
-      <tr>
-        <th>Nom</th>
-        <th>Prenom</th>
-        <th>Relation</th>
-        <th>Sexe</th>
-        <th>Date de Naissance</th>
-        <th colspan="2" />
-      </tr>
-
-      <% @foyer.membres.each do |membre| %>
+      <table >
         <tr>
-          <td><%=h membre.nom %></td>
-          <td><%=h membre.prenom %></td>
-          <td><%=h membre.relation %></td>
-          <td><%=h membre.sexe %></td>
-          <td><%=h membre.date_de_naissance %></td>
-
-          <td><%= link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) %></td>
-          <td><%= link_to 'Suprimez', foyer_membre_path(@foyer, membre),
-            :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
-
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th>Relation</th>
+          <th>Sexe</th>
+          <th>Date de Naissance</th>
+          <th colspan="2" />
         </tr>
-      <% end %>
-    </table>
+
+        <% @foyer.membres.each do |membre| %>
+          <tr>
+            <td><%=h membre.nom %></td>
+            <td><%=h membre.prenom %></td>
+            <td><%=h membre.relation %></td>
+            <td><%=h membre.sexe %></td>
+            <td><%=h membre.date_de_naissance %></td>
+
+            <td><%= link_to 'Éditez', edit_foyer_membre_path(@foyer, membre) %></td>
+            <td><%= link_to 'Suprimez', foyer_membre_path(@foyer, membre),
+              :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+
+          </tr>
+        <% end %>
+      </table>
     <% else %>
-    Aucun membre additionel.
+      Aucun membre additionel.
     <% end  %>
 
 

@@ -1,9 +1,9 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  chef_nom: MyString
-  chef_prenom: MyString
-  chef_date_naissance: 2009-12-10
+  chef_nom: Freitas Gomes
+  chef_prenom: Leo
+  chef_date_naissance: 1980-12-08
 #  nbr_membres: 1
 #  nbr_membres_adultes: 1
 #  nbr_membres_enfants: 1

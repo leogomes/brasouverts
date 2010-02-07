@@ -14,10 +14,10 @@ ActiveRecord::Schema.define(:version => 20100102154535) do
   create_table "distributions", :force => true do |t|
     t.integer  "element_id"
     t.integer  "foyer_id",                                        :null => false
-    t.date     "date",                  :default => '2010-02-03'
+    t.date     "date",                  :default => '2010-02-07'
     t.integer  "nombre_distribue"
     t.float    "prix",                                            :null => false
-    t.float    "dette"
+    t.float    "dette",                 :default => 0.0
     t.boolean  "donation_bras_ouverts"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -31,14 +31,14 @@ ActiveRecord::Schema.define(:version => 20100102154535) do
   end
 
   create_table "foyers", :force => true do |t|
-    t.string   "chef_nom",                                                                                            :null => false
-    t.string   "chef_prenom",                                                                                         :null => false
-    t.enum     "chef_sex",                  :limit => [:M, :F],                                                       :null => false
+    t.string   "chef_nom",                                                                                                                           :null => false
+    t.string   "chef_prenom",                                                                                                                        :null => false
+    t.enum     "chef_sex",                  :limit => [:M, :F],                                                                                      :null => false
     t.date     "chef_date_naissance"
     t.string   "chef_ville_de_naissance"
     t.integer  "pays_id"
     t.string   "chef_email"
-    t.enum     "situation_familiale",       :limit => [:Celibataire, :Marie, :Veuf, :Divorce, :Separe, :Concubinage], :null => false
+    t.enum     "situation_familiale",       :limit => [:Celibataire, :Marie, :Veuf, :Divorce, :Separe, :Concubinage],                                :null => false
     t.integer  "nbr_colis_a_distribuer"
     t.boolean  "inscription_complete"
     t.string   "adresse_numero"
@@ -49,6 +49,9 @@ ActiveRecord::Schema.define(:version => 20100102154535) do
     t.string   "telephone_portable"
     t.string   "telephone_fixe"
     t.string   "information_additionnelle"
+    t.integer  "revenu_impossable",         :limit => 10,                                                             :precision => 10, :scale => 0
+    t.boolean  "mis_a_jour"
+    t.boolean  "sans_papier"
     t.boolean  "sdf"
     t.boolean  "demandeur_asile"
     t.boolean  "handicape"
@@ -67,8 +70,8 @@ ActiveRecord::Schema.define(:version => 20100102154535) do
     t.date     "date_de_naissance"
     t.string   "ville_de_naissance"
     t.integer  "pays_id"
-    t.enum     "sexe",               :limit => [:M, :F],                                          :null => false
-    t.enum     "relation",           :limit => [:Epoux, :Epouse, :Fils, :Fille, :Parent, :Autre], :null => false
+    t.enum     "sexe",               :limit => [:M, :F],                                                                          :null => false
+    t.enum     "relation",           :limit => [:Epoux, :Epouse, :Fils, :Fille, :Parent, :"Petit fils", :"Petite fille", :Autre], :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
