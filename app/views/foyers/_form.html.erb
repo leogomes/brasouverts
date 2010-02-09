@@ -103,7 +103,7 @@
       <%= f.check_box :lettre_AS %><br />
     </p>
 
-        <p>
+    <p>
       <%= f.label 'Sans papier' %>
       <%= f.check_box :sans_papier %><br />
     </p>
@@ -162,6 +162,38 @@
 
 
   </fieldset>
+
+  <br />
+  
+  <fieldset>
+    <legend>Sources de revenu</legend>
+    <% if @foyer.revenus.size > 0 %>
+      <table >
+        <tr>
+          <th>Type</th>
+          <th>Valeur</th>
+          <th colspan="2" />
+        </tr>
+
+        <% @foyer.revenus.each do |revenu| %>
+          <tr>
+            <td><%=h revenu.type_de_revenu %></td>
+            <td><%=h revenu.valeur %></td>
+
+            <td><%= link_to 'Éditez', edit_foyer_revenu_path(@foyer, revenu) %></td>
+            <td><%= link_to 'Suprimez', foyer_revenu_path(@foyer, revenu),
+              :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+
+          </tr>
+        <% end %>
+      </table>
+    <% else %>
+      Aucun revenu enregistré.
+    <% end  %>
+
+
+  </fieldset>
+
 
   <br />
   <%= f.submit 'Ok' %>

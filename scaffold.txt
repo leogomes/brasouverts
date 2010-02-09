@@ -4,3 +4,5 @@ script/generate scaffold Foyer chefNom:string chefPrenom:string chefDateNaissanc
 
 
 
+
+
