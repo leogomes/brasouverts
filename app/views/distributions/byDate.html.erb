@@ -6,7 +6,7 @@
     <tr>
       <th>Date</th>
       <th>Element distribué</th>
-      <th>Prix</th>
+      <th>Total</th>
       <th>Dette</th>
       <th>Donation?</th>
       <th>Nom</th>
@@ -17,7 +17,7 @@
       <tr>
         <td><%=h d.date %></td>
         <td><%=h Element.find(d.element_id).description %></td>
-        <td><%=h d.prix %></td>
+        <td><%=h d.total %></td>
         <td><%=h d.dette %></td>
         <td><%=h d.donation_bras_ouverts %></td>
         <td><%=h Foyer.find(d.foyer_id).chef_nom %></td>

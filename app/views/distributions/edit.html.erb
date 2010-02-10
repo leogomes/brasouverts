@@ -1,12 +1,5 @@
-<h1>Editing distribution</h1>
-
-<% form_for(@distribution) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
+<%= render :partial => "nav" %>
+<%= render :partial => "form" %>
 
 <%= link_to 'Show', @distribution %> |
 <%= link_to 'Back', distributions_path %>

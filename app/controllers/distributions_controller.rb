@@ -4,11 +4,12 @@ class DistributionsController < ApplicationController
 
   # finds the associated foyer before runnign any method
   before_filter :find_foyer, :except => ['search']
+#  before_filter :find_element, :except => ['search', 'new']
 
   def search
-#    simply render the search.html page
-#    put all this in the index action and remove the mapping from the routes.rb
-# => for the search by date, put it in the model
+    #    simply render the search.html page
+    #    put all this in the index action and remove the mapping from the routes.rb
+    # => for the search by date, put it in the model
     if params[:date]
       date = params[:date]
       str_date = date[:year] + '-'  + date[:month] + '-' + date[:day]
@@ -63,7 +64,7 @@ class DistributionsController < ApplicationController
 
     respond_to do |format|
       if @distribution.save
-        flash[:notice] = 'Distribution was successfully created.'
+        flash[:notice] = 'Distribution a bien été crée.'
         format.html { redirect_to foyer_distributions_url(@foyer) }
         format.xml  { render :xml => @distribution, :status => :created, :location => @distribution }
       else
@@ -80,8 +81,8 @@ class DistributionsController < ApplicationController
 
     respond_to do |format|
       if @distribution.update_attributes(params[:distribution])
-        flash[:notice] = 'Distribution was successfully updated.'
-        format.html { redirect_to(@distribution) }
+        flash[:notice] = 'Distribution a bien été mise à jour.'
+        format.html { redirect_to foyer_distributions_url(@foyer) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -104,12 +105,18 @@ class DistributionsController < ApplicationController
   end
 
   # First thing to do is to find the associated foyer
-  
   private
   def find_foyer
     @foyer = Foyer.find(params[:foyer_id])
     logger.info "Foyer found"
     logger.info @foyer.chef_nom
   end
+
+#  private
+#  def find_element
+#    logger.info "Element id:"
+#    logger.info params['element_id']
+#    @element = Element.find(params['element_id'])
+#  end
 
 end

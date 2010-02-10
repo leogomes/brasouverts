@@ -3,12 +3,13 @@ class CreateElements < ActiveRecord::Migration
     create_table :elements do |t|
       t.string :elementDistribue
       t.string :description
+      t.float :prix_unitaire
       t.timestamps
     end
 
     # Insert the initial elements
-    Element.create(:elementDistribue => "Colis Alimentaire", :description => "Colis Alimentaire")
-    Element.create(:elementDistribue => "Lait", :description => "1L de lait")
+    Element.create(:elementDistribue => "Colis Alimentaire", :description => "Colis Alimentaire", :prix_unitaire => "1.50")
+    Element.create(:elementDistribue => "Lait", :description => "1L de lait", :prix_unitaire => "0.40")
 
   end
 
