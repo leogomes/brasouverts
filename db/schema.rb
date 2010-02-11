@@ -9,12 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100102154535) do
+ActiveRecord::Schema.define(:version => 20100210000000) do
+
+  create_table "countries", :force => true do |t|
+    t.string   "name"
+    t.string   "code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "distributions", :force => true do |t|
     t.integer  "element_id"
     t.integer  "foyer_id",                                        :null => false
-    t.date     "date",                  :default => '2010-02-09'
+    t.date     "date",                  :default => '2010-02-11'
     t.integer  "nombre_distribue"
     t.float    "prix",                                            :null => false
     t.float    "dette",                 :default => 0.0
