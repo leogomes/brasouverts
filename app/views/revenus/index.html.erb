@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Valeur</th>
+    <th colspan="3" />
+  </tr>
+
+  <% @revenus.each do |revenu| %>
+    <tr>
+      <td><%=h revenu.type_de_revenu %></td>
+      <td><%=h revenu.valeur %></td>
+
+      <td><%= link_to 'Détails', foyer_revenu_path(@foyer, revenu) %></td>
+      <td><%= link_to 'Éditez', edit_foyer_revenu_path(@foyer, revenu) %></td>
+      <td><%= link_to 'Suprimez', foyer_revenu_path(@foyer, revenu),
+        :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to 'Rajouter un nouveau type de revenu', new_foyer_revenu_path(@foyer) %>

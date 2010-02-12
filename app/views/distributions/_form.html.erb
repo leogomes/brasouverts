@@ -1,0 +1,33 @@
+<% form_for( [@foyer, @distribution] ) do |f| %>
+  <%= f.error_messages %>
+  <fieldset>
+    <legend>Distribution pour <%=@foyer.chef_prenom %> <%=@foyer.chef_nom %></legend>
+
+    <%= f.label :element_id %>
+    <%= f.collection_select :element_id, Element.find(:all), :id, :description %><br />
+
+    <%= f.label 'Nombre d\'elements' %>
+    <%= f.text_field :nombre_distribue %><br />
+
+    <%= f.label 'Prix Unitaire' %>
+    <%= f.text_field :prix, :value => '1.5' %><br />
+
+    <label for="total">Total</label>
+    <input type="text" size="30" id="total" disabled="disabled"/> <br />
+
+    <%= f.label 'Dette' %>
+    <%= f.text_field :dette %><br />
+
+
+    <%= f.label 'Date' %>
+    <%= f.date_select(:date, :start_year => 2010, :end_year => 2015, :default => {:year => 2010 }) %><br />
+
+    <%= f.label 'Donation bras ouverts' %>
+    <%= f.check_box :donation_bras_ouverts %><br />
+    <br />
+  </fieldset>
+  <br />
+
+  <br />
+  <%= f.submit 'Ok' %>
+<% end %>

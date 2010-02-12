@@ -1,0 +1,12 @@
+  <p>
+  <b>Type:</b>
+  <%=h @revenu.type_de_revenu %>
+</p>
+
+<p>
+  <b>Valeur:</b>
+  <%=h @revenu.valeur %>
+</p>
+
+<%= link_to 'Edit', edit_foyer_revenu_path(@foyer,@revenu) %> |
+<%= link_to 'Back', foyer_revenus_path %>

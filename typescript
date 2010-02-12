@@ -1,0 +1,14 @@
+Script started on Wed 10 Feb 2010 09:51:16 PM CET
+]0;leo@leonardo-laptop: ~/ruby/rails/brasouvertsleo@leonardo-laptop:~/ruby/rails/brasouverts$ script/serv[K[K[K[K[K[K[K[K[K[K[Kcd script/
+]0;leo@leonardo-laptop: ~/ruby/rails/brasouverts/scriptleo@leonardo-laptop:~/ruby/rails/brasouverts/script$ ls
+[0m[01;32mabout[0m    [01;32mdbconsole[0m  [01;32mgenerate[0m     [01;32mplugin[0m  [01;32mserver[0m
+[01;32mconsole[0m  [01;32mdestroy[0m    [01;34mperformance[0m  [01;32mrunner[0m
+[m]0;leo@leonardo-laptop: ~/ruby/rails/brasouverts/scriptleo@leonardo-laptop:~/ruby/rails/brasouverts/script$ cd ..
+]0;leo@leonardo-laptop: ~/ruby/rails/brasouvertsleo@leonardo-laptop:~/ruby/rails/brasouverts$ ls
+[0m[01;34mapp[0m     [01;34mdoc[0m  [01;34mnbproject[0m     Rakefile      [01;34mscript[0m  typescript
+[01;34mconfig[0m  [01;34mlib[0m  [01;34mpublic[0m        README.md     [01;34mtest[0m    [01;34mvendor[0m
+[01;34mdb[0m      [01;34mlog[0m  rails.readme  scaffold.txt  [01;34mtmp[0m
+[m]0;leo@leonardo-laptop: ~/ruby/rails/brasouvertsleo@leonardo-laptop:~/ruby/rails/brasouverts$ exit
+exit
+
+Script done on Wed 10 Feb 2010 09:51:48 PM CET
