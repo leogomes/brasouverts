@@ -1,7 +1,13 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# Test data for cities
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+one:
+   name: Antibes
+   code: 06600
+
+two:
+   name: Juan les Pins
+   code: 06160
+
+three:
+  name: Vallauris
+  code: 06500

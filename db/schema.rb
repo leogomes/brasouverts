@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20100213213202) do
   create_table "distributions", :force => true do |t|
     t.integer  "element_id"
     t.integer  "foyer_id",                                        :null => false
-    t.date     "date",                  :default => '2010-02-13'
+    t.date     "date",                  :default => '2010-02-14'
     t.integer  "nombre_distribue"
     t.float    "prix",                                            :null => false
     t.float    "dette",                 :default => 0.0
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(:version => 20100213213202) do
     t.string   "adresse_numero"
     t.string   "adresse_rue"
     t.string   "adresse_additionel"
+    t.string   "adresse_ville"
     t.string   "adresse_chez"
     t.string   "adresse_code_postal"
     t.string   "telephone_portable"

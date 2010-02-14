@@ -1,7 +1,5 @@
 <%= render :partial => "nav" %>
 
-
-
 <% form_for(@foyer) do |f| %>
   <%= f.error_messages %>
   <fieldset>
@@ -31,11 +29,15 @@
     <%= f.label :adresse_additionel %>
     <%= f.text_field :adresse_additionel %><br />
 
+    <%= f.label 'Ville' %>
+    <%= f.text_field :adresse_ville %><br />
+
+    <%= f.label 'Code Postal' %>
+    <%= f.text_field :adresse_code_postal %><br />
+
     <%= f.label :adresse_chez %>
     <%= f.text_field :adresse_chez %><br />
 
-    <%= f.label :adresse_code_postal %>
-    <%= f.text_field :adresse_code_postal %><br />
 
     <%= f.label :telephone_portable %>
     <%= f.text_field :telephone_portable %><br />
@@ -164,7 +166,7 @@
   </fieldset>
 
   <br />
-  
+
   <fieldset>
     <legend>Sources de revenu</legend>
     <% if @foyer.revenus.size > 0 %>

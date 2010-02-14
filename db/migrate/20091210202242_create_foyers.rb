@@ -18,6 +18,7 @@ class CreateFoyers < ActiveRecord::Migration
       t.string :adresse_numero
       t.string :adresse_rue
       t.string :adresse_additionel
+      t.string :adresse_ville
       t.string :adresse_chez
       t.string :adresse_code_postal
       t.string :telephone_portable
