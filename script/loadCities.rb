@@ -1,18 +1,33 @@
 #!/usr/bin/env ruby
 
-#
 begin
   
   toRead = ARGV[0]
-  toWrite = ARGV[1]
   
   file = File.open(toRead, "r")
+
   while (line = file.gets)
     
     parsed = line.scan(/\S\D+[a-zA-Z]/)
     parsed |= line.scan(/\d+/)
+
+    capitalized = ""
     
-    puts "Country.create(:name => \"" + parsed[0] + "\", :code => \"" + (parsed[1] == nil ? "0" : parsed[1]) +"\")"
+    parsed[0].split.each { |word|
+
+      word.capitalize!
+
+      if ((index = word.rindex'\'') != nil)
+        word = word[0..index] + word[index+1, word.length].capitalize
+      end
+
+      capitalized += word + " "
+
+    }
+
+    capitalized.strip!
+    
+    puts "City.create(:name => \"" + capitalized + "\", :code => \"" + (parsed[1] == nil ? "0" : parsed[1]) +"\")"
 
   end
 
