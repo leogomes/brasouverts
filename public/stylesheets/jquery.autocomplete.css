@@ -4,6 +4,8 @@
 	background-color: white;
 	overflow: hidden;
 	z-index: 99999;
+        color: #6A6969;
+        
 }
 
 .ac_results ul {
@@ -12,6 +14,7 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
+        
 }
 
 .ac_results li {
@@ -39,8 +42,11 @@
 }
 
 .ac_odd {
-	background-color: #eee;
+    	color: #7BA857;
+	background: #EFFAE6;
+/*	background-color: #eee;*/
 }
+
 
 .ac_over {
 	background-color: #0A246A;
