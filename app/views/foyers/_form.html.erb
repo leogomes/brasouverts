@@ -17,6 +17,12 @@
     <%= f.label 'Date de Naissance:' %>
     <%= f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) %><br />
 
+    <%= f.label 'Ville de Naissance:' %>
+    <%= f.text_field :chef_ville_de_naissance %><br />
+
+    <%= f.label 'Pays de Naissance:' %>
+    <%= f.collection_select :pays_id, Country.find(:all), :id, :name %><br />
+
     <%= f.label 'Situation Familiale:' %>
     <%= f.enum_select :situation_familiale %><br />
 
@@ -192,11 +198,38 @@
     <% else %>
       Aucun revenu enregistré.
     <% end  %>
+  </fieldset>
+  <br />
+
+  <fieldset>
+    <legend>Charges</legend>
+    <% if @foyer.charges.size > 0 %>
+      <table >
+        <tr>
+          <th>Type</th>
+          <th>Valeur</th>
+          <th colspan="2" />
+        </tr>
+
+        <% @foyer.charges.each do |charge| %>
+          <tr>
+            <td><%=h charge.type_de_charge %></td>
+            <td><%=h charge.valeur %></td>
+
+            <td><%= link_to 'Éditez', edit_foyer_charge_path(@foyer, charge) %></td>
+            <td><%= link_to 'Suprimez', foyer_charge_path(@foyer, charge),
+              :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+
+          </tr>
+        <% end %>
+      </table>
+    <% else %>
+      Aucune charge enregistrée.
+    <% end  %>
+
 
 
   </fieldset>
-
-
   <br />
   <%= f.submit 'Ok' %>
 <% end %>

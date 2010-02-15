@@ -1,0 +1,19 @@
+<h1>New charge</h1>
+
+<% form_for(@charge) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.label :valeur %><br />
+    <%= f.text_field :valeur %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', charges_path %>

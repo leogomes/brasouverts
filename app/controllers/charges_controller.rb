@@ -1,25 +1,25 @@
-class RevenusController < ApplicationController
+class ChargesController < ApplicationController
 
   layout 'brasouverts'
 
   # finds the associated foyer before runnign any method
   before_filter :find_foyer
 
-  # GET /revenus
-  # GET /revenus.xml
+  # GET /charges
+  # GET /charges.xml
   def index
-    @revenus = @foyer.revenus
+    @charges = @foyer.charges
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @revenus }
+      format.xml  { render :xml => @charges }
     end
   end
 
-  # GET /revenus/1
-  # GET /revenus/1.xml
+  # GET /charges/1
+  # GET /charges/1.xml
   def show
-    @revenu = @foyer.revenus.find(params[:id])
+    @revenu = @foyer.charges.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -27,10 +27,10 @@ class RevenusController < ApplicationController
     end
   end
 
-  # GET /revenus/new
-  # GET /revenus/new.xml
+  # GET /charges/new
+  # GET /charges/new.xml
   def new
-    @revenu = @foyer.revenus.build
+    @revenu = @foyer.charges.build
 
     respond_to do |format|
       format.html # new.html.erb
@@ -38,19 +38,19 @@ class RevenusController < ApplicationController
     end
   end
 
-  # GET /revenus/1/edit
+  # GET /charges/1/edit
   def edit
-    @revenu = @foyer.revenus.find(params[:id])
+    @revenu = @foyer.charges.find(params[:id])
   end
 
-  # POST /revenus
-  # POST /revenus.xml
+  # POST /charges
+  # POST /charges.xml
   def create
-    @revenu = @foyer.revenus.build(params[:revenu])
+    @revenu = @foyer.charges.build(params[:revenu])
 
     respond_to do |format|
       if @revenu.save
-        flash[:notice] = 'Revenu a bien été rajouté.'
+        flash[:notice] = 'Charge a bien été rajoutée.'
         format.html { redirect_to foyer_url(@foyer) }
         format.xml  { render :xml => @revenu, :status => :created, :location => @revenu }
       else
@@ -60,14 +60,14 @@ class RevenusController < ApplicationController
     end
   end
 
-  # PUT /revenus/1
-  # PUT /revenus/1.xml
+  # PUT /charges/1
+  # PUT /charges/1.xml
   def update
-    @revenu = @foyer.revenus.find(params[:id])
+    @revenu = @foyer.charges.find(params[:id])
 
     respond_to do |format|
       if @revenu.update_attributes(params[:revenu])
-        flash[:notice] = 'Revenu a bien été mis à jour.'
+        flash[:notice] = 'Charge a bien été mise à jour.'
         format.html { redirect_to edit_foyer_url(@foyer) }
         format.xml  { head :ok }
       else
@@ -77,10 +77,10 @@ class RevenusController < ApplicationController
     end
   end
 
-  # DELETE /revenus/1
-  # DELETE /revenus/1.xml
+  # DELETE /charges/1
+  # DELETE /charges/1.xml
   def destroy
-    @revenu = @foyer.revenus.find(params[:id])
+    @revenu = @foyer.charges.find(params[:id])
     @revenu.destroy
 
     respond_to do |format|

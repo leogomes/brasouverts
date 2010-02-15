@@ -3,7 +3,9 @@ class Foyer < ActiveRecord::Base
   validates_presence_of :chef_nom, :chef_prenom
   has_many :membres
   has_many :revenus
+  has_many :charges
   has_many :distributions
+  has_one :country # pays de naissance
 
   # Calculates the accumulated debit by summing up the
   # debits of each distribution

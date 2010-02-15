@@ -1,0 +1,862 @@
+# Logfile created on Sun Feb 14 23:47:47 +0100 2010  [4;36;1mSQL (45.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-14 23:48:21) [GET]
+  [4;36;1mFoyer Columns (53.1ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (14.2ms)
+Rendered foyers/_form (413.6ms)
+Completed in 701ms (View: 570, DB: 107) | 200 OK [http://localhost/foyers/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-14 23:48:26) [GET]
+  Parameters: {"timestamp"=>"1266187706401", "q"=>"a", "limit"=>"10"}
+  [4;35;1mCity Load (56.1ms)[0m   [0mSELECT * FROM `cities` WHERE (name LIKE '%a%') ORDER BY name ASC[0m
+Rendering cities/index
+  [4;36;1mCity Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM cities[0m
+Completed in 152ms (View: 61, DB: 58) | 200 OK [http://localhost/cities.js?q=a&limit=10&timestamp=1266187706401]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-14 23:49:00) [GET]
+  Parameters: {"timestamp"=>"1266187740180", "q"=>"jua", "limit"=>"10"}
+  [4;35;1mCity Load (0.5ms)[0m   [0mSELECT * FROM `cities` WHERE (name LIKE '%jua%') ORDER BY name ASC[0m
+Rendering cities/index
+  [4;36;1mCity Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM cities[0m
+Completed in 14ms (View: 3, DB: 2) | 200 OK [http://localhost/cities.js?q=jua&limit=10&timestamp=1266187740180]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-14 23:49:44) [GET]
+  [4;35;1mFoyer Columns (2.2ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+Rendered foyers/_form (144.3ms)
+Completed in 165ms (View: 149, DB: 3) | 200 OK [http://localhost/foyers/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-14 23:49:56) [GET]
+  Parameters: {"timestamp"=>"1266187796302", "q"=>"a", "limit"=>"10"}
+  [4;36;1mCity Load (0.3ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name LIKE '%a%') ORDER BY name ASC[0m
+Rendering cities/index
+  [4;35;1mCity Columns (1.3ms)[0m   [0mSHOW FIELDS FROM cities[0m
+Completed in 19ms (View: 6, DB: 2) | 200 OK [http://localhost/cities.js?q=a&limit=10&timestamp=1266187796302]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-14 23:50:25) [GET]
+  Parameters: {"timestamp"=>"1266187825760", "q"=>"jua", "limit"=>"10"}
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name LIKE '%jua%') ORDER BY name ASC[0m
+Rendering cities/index
+  [4;35;1mCity Columns (1.0ms)[0m   [0mSHOW FIELDS FROM cities[0m
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/cities.js?q=jua&limit=10&timestamp=1266187825760]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-14 23:50:40) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (13.8ms)
+Rendered home/_search (22.6ms)
+Completed in 119ms (View: 115, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index to js (for 127.0.0.1 at 2010-02-14 23:50:44) [GET]
+  Parameters: {"foyer"=>{"chef_nom"=>"fre"}}
+  [4;36;1mFoyer Load (59.4ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%fre%') ORDER BY chef_nom ASC[0m
+Rendering foyers/index
+  [4;35;1mFoyer Columns (3.9ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 106ms (View: 29, DB: 64) | 200 OK [http://localhost/foyers.js?foyer%5Bchef_nom%5D=fre]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-02-14 23:50:48) [GET]
+  Parameters: {"x"=>"0", "y"=>"0", "qsearch"=>"", "foyer"=>{"chef_nom"=>"FREITAS GOMES"}}
+  [4;36;1mFoyer Load (3.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%FREITAS GOMES%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.5ms)
+  [4;35;1mFoyer Columns (3.8ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 70ms (View: 51, DB: 7) | 200 OK [http://localhost/foyers?foyer%5Bchef_nom%5D=FREITAS+GOMES&x=0&y=0&qsearch=]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-14 23:51:12) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.4ms)
+Rendered home/_search (2.4ms)
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-14 23:51:15) [GET]
+  [4;36;1mFoyer Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+Rendered foyers/_form (65.4ms)
+Completed in 86ms (View: 70, DB: 2) | 200 OK [http://localhost/foyers/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-14 23:51:19) [GET]
+  Parameters: {"timestamp"=>"1266187879164", "q"=>"jua", "limit"=>"10"}
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM `cities` WHERE (name LIKE '%jua%') ORDER BY name ASC[0m
+Rendering cities/index
+  [4;36;1mCity Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM cities[0m
+Completed in 91ms (View: 4, DB: 2) | 200 OK [http://localhost/cities.js?q=jua&limit=10&timestamp=1266187879164]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (21.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-15 20:01:29) [GET]
+  [4;35;1mFoyer Columns (27.6ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+
+ActionView::TemplateError (undefined method `each' for 255:Fixnum) on line #21 of app/views/foyers/_form.html.erb:
+18:     <%= f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) %><br />
+19: 
+20:     <%= f.label 'Ville de Naissance:' %>
+21:     <%= f.enum_select :chef_ville_de_naissance %><br />
+22: 
+23:     <%= f.label 'Pays de Naissance:' %>
+24:     <%= f.collection_select :pays_id, Country.find(:all), :id, :name %><br />
+
+    app/views/foyers/_form.html.erb:21
+    app/views/foyers/_form.html.erb:3
+    app/views/foyers/new.html.erb:36
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.2ms)
+Rendered rescues/_request_and_response (12.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-15 20:02:19) [GET]
+  [4;36;1mFoyer Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+
+ActionView::TemplateError (undefined method `each' for 255:Fixnum) on line #21 of app/views/foyers/_form.html.erb:
+18:     <%= f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) %><br />
+19: 
+20:     <%= f.label 'Ville de Naissance:' %>
+21:     <%= f.enum_select :chef_ville_de_naissance %><br />
+22: 
+23:     <%= f.label 'Pays de Naissance:' %>
+24:     <!--%= f.collection_select :pays_id, Country.find(:all), :id, :name %><br /-->
+
+    app/views/foyers/_form.html.erb:21
+    app/views/foyers/_form.html.erb:3
+    app/views/foyers/new.html.erb:36
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-15 20:02:35) [GET]
+  [4;35;1mFoyer Columns (1.9ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.4ms)
+
+ActionView::TemplateError (undefined method `each' for 255:Fixnum) on line #21 of app/views/foyers/_form.html.erb:
+18:     <%= f.date_select(:chef_date_naissance, :start_year => 1920, :end_year => 1995, :default => {:year => 1970}) %><br />
+19: 
+20:     <%= f.label 'Ville de Naissance:' %>
+21:     <%= f.enum_select :chef_ville_de_naissance %><br />
+22: 
+23: 
+24:     <%= f.label 'Situation Familiale:' %>
+
+    app/views/foyers/_form.html.erb:21
+    app/views/foyers/_form.html.erb:3
+    app/views/foyers/new.html.erb:36
+    app/controllers/foyers_controller.rb:54:in `new'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-15 20:17:03) [GET]
+  [4;36;1mFoyer Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+  [4;35;1mCountry Load (95.5ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+Rendered foyers/_form (241.0ms)
+Completed in 266ms (View: 153, DB: 100) | 200 OK [http://localhost/foyers/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-15 20:17:20) [GET]
+  Parameters: {"timestamp"=>"1266261440755", "q"=>"an", "limit"=>"10"}
+  [4;35;1mCity Load (0.3ms)[0m   [0mSELECT * FROM `cities` WHERE (name LIKE '%an%') ORDER BY name ASC[0m
+Rendering cities/index
+  [4;36;1mCity Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM cities[0m
+Completed in 38ms (View: 8, DB: 2) | 200 OK [http://localhost/cities.js?q=an&limit=10&timestamp=1266261440755]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-15 20:45:24) [GET]
+  Parameters: {"timestamp"=>"1266263124570", "q"=>"j", "limit"=>"10"}
+  [4;35;1mCity Load (82.0ms)[0m   [0mSELECT * FROM `cities` WHERE (name LIKE '%j%') ORDER BY name ASC[0m
+Rendering cities/index
+  [4;36;1mCity Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM cities[0m
+Completed in 100ms (View: 7, DB: 84) | 200 OK [http://localhost/cities.js?q=j&limit=10&timestamp=1266263124570]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-15 20:45:25) [GET]
+  Parameters: {"timestamp"=>"1266263125734", "q"=>"jau", "limit"=>"10"}
+  [4;35;1mCity Load (23.5ms)[0m   [0mSELECT * FROM `cities` WHERE (name LIKE '%jau%') ORDER BY name ASC[0m
+Rendering cities/index
+Completed in 35ms (View: 3, DB: 24) | 200 OK [http://localhost/cities.js?q=jau&limit=10&timestamp=1266263125734]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-15 20:45:26) [GET]
+  Parameters: {"timestamp"=>"1266263126063", "q"=>"jau", "limit"=>"10"}
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name LIKE '%jau%') ORDER BY name ASC[0m
+Rendering cities/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/cities.js?q=jau&limit=10&timestamp=1266263126063]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-15 20:45:36) [GET]
+  Parameters: {"timestamp"=>"1266263136751", "q"=>"vall", "limit"=>"10"}
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM `cities` WHERE (name LIKE '%vall%') ORDER BY name ASC[0m
+Rendering cities/index
+  [4;36;1mCity Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM cities[0m
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/cities.js?q=vall&limit=10&timestamp=1266263136751]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index to js (for 127.0.0.1 at 2010-02-15 20:45:55) [GET]
+  Parameters: {"timestamp"=>"1266263155163", "q"=>"cap", "limit"=>"10"}
+  [4;35;1mCity Load (1.0ms)[0m   [0mSELECT * FROM `cities` WHERE (name LIKE '%cap%') ORDER BY name ASC[0m
+Rendering cities/index
+  [4;36;1mCity Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM cities[0m
+Completed in 15ms (View: 4, DB: 2) | 200 OK [http://localhost/cities.js?q=cap&limit=10&timestamp=1266263155163]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#create (for 127.0.0.1 at 2010-02-15 20:46:45) [POST]
+  Parameters: {"commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "foyer"=>{"adresse_rue"=>"", "mis_a_jour"=>"0", "adresse_additionel"=>"", "inscription_complete"=>"0", "telephone_fixe"=>"", "telephone_portable"=>"", "adresse_code_postal"=>"06160", "chef_date_naissance(1i)"=>"1970", "chef_email"=>"", "adresse_chez"=>"", "adresse_numero"=>"", "chef_date_naissance(2i)"=>"2", "diabetique"=>"0", "handicape"=>"0", "adresse_ville"=>"Cap D'Antibes", "chef_date_naissance(3i)"=>"14", "chef_sex"=>"M", "sans_papier"=>"0", "hallal"=>"0", "pays_id"=>"4", "chef_ville_de_naissance"=>"", "chef_prenom"=>"", "lettre_AS"=>"0", "situation_familiale"=>"Celibataire", "sans_porc"=>"0", "nbr_colis_a_distribuer"=>"", "information_additionnelle"=>"", "demandeur_asile"=>"0", "sdf"=>"0", "revenu_impossable"=>"", "chef_nom"=>""}}
+  [4;35;1mFoyer Columns (25.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.4ms)
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.0ms)[0m   [0mSHOW FIELDS FROM countries[0m
+Rendered foyers/_form (96.6ms)
+Completed in 162ms (View: 101, DB: 27) | 200 OK [http://localhost/foyers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#create (for 127.0.0.1 at 2010-02-15 20:47:32) [POST]
+  Parameters: {"commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "foyer"=>{"adresse_rue"=>"", "mis_a_jour"=>"0", "adresse_additionel"=>"", "inscription_complete"=>"0", "telephone_fixe"=>"", "telephone_portable"=>"", "adresse_code_postal"=>"06160", "chef_date_naissance(1i)"=>"1970", "chef_email"=>"", "adresse_chez"=>"", "adresse_numero"=>"", "chef_date_naissance(2i)"=>"2", "diabetique"=>"0", "handicape"=>"0", "adresse_ville"=>"Cap D'Antibes", "chef_date_naissance(3i)"=>"14", "chef_sex"=>"F", "sans_papier"=>"0", "hallal"=>"0", "pays_id"=>"34", "chef_ville_de_naissance"=>"", "chef_prenom"=>"Ana", "lettre_AS"=>"0", "situation_familiale"=>"Marie", "sans_porc"=>"0", "nbr_colis_a_distribuer"=>"", "information_additionnelle"=>"", "demandeur_asile"=>"0", "sdf"=>"0", "revenu_impossable"=>"", "chef_nom"=>"Pizzutti"}}
+  [4;36;1mFoyer Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoyer Create (66.1ms)[0m   [0;1mINSERT INTO `foyers` (`adresse_rue`, `adresse_additionel`, `mis_a_jour`, `created_at`, `inscription_complete`, `adresse_code_postal`, `telephone_portable`, `telephone_fixe`, `chef_email`, `adresse_numero`, `adresse_chez`, `updated_at`, `chef_sex`, `chef_date_naissance`, `adresse_ville`, `handicape`, `diabetique`, `sans_papier`, `chef_prenom`, `chef_ville_de_naissance`, `pays_id`, `hallal`, `situation_familiale`, `lettre_AS`, `nbr_colis_a_distribuer`, `sans_porc`, `information_additionnelle`, `chef_nom`, `revenu_impossable`, `sdf`, `demandeur_asile`) VALUES('', '', 0, '2010-02-15 19:47:32', 0, '06160', '', '', '', '', '', '2010-02-15 19:47:32', 'F', '1970-02-14', 'Cap D\'Antibes', 0, 0, 0, 'Ana', '', 34, 0, 'Marie', 0, NULL, 0, '', 'Pizzutti', NULL, 0, 0)[0m
+  [4;35;1mSQL (155.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/3
+Completed in 256ms (DB: 225) | 302 Found [http://localhost/foyers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#show (for 127.0.0.1 at 2010-02-15 20:47:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (24.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/show
+Rendered foyers/_nav (0.4ms)
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.0ms)[0m   [0mSHOW FIELDS FROM countries[0m
+  [4;36;1mMembre Load (0.5ms)[0m   [0;1mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 3) [0m
+  [4;35;1mDistribution Load (0.6ms)[0m   [0mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 3) [0m
+  [4;36;1mRevenu Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+Rendered foyers/_form (103.5ms)
+Completed in 246ms (View: 201, DB: 32) | 200 OK [http://localhost/foyers/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MembresController#new (for 127.0.0.1 at 2010-02-15 20:47:39) [GET]
+  Parameters: {"foyer_id"=>"3"}
+  [4;36;1mFoyer Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;36;1mMembre Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM membres[0m
+Rendering template within layouts/brasouverts
+Rendering membres/new
+Rendered membres/_form (42.1ms)
+Completed in 129ms (View: 102, DB: 4) | 200 OK [http://localhost/foyers/3/membres/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MembresController#create (for 127.0.0.1 at 2010-02-15 20:48:06) [POST]
+  Parameters: {"membre"=>{"prenom"=>"Leo", "nom"=>"FREITAS GOMES", "relation"=>"Epoux", "date_de_naissance(1i)"=>"1980", "date_de_naissance(2i)"=>"2", "date_de_naissance(3i)"=>"15", "sexe"=>"M"}, "commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "foyer_id"=>"3"}
+  [4;35;1mFoyer Columns (2.1ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;35;1mMembre Columns (1.2ms)[0m   [0mSHOW FIELDS FROM membres[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMembre Create (0.4ms)[0m   [0mINSERT INTO `membres` (`prenom`, `nom`, `created_at`, `ville_de_naissance`, `updated_at`, `date_de_naissance`, `relation`, `pays_id`, `foyer_id`, `sexe`) VALUES('Leo', 'FREITAS GOMES', '2010-02-15 19:48:06', NULL, '2010-02-15 19:48:06', '1980-02-15', 'Epoux', NULL, 3, 'M')[0m
+  [4;36;1mSQL (54.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/3
+Completed in 89ms (DB: 59) | 302 Found [http://localhost/foyers/3/membres]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#show (for 127.0.0.1 at 2010-02-15 20:48:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFoyer Columns (2.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/show
+Rendered foyers/_nav (0.4ms)
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+  [4;35;1mMembre Load (0.5ms)[0m   [0mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 3) [0m
+  [4;36;1mMembre Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM membres[0m
+  [4;35;1mDistribution Load (0.2ms)[0m   [0mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 3) [0m
+  [4;36;1mRevenu Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+Rendered foyers/_form (108.0ms)
+Completed in 210ms (View: 108, DB: 7) | 200 OK [http://localhost/foyers/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MembresController#edit (for 127.0.0.1 at 2010-02-15 20:48:21) [GET]
+  Parameters: {"id"=>"3", "foyer_id"=>"3"}
+  [4;36;1mFoyer Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.3ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;36;1mMembre Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM membres[0m
+  [4;35;1mMembre Load (0.5ms)[0m   [0mSELECT * FROM `membres` WHERE (`membres`.`id` = 3 AND (`membres`.foyer_id = 3)) [0m
+Rendering template within layouts/brasouverts
+Rendering membres/edit
+Rendered membres/_form (33.4ms)
+Completed in 95ms (View: 69, DB: 4) | 200 OK [http://localhost/foyers/3/membres/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MembresController#update (for 127.0.0.1 at 2010-02-15 20:48:24) [PUT]
+  Parameters: {"membre"=>{"prenom"=>"Leo", "nom"=>"FREITAS GOMES", "relation"=>"Epoux", "date_de_naissance(1i)"=>"1980", "date_de_naissance(2i)"=>"2", "date_de_naissance(3i)"=>"15", "sexe"=>"M"}, "commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "id"=>"3", "foyer_id"=>"3"}
+  [4;36;1mFoyer Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;36;1mMembre Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM membres[0m
+  [4;35;1mMembre Load (0.2ms)[0m   [0mSELECT * FROM `membres` WHERE (`membres`.`id` = 3 AND (`membres`.foyer_id = 3)) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/3/edit
+Completed in 33ms (DB: 4) | 302 Found [http://localhost/foyers/3/membres/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#edit (for 127.0.0.1 at 2010-02-15 20:48:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/edit
+Rendered foyers/_nav (0.7ms)
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.0ms)[0m   [0mSHOW FIELDS FROM countries[0m
+  [4;36;1mMembre Load (0.2ms)[0m   [0;1mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 3) [0m
+  [4;35;1mMembre Columns (1.1ms)[0m   [0mSHOW FIELDS FROM membres[0m
+  [4;36;1mDistribution Load (0.2ms)[0m   [0;1mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 3) [0m
+  [4;35;1mRevenu Columns (1.0ms)[0m   [0mSHOW FIELDS FROM revenus[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+Rendered foyers/_form (118.2ms)
+Completed in 246ms (View: 145, DB: 6) | 200 OK [http://localhost/foyers/3/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#update (for 127.0.0.1 at 2010-02-15 20:48:33) [PUT]
+  Parameters: {"commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "id"=>"3", "foyer"=>{"adresse_rue"=>"", "mis_a_jour"=>"0", "adresse_additionel"=>"", "inscription_complete"=>"0", "telephone_fixe"=>"", "telephone_portable"=>"", "adresse_code_postal"=>"06160", "chef_date_naissance(1i)"=>"1970", "chef_email"=>"", "adresse_chez"=>"", "adresse_numero"=>"", "chef_date_naissance(2i)"=>"2", "diabetique"=>"0", "handicape"=>"0", "adresse_ville"=>"Cap D'Antibes", "chef_date_naissance(3i)"=>"14", "chef_sex"=>"F", "sans_papier"=>"0", "hallal"=>"0", "pays_id"=>"34", "chef_ville_de_naissance"=>"", "chef_prenom"=>"Ana", "lettre_AS"=>"0", "situation_familiale"=>"Marie", "sans_porc"=>"0", "nbr_colis_a_distribuer"=>"", "information_additionnelle"=>"", "demandeur_asile"=>"0", "sdf"=>"0", "revenu_impossable"=>"", "chef_nom"=>"Pizzutti"}}
+  [4;35;1mFoyer Columns (1.9ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/3
+Completed in 31ms (DB: 3) | 302 Found [http://localhost/foyers/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#show (for 127.0.0.1 at 2010-02-15 20:48:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFoyer Columns (2.1ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.3ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/show
+Rendered foyers/_nav (0.4ms)
+  [4;35;1mCountry Load (0.4ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+  [4;35;1mMembre Load (0.2ms)[0m   [0mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 3) [0m
+  [4;36;1mMembre Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM membres[0m
+  [4;35;1mDistribution Load (0.2ms)[0m   [0mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 3) [0m
+  [4;36;1mRevenu Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+Rendered foyers/_form (228.3ms)
+Completed in 250ms (View: 229, DB: 7) | 200 OK [http://localhost/foyers/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RevenusController#new (for 127.0.0.1 at 2010-02-15 20:49:45) [GET]
+  Parameters: {"foyer_id"=>"3"}
+  [4;36;1mFoyer Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;36;1mRevenu Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+Rendering template within layouts/brasouverts
+Rendering revenus/new
+Rendered revenus/_form (9.2ms)
+Completed in 81ms (View: 51, DB: 4) | 200 OK [http://localhost/foyers/3/revenus/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RevenusController#create (for 127.0.0.1 at 2010-02-15 20:49:58) [POST]
+  Parameters: {"revenu"=>{"type_de_revenu"=>"Prestation d''Accueil du Jeune Enfant", "valeur"=>"89"}, "commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "foyer_id"=>"3"}
+  [4;35;1mFoyer Columns (2.2ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;35;1mRevenu Columns (1.1ms)[0m   [0mSHOW FIELDS FROM revenus[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRevenu Create (16.0ms)[0m   [0mINSERT INTO `revenus` (`created_at`, `type_de_revenu`, `updated_at`, `valeur`, `foyer_id`) VALUES('2010-02-15 19:49:58', 'Prestation d\'\'Accueil du Jeune Enfant', '2010-02-15 19:49:58', 89.0, 3)[0m
+  [4;36;1mSQL (108.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/3
+Completed in 156ms (DB: 128) | 302 Found [http://localhost/foyers/3/revenus]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#show (for 127.0.0.1 at 2010-02-15 20:49:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFoyer Columns (2.4ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/show
+Rendered foyers/_nav (0.3ms)
+  [4;35;1mCountry Load (0.9ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+  [4;35;1mMembre Load (0.1ms)[0m   [0mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 3) [0m
+  [4;36;1mMembre Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM membres[0m
+  [4;35;1mDistribution Load (0.3ms)[0m   [0mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 3) [0m
+  [4;36;1mRevenu Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+  [4;36;1mRevenu Load (0.4ms)[0m   [0;1mSELECT * FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+Rendered foyers/_form (195.1ms)
+Completed in 216ms (View: 194, DB: 9) | 200 OK [http://localhost/foyers/3]
+  [4;35;1mSQL (11.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#show (for 127.0.0.1 at 2010-02-15 20:50:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFoyer Columns (2.1ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/show
+Rendered foyers/_nav (0.3ms)
+  [4;35;1mCountry Load (0.5ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+  [4;35;1mMembre Load (0.4ms)[0m   [0mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 3) [0m
+  [4;36;1mMembre Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM membres[0m
+  [4;35;1mDistribution Load (0.6ms)[0m   [0mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 3) [0m
+  [4;36;1mRevenu Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+  [4;36;1mRevenu Load (0.1ms)[0m   [0;1mSELECT * FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+Rendered foyers/_form (113.4ms)
+Completed in 136ms (View: 113, DB: 19) | 200 OK [http://localhost/foyers/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RevenusController#edit (for 127.0.0.1 at 2010-02-15 20:50:09) [GET]
+  Parameters: {"id"=>"2", "foyer_id"=>"3"}
+  [4;35;1mFoyer Columns (1.9ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.5ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;35;1mRevenu Columns (1.0ms)[0m   [0mSHOW FIELDS FROM revenus[0m
+  [4;36;1mRevenu Load (0.5ms)[0m   [0;1mSELECT * FROM `revenus` WHERE (`revenus`.`id` = 2 AND (`revenus`.foyer_id = 3)) [0m
+Rendering template within layouts/brasouverts
+Rendering revenus/edit
+Rendered revenus/_form (7.2ms)
+Completed in 126ms (View: 101, DB: 4) | 200 OK [http://localhost/foyers/3/revenus/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RevenusController#update (for 127.0.0.1 at 2010-02-15 20:50:14) [PUT]
+  Parameters: {"revenu"=>{"type_de_revenu"=>"Allocation Familiale", "valeur"=>"89"}, "commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "id"=>"2", "foyer_id"=>"3"}
+  [4;35;1mFoyer Columns (2.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;35;1mRevenu Columns (1.1ms)[0m   [0mSHOW FIELDS FROM revenus[0m
+  [4;36;1mRevenu Load (0.2ms)[0m   [0;1mSELECT * FROM `revenus` WHERE (`revenus`.`id` = 2 AND (`revenus`.foyer_id = 3)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mRevenu Update (26.6ms)[0m   [0;1mUPDATE `revenus` SET `updated_at` = '2010-02-15 19:50:14', `type_de_revenu` = 'Allocation Familiale' WHERE `id` = 2[0m
+  [4;35;1mSQL (67.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/3/edit
+Completed in 128ms (DB: 98) | 302 Found [http://localhost/foyers/3/revenus/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#edit (for 127.0.0.1 at 2010-02-15 20:50:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFoyer Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/edit
+Rendered foyers/_nav (0.3ms)
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (0.9ms)[0m   [0mSHOW FIELDS FROM countries[0m
+  [4;36;1mMembre Load (0.2ms)[0m   [0;1mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 3) [0m
+  [4;35;1mMembre Columns (1.0ms)[0m   [0mSHOW FIELDS FROM membres[0m
+  [4;36;1mDistribution Load (0.1ms)[0m   [0;1mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 3) [0m
+  [4;35;1mRevenu Columns (0.9ms)[0m   [0mSHOW FIELDS FROM revenus[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+  [4;35;1mRevenu Load (0.4ms)[0m   [0mSELECT * FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+Rendered foyers/_form (113.7ms)
+Completed in 137ms (View: 113, DB: 9) | 200 OK [http://localhost/foyers/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#update (for 127.0.0.1 at 2010-02-15 20:51:38) [PUT]
+  Parameters: {"commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "id"=>"3", "foyer"=>{"adresse_rue"=>"", "mis_a_jour"=>"0", "adresse_additionel"=>"", "inscription_complete"=>"0", "telephone_fixe"=>"", "telephone_portable"=>"", "adresse_code_postal"=>"06160", "chef_date_naissance(1i)"=>"1970", "chef_email"=>"", "adresse_chez"=>"", "adresse_numero"=>"", "chef_date_naissance(2i)"=>"2", "diabetique"=>"0", "handicape"=>"0", "adresse_ville"=>"Cap D'Antibes", "chef_date_naissance(3i)"=>"14", "chef_sex"=>"F", "sans_papier"=>"0", "hallal"=>"0", "pays_id"=>"34", "chef_ville_de_naissance"=>"", "chef_prenom"=>"Ana", "lettre_AS"=>"0", "situation_familiale"=>"Marie", "sans_porc"=>"0", "nbr_colis_a_distribuer"=>"", "information_additionnelle"=>"", "demandeur_asile"=>"0", "sdf"=>"0", "revenu_impossable"=>"", "chef_nom"=>"Pizzutti"}}
+  [4;36;1mFoyer Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/3
+Completed in 31ms (DB: 3) | 302 Found [http://localhost/foyers/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#show (for 127.0.0.1 at 2010-02-15 20:51:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/show
+Rendered foyers/_nav (0.4ms)
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM countries[0m
+  [4;36;1mMembre Load (0.2ms)[0m   [0;1mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 3) [0m
+  [4;35;1mMembre Columns (1.2ms)[0m   [0mSHOW FIELDS FROM membres[0m
+  [4;36;1mDistribution Load (0.2ms)[0m   [0;1mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 3) [0m
+  [4;35;1mRevenu Columns (1.7ms)[0m   [0mSHOW FIELDS FROM revenus[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+  [4;35;1mRevenu Load (0.1ms)[0m   [0mSELECT * FROM `revenus` WHERE (`revenus`.foyer_id = 3) [0m
+Rendered foyers/_form (119.9ms)
+Completed in 143ms (View: 119, DB: 7) | 200 OK [http://localhost/foyers/3]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#search (for 127.0.0.1 at 2010-02-15 20:51:51) [GET]
+Rendering template within layouts/brasouverts
+Rendering distributions/search
+Rendered distributions/_nav (14.2ms)
+Completed in 61ms (View: 57, DB: 0) | 200 OK [http://localhost/distributions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-15 20:51:57) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.1ms)
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-02-15 20:52:01) [GET]
+  [4;36;1mFoyer Load (1.1ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.3ms)
+  [4;35;1mFoyer Columns (2.2ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 123ms (View: 49, DB: 4) | 200 OK [http://localhost/foyers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-02-15 20:52:07) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.6ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (21.0ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (38.7ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (101.3ms)
+Completed in 205ms (View: 110, DB: 64) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#create (for 127.0.0.1 at 2010-02-15 20:53:56) [POST]
+  Parameters: {"commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "foyer_id"=>"1", "distribution"=>{"date(1i)"=>"2010", "date(2i)"=>"2", "donation_bras_ouverts"=>"0", "date(3i)"=>"14", "dette"=>"0.0", "prix"=>"0.4", "nombre_distribue"=>"6", "element_id"=>"2"}}
+  [4;35;1mFoyer Columns (2.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.6ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.4ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDistribution Create (0.4ms)[0m   [0mINSERT INTO `distributions` (`created_at`, `donation_bras_ouverts`, `updated_at`, `dette`, `date`, `foyer_id`, `prix`, `nombre_distribue`, `element_id`) VALUES('2010-02-15 19:53:56', 0, '2010-02-15 19:53:56', 0.0, '2010-02-14', 1, 0.4, 6, 2)[0m
+  [4;36;1mSQL (52.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/1/distributions
+Completed in 92ms (DB: 58) | 302 Found [http://localhost/foyers/1/distributions]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#index (for 127.0.0.1 at 2010-02-15 20:53:56) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (2.1ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+Rendering template within layouts/brasouverts
+Rendering distributions/index
+Rendered distributions/_nav (0.5ms)
+  [4;35;1mDistribution Load (0.8ms)[0m   [0mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 1) [0m
+  [4;36;1mDistribution Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+  [4;35;1mElement Columns (1.0ms)[0m   [0mSHOW FIELDS FROM elements[0m
+  [4;36;1mElement Load (26.2ms)[0m   [0;1mSELECT * FROM `elements` WHERE (`elements`.`id` = 2) [0m
+Completed in 127ms (View: 69, DB: 33) | 200 OK [http://localhost/foyers/1/distributions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-02-15 20:53:58) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (2.2ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.2ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.1ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (1.0ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (28.1ms)
+Completed in 67ms (View: 31, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#create (for 127.0.0.1 at 2010-02-15 20:54:06) [POST]
+  Parameters: {"commit"=>"Ok", "authenticity_token"=>"M0aoSjRCua/5N0/xrN9OVnDvyrqLH1foFPV5Ui9GKTk=", "foyer_id"=>"1", "distribution"=>{"date(1i)"=>"2010", "date(2i)"=>"2", "donation_bras_ouverts"=>"0", "date(3i)"=>"14", "dette"=>"0.0", "prix"=>"1.5", "nombre_distribue"=>"2", "element_id"=>"1"}}
+  [4;36;1mFoyer Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mDistribution Create (0.4ms)[0m   [0;1mINSERT INTO `distributions` (`created_at`, `donation_bras_ouverts`, `updated_at`, `dette`, `date`, `foyer_id`, `prix`, `nombre_distribue`, `element_id`) VALUES('2010-02-15 19:54:06', 0, '2010-02-15 19:54:06', 0.0, '2010-02-14', 1, 1.5, 2, 1)[0m
+  [4;35;1mSQL (71.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/1/distributions
+Completed in 111ms (DB: 75) | 302 Found [http://localhost/foyers/1/distributions]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#index (for 127.0.0.1 at 2010-02-15 20:54:06) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (1.6ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+Rendering template within layouts/brasouverts
+Rendering distributions/index
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mDistribution Load (0.6ms)[0m   [0;1mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 1) [0m
+  [4;35;1mDistribution Columns (1.5ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+  [4;36;1mElement Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+  [4;35;1mElement Load (0.1ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 2) [0m
+  [4;36;1mElement Load (0.5ms)[0m   [0;1mSELECT * FROM `elements` WHERE (`elements`.`id` = 1) [0m
+Completed in 66ms (View: 32, DB: 9) | 200 OK [http://localhost/foyers/1/distributions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-15 20:54:12) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.2ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index to js (for 127.0.0.1 at 2010-02-15 20:54:17) [GET]
+  Parameters: {"foyer"=>{"chef_nom"=>"p"}}
+  [4;35;1mFoyer Load (0.6ms)[0m   [0mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%p%') ORDER BY chef_nom ASC[0m
+Rendering foyers/index
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Completed in 19ms (View: 4, DB: 3) | 200 OK [http://localhost/foyers.js?foyer%5Bchef_nom%5D=p]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-02-15 20:54:18) [GET]
+  Parameters: {"x"=>"0", "y"=>"0", "qsearch"=>"", "foyer"=>{"chef_nom"=>"Pizzutti"}}
+  [4;35;1mFoyer Load (3.7ms)[0m   [0mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%Pizzutti%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.3ms)
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Completed in 35ms (View: 17, DB: 6) | 200 OK [http://localhost/foyers?foyer%5Bchef_nom%5D=Pizzutti&x=0&y=0&qsearch=]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-15 20:54:32) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.3ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-15 20:54:35) [GET]
+  [4;35;1mFoyer Columns (2.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (0.9ms)[0m   [0mSHOW FIELDS FROM countries[0m
+Rendered foyers/_form (85.5ms)
+Completed in 105ms (View: 89, DB: 3) | 200 OK [http://localhost/foyers/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-15 21:40:45) [GET]
+  [4;36;1mFoyer Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (13.7ms)
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+Rendered foyers/_form (332.7ms)
+Completed in 510ms (View: 443, DB: 4) | 200 OK [http://localhost/foyers/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-15 21:41:35) [GET]
+  [4;35;1mFoyer Columns (2.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.0ms)[0m   [0mSHOW FIELDS FROM countries[0m
+Rendered foyers/_form (182.8ms)
+Completed in 209ms (View: 191, DB: 4) | 200 OK [http://localhost/foyers/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-02-15 21:41:49) [GET]
+  [4;36;1mFoyer Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+Rendered foyers/_nav (0.3ms)
+  [4;35;1mCountry Load (0.5ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+Rendered foyers/_form (104.4ms)
+Completed in 135ms (View: 113, DB: 5) | 200 OK [http://localhost/foyers/new]

@@ -1,11 +1,12 @@
 <%= javascript_include_tag 'jquery.js' %>
 
 <script type="text/javascript">
-  
-  $("input#distribution_nombre_distribue,input#distribution_prix").change(function(){
-    var total = 0;
-    total = $("input#distribution_nombre_distribue").val() * $("input#distribution_prix").val();
-    $("input#total").val(Math.round(total*100)/100)
+  $().ready(function(){
+    $("input#distribution_nombre_distribue,input#distribution_prix").change(function(){
+      var total = 0;
+      total = $("input#distribution_nombre_distribue").val() * $("input#distribution_prix").val();
+      $("input#total").val(Math.round(total*100)/100)
+    });
   });
   
 </script>

@@ -1,18 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
-
-
+  
   map.root :controller => "home"
 
   map.connect 'distributions', :controller => 'distributions', :action => 'search'
-  
 
   map.resources :foyers, :has_many => :revenus
+  map.resources :foyers, :has_many => :charges
   map.resources :foyers, :has_many => :membres
   map.resources :foyers, :has_many => :distributions
   map.resources :distributions
   map.resources :cities
-  
-  
 
 
   # The priority is based upon order of creation: first created -> highest priority.
