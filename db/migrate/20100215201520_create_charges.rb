@@ -1,7 +1,7 @@
 class CreateCharges < ActiveRecord::Migration
   def self.up
     create_table :charges do |t|
-      t.column :type, :enum, :limit => [
+      t.column :type_de_charge, :enum, :limit => [
         'Loyer',
         'Dettes',
         'Pension Alimentaire'],

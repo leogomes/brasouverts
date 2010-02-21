@@ -1,20 +1,4 @@
-<h1>Editing charge</h1>
+<%= render :partial => 'form' %>
 
-<% form_for(@charge) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :type %><br />
-    <%= f.text_field :type %>
-  </p>
-  <p>
-    <%= f.label :valeur %><br />
-    <%= f.text_field :valeur %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @charge %> |
-<%= link_to 'Back', charges_path %>
+<%= link_to 'Show', foyer_charge_path(@foyer, @revenu) %> |
+<%= link_to 'Back', foyer_charges_path(@foyer) %>

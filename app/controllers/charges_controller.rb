@@ -19,43 +19,43 @@ class ChargesController < ApplicationController
   # GET /charges/1
   # GET /charges/1.xml
   def show
-    @revenu = @foyer.charges.find(params[:id])
+    @charge = @foyer.charges.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @revenu }
+      format.xml  { render :xml => @charge }
     end
   end
 
   # GET /charges/new
   # GET /charges/new.xml
   def new
-    @revenu = @foyer.charges.build
+    @charge = @foyer.charges.build
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @revenu }
+      format.xml  { render :xml => @charge }
     end
   end
 
   # GET /charges/1/edit
   def edit
-    @revenu = @foyer.charges.find(params[:id])
+    @charge = @foyer.charges.find(params[:id])
   end
 
   # POST /charges
   # POST /charges.xml
   def create
-    @revenu = @foyer.charges.build(params[:revenu])
+    @charge = @foyer.charges.build(params[:charge])
 
     respond_to do |format|
-      if @revenu.save
+      if @charge.save
         flash[:notice] = 'Charge a bien été rajoutée.'
         format.html { redirect_to foyer_url(@foyer) }
-        format.xml  { render :xml => @revenu, :status => :created, :location => @revenu }
+        format.xml  { render :xml => @charge, :status => :created, :location => @charge }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @revenu.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @charge.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -63,16 +63,16 @@ class ChargesController < ApplicationController
   # PUT /charges/1
   # PUT /charges/1.xml
   def update
-    @revenu = @foyer.charges.find(params[:id])
+    @charge = @foyer.charges.find(params[:id])
 
     respond_to do |format|
-      if @revenu.update_attributes(params[:revenu])
+      if @charge.update_attributes(params[:charge])
         flash[:notice] = 'Charge a bien été mise à jour.'
         format.html { redirect_to edit_foyer_url(@foyer) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @revenu.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @charge.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -80,8 +80,8 @@ class ChargesController < ApplicationController
   # DELETE /charges/1
   # DELETE /charges/1.xml
   def destroy
-    @revenu = @foyer.charges.find(params[:id])
-    @revenu.destroy
+    @charge = @foyer.charges.find(params[:id])
+    @charge.destroy
 
     respond_to do |format|
       format.html { redirect_to foyer_url(@foyer) }

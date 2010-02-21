@@ -11,7 +11,8 @@
 
 <%= link_to 'Éditez', edit_foyer_path(@foyer) %> |
 <%= link_to 'Rajoutez un membre', new_foyer_membre_path(@foyer) %> |
-<%= link_to 'Rajoutez une source de revenu', new_foyer_revenu_path(@foyer) %><br />
+<%= link_to 'Rajoutez une source de revenu', new_foyer_revenu_path(@foyer) %> |
+<%= link_to 'Rajoutez une charge', new_foyer_charge_path(@foyer) %><br />
 <br />
 --<br />
 Dernière mise à jour: <%=  @foyer.updated_at.strftime('%d %b %Y - %Hh%M') %>

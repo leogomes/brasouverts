@@ -1,0 +1,16 @@
+<% form_for( [ @foyer, @charge ] ) do |f| %>
+  <%= f.error_messages %>
+  <fieldset>
+
+    <legend>Charge du foyer</legend>
+
+    <%= f.label 'Type:' %>
+    <%= f.enum_select :type_de_charge %><br />
+
+    <%= f.label :valeur %>
+    <%= f.text_field :valeur %><br />
+
+  </fieldset>
+  <br />
+  <%= f.submit 'Ok' %>
+<% end %>

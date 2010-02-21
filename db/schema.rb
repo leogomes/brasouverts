@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100213213202) do
+ActiveRecord::Schema.define(:version => 20100215201520) do
+
+  create_table "charges", :force => true do |t|
+    t.enum     "type_de_charge", :limit => [:Loyer, :Dettes, :"Pension Alimentaire"], :null => false
+    t.float    "valeur"
+    t.integer  "foyer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -28,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20100213213202) do
   create_table "distributions", :force => true do |t|
     t.integer  "element_id"
     t.integer  "foyer_id",                                        :null => false
-    t.date     "date",                  :default => '2010-02-14'
+    t.date     "date",                  :default => '2010-02-21'
     t.integer  "nombre_distribue"
     t.float    "prix",                                            :null => false
     t.float    "dette",                 :default => 0.0

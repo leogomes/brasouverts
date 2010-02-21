@@ -1,6 +1,6 @@
 <p>
   <b>Type:</b>
-  <%=h @charge.type %>
+  <%=h @charge.type_de_revenu %>
 </p>
 
 <p>
@@ -8,6 +8,5 @@
   <%=h @charge.valeur %>
 </p>
 
-
-<%= link_to 'Edit', edit_charge_path(@charge) %> |
-<%= link_to 'Back', charges_path %>
+<%= link_to 'Edit', edit_foyer_charge_path(@foyer,@charge) %> |
+<%= link_to 'Back', foyer_charges_path %>
