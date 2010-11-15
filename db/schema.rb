@@ -12,7 +12,7 @@
 ActiveRecord::Schema.define(:version => 20100215201520) do
 
   create_table "charges", :force => true do |t|
-    t.enum     "type_de_charge", :limit => [:Loyer, :Dettes, :"Pension Alimentaire"], :null => false
+    t.enum     "type_de_charge", :limit => [:Loyer, :Dettes, :"Pension Alimentaire", :Autres], :null => false
     t.float    "valeur"
     t.integer  "foyer_id"
     t.datetime "created_at"
@@ -101,7 +101,7 @@ ActiveRecord::Schema.define(:version => 20100215201520) do
   end
 
   create_table "revenus", :force => true do |t|
-    t.enum     "type_de_revenu", :limit => [:"Allocation Sp\303\251cifique Solidarit\303\251", :"Allocation Parent Isol\303\251", :"Allocation Logement", :"Allocation Familiale", :"Prestation d''Accueil du Jeune Enfant", :"Allocation Handicap", :"Pension de Reversion", :"Pension Alimentaire", :"Autres Revenus"], :null => false
+    t.enum     "type_de_revenu", :limit => [:"Allocation Sp\303\251cifique Solidarit\303\251", :"Allocation Parent Isol\303\251", :"Allocation Logement", :"Allocation Familiale", :"Prestation d''Accueil du Jeune Enfant", :"Allocation Handicap", :"Pension de Reversion", :"Pension Alimentaire", :Salaire, :"Autres Revenus"], :null => false
     t.float    "valeur"
     t.integer  "foyer_id"
     t.datetime "created_at"

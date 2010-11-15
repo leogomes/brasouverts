@@ -22,7 +22,7 @@
         <td><%=h d.nombre_distribue %></td>
         <td><%=h d.total %></td>
         <td><%=h d.dette %></td>
-        <td><%=h d.donation_bras_ouverts %></td>
+        <td><%=h d.donation_bras_ouverts ? 'Oui' : 'Non' %></td>
 
         <td><%= link_to 'Éditez', edit_foyer_distribution_path(@foyer, d) %></td>
         <td><%= link_to 'Suprimez', foyer_distribution_path(@foyer, d),

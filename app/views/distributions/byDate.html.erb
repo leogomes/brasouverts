@@ -1,30 +1,30 @@
 <% form_tag '' do %>
-<fieldset>
-  <legend>Distributions</legend>
+  <fieldset>
+    <legend>Distributions</legend>
 
-  <table >
-    <tr>
-      <th>Date</th>
-      <th>Element distribué</th>
-      <th>Total</th>
-      <th>Dette</th>
-      <th>Donation?</th>
-      <th>Nom</th>
-      <th>Identifiant</th>
-    </tr>
-
-    <% @distributions.each do |d| %>
+    <table >
       <tr>
-        <td><%=h d.date %></td>
-        <td><%=h Element.find(d.element_id).description %></td>
-        <td><%=h d.total %></td>
-        <td><%=h d.dette %></td>
-        <td><%=h d.donation_bras_ouverts %></td>
-        <td><%=h Foyer.find(d.foyer_id).chef_nom %></td>
-        <td><%=h d.foyer_id %></td>
+        <th>Date</th>
+        <th>Element distribué</th>
+        <th>Total</th>
+        <th>Dette</th>
+        <th>Donation?</th>
+        <th>Nom</th>
+        <th>Identifiant</th>
       </tr>
-    <% end %>
-  </table>
 
-</fieldset>
+      <% @distributions.each do |d| %>
+        <tr>
+          <td><%=h d.date %></td>
+          <td><%=h Element.find(d.element_id).description %></td>
+          <td><%=h d.total %></td>
+          <td><%=h d.dette %></td>
+          <td><%=h d.donation_bras_ouverts ? 'Oui' : 'Non' %></td>
+          <td><%=h Foyer.find(d.foyer_id).chef_nom %></td>
+          <td><%=h d.foyer_id %></td>
+        </tr>
+      <% end %>
+    </table>
+
+  </fieldset>
 <% end %>

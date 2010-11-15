@@ -1,22 +1,31 @@
-<h1>Listing charges</h1>
+<%= render :partial => "foyers/nav" %>
+<% form_for( @foyer ) do |f| %>
+  <%= f.error_messages %>
+  <fieldset>
+    <legend>Charges de <%=@foyer.chef_prenom %> <%=@foyer.chef_nom %></legend>
 
-<table>
-  <tr>
-    <th>Type</th>
-    <th>Valeur</th>
-  </tr>
+    <table >
+      <tr>
+        <th>Type</th>
+        <th>Valeur</th>
+        <th colspan="2" />
+      </tr>
 
-<% @charges.each do |charge| %>
-  <tr>
-    <td><%=h charge.type %></td>
-    <td><%=h charge.valeur %></td>
-    <td><%= link_to 'Show', charge %></td>
-    <td><%= link_to 'Edit', edit_charge_path(charge) %></td>
-    <td><%= link_to 'Destroy', charge, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+      <% @foyer.charges.each do |c| %>
+        <tr>
+          <td><%=h c.type_de_charge %></td>
+          <td><%=h c.valeur %></td>
+
+          <td><%= link_to 'Éditez', edit_foyer_charge_path(@foyer, c) %></td>
+          <td><%= link_to 'Suprimez', foyer_charge_path(@foyer, c),
+            :confirm => 'Vous êtes sûr ?', :method => :delete %></td>
+        </tr>
+      <% end %>
+    </table>
+  </fieldset>
+  <br />
+
+  <%= link_to 'Rajoutez une autre charge', new_foyer_charge_path(@foyer) %> |
+  <%= link_to 'Visualisez le foyer', foyer_path(@foyer) %>
+
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New charge', new_charge_path %>

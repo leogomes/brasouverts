@@ -4,7 +4,8 @@ class CreateCharges < ActiveRecord::Migration
       t.column :type_de_charge, :enum, :limit => [
         'Loyer',
         'Dettes',
-        'Pension Alimentaire'],
+        'Pension Alimentaire',
+        'Autres'],
         :null => false
       t.float :valeur
       t.references :foyer

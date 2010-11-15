@@ -1,4 +1,38 @@
-<%= render :partial => "nav" %>
+<%= javascript_include_tag 'jquery.js' %>
+<%= javascript_include_tag 'jquery.bgiframe.min.js' %>
+<%= javascript_include_tag 'jquery.autocomplete.min.js' %>
+<%= stylesheet_link_tag 'jquery.autocomplete' %>
+<%= javascript_include_tag  %>
+
+<script type="text/javascript">
+  $().ready(function(){
+
+    // Cleanup any garbage
+    //$("#foyer_adresse_code_postal").attr("disabled", true);
+    //$("#foyer_adresse_code_postal").val("");
+
+    function formatItem(row) {
+      return row[0] + " (" + row[1] + ")";
+    }
+    function formatResult(row) {
+      return row[0].replace(/(<.+?>)/gi, '');
+    }
+
+    $("#foyer_adresse_ville").autocomplete("<%=cities_path%>.js", {
+      formatItem: formatItem,
+      formatResult: formatResult,
+      autoFill: true
+    });
+
+    $("#foyer_adresse_ville").result(function(event, data, formatted) {
+      if (data)
+        $(this).val(data[0]);
+      $("#foyer_adresse_code_postal").val(data[1]);
+    });
+
+  });
+</script>
+
 
 <% form_for(@foyer) do |f| %>
   <%= f.error_messages %>
@@ -21,7 +55,7 @@
     <%= f.text_field :chef_ville_de_naissance %><br />
 
     <%= f.label 'Pays de Naissance:' %>
-    <%= f.collection_select :pays_id, Country.find(:all), :id, :name %><br />
+    <%= f.collection_select :pays_id, Country.find(:all), :id, :name, :default => 'France' %><br />
 
     <%= f.label 'Situation Familiale:' %>
     <%= f.enum_select :situation_familiale %><br />

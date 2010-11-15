@@ -51,7 +51,7 @@ class MembresController < ApplicationController
     respond_to do |format|
       if @membre.save
         flash[:notice] = 'Membre a bien été rajouté.'
-        format.html { redirect_to foyer_url(@foyer) }
+        format.html { redirect_to foyer_membres_url(@foyer) }
         format.xml  { render :xml => @membre, :status => :created, :location => @membre }
       else
         format.html { render :action => "new" }
@@ -68,7 +68,7 @@ class MembresController < ApplicationController
     respond_to do |format|
       if @membre.update_attributes(params[:membre])
         flash[:notice] = 'Membre a bien été mis à jour.'
-        format.html { redirect_to edit_foyer_url(@foyer) }
+        format.html { redirect_to foyer_membres_url(@foyer) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -84,7 +84,7 @@ class MembresController < ApplicationController
     @membre.destroy
 
     respond_to do |format|
-      format.html { redirect_to foyer_url(@foyer) }
+      format.html { redirect_to foyer_membres_url(@foyer) }
       format.xml  { head :ok }
     end
   end

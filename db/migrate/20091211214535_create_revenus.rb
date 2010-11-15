@@ -6,10 +6,11 @@ class CreateRevenus < ActiveRecord::Migration
                 'Allocation Parent Isolé',
                 'Allocation Logement',
                 'Allocation Familiale',
-                "Prestation d'Accueil du Jeune Enfant",
+                'Prestation d\'Accueil du Jeune Enfant',
                 'Allocation Handicap',
                 'Pension de Reversion',
                 'Pension Alimentaire',
+                'Salaire',
                 'Autres Revenus'],
                 :null => false
       t.float :valeur

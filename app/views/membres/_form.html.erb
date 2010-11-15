@@ -10,10 +10,19 @@
 
     <%= f.label 'Prenom:' %>
     <%= f.text_field :prenom %><br />
+
     <%= f.label 'Sexe:' %>
     <%= f.enum_select :sexe %><br />
+
     <%= f.label 'Date de Naissance:' %>
-    <%= f.date_select(:date_de_naissance, :start_year => 1920) %><br />
+    <%= f.date_select(:date_de_naissance, :start_year => 1920, :defaul_year => 1970) %><br />
+
+    <%= f.label 'Ville de Naissance:' %>
+    <%= f.text_field :ville_de_naissance %><br />
+
+    <%= f.label 'Pays de Naissance:' %>
+    <%= f.collection_select :pays_id, Country.find(:all), :id, :name %><br />
+
     <%= f.label 'Relation:' %>
     <%= f.enum_select :relation %><br />
 

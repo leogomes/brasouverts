@@ -51,7 +51,7 @@ class RevenusController < ApplicationController
     respond_to do |format|
       if @revenu.save
         flash[:notice] = 'Revenu a bien été rajouté.'
-        format.html { redirect_to foyer_url(@foyer) }
+        format.html { redirect_to foyer_revenus_url(@foyer) }
         format.xml  { render :xml => @revenu, :status => :created, :location => @revenu }
       else
         format.html { render :action => "new" }
@@ -68,7 +68,7 @@ class RevenusController < ApplicationController
     respond_to do |format|
       if @revenu.update_attributes(params[:revenu])
         flash[:notice] = 'Revenu a bien été mis à jour.'
-        format.html { redirect_to edit_foyer_url(@foyer) }
+        format.html { redirect_to foyer_revenus_url(@foyer) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -84,7 +84,7 @@ class RevenusController < ApplicationController
     @revenu.destroy
 
     respond_to do |format|
-      format.html { redirect_to foyer_url(@foyer) }
+      format.html { redirect_to foyer_revenus_url(@foyer) }
       format.xml  { head :ok }
     end
   end

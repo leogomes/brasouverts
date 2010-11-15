@@ -51,7 +51,7 @@ class ChargesController < ApplicationController
     respond_to do |format|
       if @charge.save
         flash[:notice] = 'Charge a bien été rajoutée.'
-        format.html { redirect_to foyer_url(@foyer) }
+        format.html { redirect_to foyer_charges_url(@foyer) }
         format.xml  { render :xml => @charge, :status => :created, :location => @charge }
       else
         format.html { render :action => "new" }
