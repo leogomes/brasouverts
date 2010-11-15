@@ -13858,3 +13858,2353 @@ Rendering template within layouts/brasouverts
 Rendering revenus/new
 Rendered revenus/_form (6.7ms)
 Completed in 127ms (View: 10, DB: 3) | 200 OK [http://localhost/foyers/3/revenus/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFoyers (20091210202242)
+Migrating to CreateRevenus (20091211214535)
+Migrating to CreateMembres (20091211215647)
+Migrating to CreateElements (20100102154111)
+Migrating to CreateDistributions (20100102154535)
+Migrating to CreateCountries (20100210000000)
+Migrating to CreateCities (20100213213202)
+Migrating to CreateCharges (20100215201520)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM charges[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `charges`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `charges`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM cities[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `cities`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `cities`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM countries[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `countries`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `countries`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `distributions`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `distributions`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM elements[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `elements`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `elements`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `foyers`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `foyers`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM membres[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `membres`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `membres`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `revenus`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `revenus`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCharges (20100215201520)
+  [4;36;1mSQL (78.3ms)[0m   [0;1mDROP TABLE `charges`[0m
+  [4;35;1mSQL (78.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100215201520'[0m
+Migrating to CreateCities (20100213213202)
+  [4;36;1mSQL (73.4ms)[0m   [0;1mDROP TABLE `cities`[0m
+  [4;35;1mSQL (77.5ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100213213202'[0m
+Migrating to CreateCountries (20100210000000)
+  [4;36;1mSQL (73.4ms)[0m   [0;1mDROP TABLE `countries`[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100210000000'[0m
+Migrating to CreateDistributions (20100102154535)
+  [4;36;1mSQL (308.1ms)[0m   [0;1mDROP TABLE `distributions`[0m
+  [4;35;1mSQL (66.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100102154535'[0m
+Migrating to CreateElements (20100102154111)
+  [4;36;1mSQL (61.4ms)[0m   [0;1mDROP TABLE `elements`[0m
+  [4;35;1mSQL (66.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100102154111'[0m
+Migrating to CreateMembres (20091211215647)
+  [4;36;1mSQL (76.2ms)[0m   [0;1mDROP TABLE `membres`[0m
+  [4;35;1mSQL (66.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091211215647'[0m
+Migrating to CreateRevenus (20091211214535)
+  [4;36;1mSQL (71.1ms)[0m   [0;1mDROP TABLE `revenus`[0m
+  [4;35;1mSQL (78.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091211214535'[0m
+Migrating to CreateFoyers (20091210202242)
+  [4;36;1mSQL (68.9ms)[0m   [0;1mDROP TABLE `foyers`[0m
+  [4;35;1mSQL (66.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091210202242'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFoyers (20091210202242)
+  [4;36;1mSQL (143.5ms)[0m   [0;1mCREATE TABLE `foyers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `chef_nom` varchar(255) NOT NULL, `chef_prenom` varchar(255) NOT NULL, `chef_sex` enum('M','F') NOT NULL, `chef_date_naissance` date, `chef_ville_de_naissance` varchar(255), `pays_id` int(11), `chef_email` varchar(255), `situation_familiale` enum('Celibataire','Marie','Veuf','Divorce','Separe','Concubinage') NOT NULL, `nbr_colis_a_distribuer` int(11), `inscription_complete` tinyint(1), `adresse_numero` varchar(255), `adresse_rue` varchar(255), `adresse_additionel` varchar(255), `adresse_ville` varchar(255), `adresse_chez` varchar(255), `adresse_code_postal` varchar(255), `telephone_portable` varchar(255), `telephone_fixe` varchar(255), `information_additionnelle` varchar(255), `revenu_impossable` decimal, `mis_a_jour` tinyint(1), `sans_papier` tinyint(1), `sdf` tinyint(1), `demandeur_asile` tinyint(1), `handicape` tinyint(1), `diabetique` tinyint(1), `hallal` tinyint(1), `sans_porc` tinyint(1), `lettre_AS` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (54.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091210202242')[0m
+Migrating to CreateRevenus (20091211214535)
+  [4;36;1mSQL (147.1ms)[0m   [0;1mCREATE TABLE `revenus` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type_de_revenu` enum('Allocation Familiale','Allocation Handicap','Allocation Logement','Allocation Parent Isolé','Allocation de Soutien Familliale','Allocation Spécifique Solidarité','ASSEDIC','Complement Libre Choix','Pension Alimentaire','Pension de Reversion','Prestation d\'Accueil du Jeune Enfant','Retraite','RSA','Salaire','Autres Revenus') NOT NULL, `valeur` float, `foyer_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091211214535')[0m
+Migrating to CreateMembres (20091211215647)
+  [4;36;1mSQL (147.7ms)[0m   [0;1mCREATE TABLE `membres` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `foyer_id` int(11), `nom` varchar(255), `prenom` varchar(255), `date_de_naissance` date, `ville_de_naissance` varchar(255), `pays_id` int(11), `sexe` enum('M','F') NOT NULL, `relation` enum('Epoux','Epouse','Fils','Fille','Parent','Petit fils','Petite fille','Autre') NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (54.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091211215647')[0m
+Migrating to CreateElements (20100102154111)
+  [4;36;1mSQL (160.2ms)[0m   [0;1mCREATE TABLE `elements` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `elementDistribue` varchar(255), `description` varchar(255), `prix_unitaire` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mElement Columns (1.0ms)[0m   [0mSHOW FIELDS FROM elements[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mElement Create (0.3ms)[0m   [0mINSERT INTO `elements` (`created_at`, `prix_unitaire`, `updated_at`, `elementDistribue`, `description`) VALUES('2010-11-15 20:38:11', 1.5, '2010-11-15 20:38:11', 'Colis Alimentaire', 'Colis Alimentaire')[0m
+  [4;36;1mSQL (72.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mElement Create (0.4ms)[0m   [0;1mINSERT INTO `elements` (`created_at`, `prix_unitaire`, `updated_at`, `elementDistribue`, `description`) VALUES('2010-11-15 20:38:11', 0.4, '2010-11-15 20:38:11', 'Lait', '1L de lait')[0m
+  [4;35;1mSQL (38.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (43.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100102154111')[0m
+Migrating to CreateDistributions (20100102154535)
+  [4;35;1mSQL (147.4ms)[0m   [0mCREATE TABLE `distributions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `element_id` int(11), `foyer_id` int(11) NOT NULL, `date` date DEFAULT '2010-11-15 21:38:11', `nombre_distribue` int(11), `prix` float NOT NULL, `dette` float DEFAULT 0, `donation_bras_ouverts` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (43.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100102154535')[0m
+Migrating to CreateCountries (20100210000000)
+  [4;35;1mSQL (145.7ms)[0m   [0mCREATE TABLE `countries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `code` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mCountry Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Afghanistan', '2010-11-15 20:38:11', '93', '2010-11-15 20:38:11')[0m
+  [4;35;1mSQL (55.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Afrique du Sud', '2010-11-15 20:38:11', '27', '2010-11-15 20:38:11')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Albanie', '2010-11-15 20:38:11', '355', '2010-11-15 20:38:11')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Algérie', '2010-11-15 20:38:11', '213', '2010-11-15 20:38:11')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Allemagne', '2010-11-15 20:38:11', '49', '2010-11-15 20:38:11')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Andorre', '2010-11-15 20:38:11', '376', '2010-11-15 20:38:11')[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Angola', '2010-11-15 20:38:11', '244', '2010-11-15 20:38:11')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Anguilla', '2010-11-15 20:38:11', '11', '2010-11-15 20:38:11')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Antigua-et-Barbuda', '2010-11-15 20:38:12', '11', '2010-11-15 20:38:12')[0m
+  [4;35;1mSQL (49.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Antilles néerlandaises', '2010-11-15 20:38:12', '599', '2010-11-15 20:38:12')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Arabie saoudite', '2010-11-15 20:38:12', '966', '2010-11-15 20:38:12')[0m
+  [4;35;1mSQL (51.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Argentine', '2010-11-15 20:38:12', '54', '2010-11-15 20:38:12')[0m
+  [4;36;1mSQL (39.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Arménie', '2010-11-15 20:38:12', '374', '2010-11-15 20:38:12')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Aruba', '2010-11-15 20:38:12', '297', '2010-11-15 20:38:12')[0m
+  [4;36;1mSQL (39.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Ascension', '2010-11-15 20:38:12', '247', '2010-11-15 20:38:12')[0m
+  [4;35;1mSQL (41.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Australie', '2010-11-15 20:38:12', '61', '2010-11-15 20:38:12')[0m
+  [4;36;1mSQL (38.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (64.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Palestine', '2010-11-15 20:38:12', '970', '2010-11-15 20:38:12')[0m
+  [4;35;1mSQL (86.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Autriche', '2010-11-15 20:38:12', '43', '2010-11-15 20:38:12')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (85.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Azerbaïdjan', '2010-11-15 20:38:12', '994', '2010-11-15 20:38:12')[0m
+  [4;35;1mSQL (54.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bahamas', '2010-11-15 20:38:12', '1', '2010-11-15 20:38:12')[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (41.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bahreïn', '2010-11-15 20:38:12', '973', '2010-11-15 20:38:12')[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bangladesh', '2010-11-15 20:38:12', '880', '2010-11-15 20:38:12')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Barbade', '2010-11-15 20:38:13', '11', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (59.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Belgique', '2010-11-15 20:38:13', '32', '2010-11-15 20:38:13')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Belize', '2010-11-15 20:38:13', '501', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bénin', '2010-11-15 20:38:13', '229', '2010-11-15 20:38:13')[0m
+  [4;36;1mSQL (49.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bermudes', '2010-11-15 20:38:13', '11', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (49.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bhoutan', '2010-11-15 20:38:13', '975', '2010-11-15 20:38:13')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Biélorussie', '2010-11-15 20:38:13', '375', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (49.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Birmanie', '2010-11-15 20:38:13', '95', '2010-11-15 20:38:13')[0m
+  [4;36;1mSQL (49.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bolivie', '2010-11-15 20:38:13', '591', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (49.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bosnie-Herzégovine', '2010-11-15 20:38:13', '387', '2010-11-15 20:38:13')[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Botswana', '2010-11-15 20:38:13', '267', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (49.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Brésil', '2010-11-15 20:38:13', '55', '2010-11-15 20:38:13')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Brunei', '2010-11-15 20:38:13', '673', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bulgarie', '2010-11-15 20:38:13', '359', '2010-11-15 20:38:13')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Burkina Faso', '2010-11-15 20:38:13', '226', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Burundi', '2010-11-15 20:38:13', '257', '2010-11-15 20:38:13')[0m
+  [4;36;1mSQL (40.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.6ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cambodge', '2010-11-15 20:38:13', '855', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (39.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cameroun', '2010-11-15 20:38:13', '237', '2010-11-15 20:38:13')[0m
+  [4;36;1mSQL (39.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Canada', '2010-11-15 20:38:13', '11', '2010-11-15 20:38:13')[0m
+  [4;35;1mSQL (39.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cap-Vert', '2010-11-15 20:38:14', '238', '2010-11-15 20:38:14')[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Îles Caïmans', '2010-11-15 20:38:14', '11', '2010-11-15 20:38:14')[0m
+  [4;35;1mSQL (49.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('République centrafricaine', '2010-11-15 20:38:14', '236', '2010-11-15 20:38:14')[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Chili', '2010-11-15 20:38:14', '56', '2010-11-15 20:38:14')[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Chine', '2010-11-15 20:38:14', '86', '2010-11-15 20:38:14')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Chypre', '2010-11-15 20:38:14', '357', '2010-11-15 20:38:14')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Colombie', '2010-11-15 20:38:14', '57', '2010-11-15 20:38:14')[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Comores', '2010-11-15 20:38:14', '269', '2010-11-15 20:38:14')[0m
+  [4;35;1mSQL (49.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('République démocratique du Congo', '2010-11-15 20:38:14', '243', '2010-11-15 20:38:14')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('République du Congo', '2010-11-15 20:38:14', '242', '2010-11-15 20:38:14')[0m
+  [4;35;1mSQL (49.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Îles Cook', '2010-11-15 20:38:14', '682', '2010-11-15 20:38:14')[0m
+  [4;36;1mSQL (49.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Corée du Nord', '2010-11-15 20:38:14', '850', '2010-11-15 20:38:14')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Corée du Sud', '2010-11-15 20:38:14', '82', '2010-11-15 20:38:14')[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Costa Rica', '2010-11-15 20:38:14', '506', '2010-11-15 20:38:14')[0m
+  [4;35;1mSQL (49.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Côte d\'Ivoire', '2010-11-15 20:38:14', '225', '2010-11-15 20:38:14')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Croatie', '2010-11-15 20:38:14', '385', '2010-11-15 20:38:14')[0m
+  [4;35;1mSQL (49.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cuba', '2010-11-15 20:38:14', '53', '2010-11-15 20:38:14')[0m
+  [4;36;1mSQL (72.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Danemark', '2010-11-15 20:38:14', '45', '2010-11-15 20:38:14')[0m
+  [4;35;1mSQL (52.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.6ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Diego Garcia', '2010-11-15 20:38:15', '0', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Djibouti', '2010-11-15 20:38:15', '253', '2010-11-15 20:38:15')[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('République dominicaine', '2010-11-15 20:38:15', '11', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Dominique', '2010-11-15 20:38:15', '11', '2010-11-15 20:38:15')[0m
+  [4;35;1mSQL (48.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Égypte', '2010-11-15 20:38:15', '20', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Émirats arabes unis', '2010-11-15 20:38:15', '971', '2010-11-15 20:38:15')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Équateur', '2010-11-15 20:38:15', '593', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (39.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Érythrée', '2010-11-15 20:38:15', '291', '2010-11-15 20:38:15')[0m
+  [4;35;1mSQL (39.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Espagne', '2010-11-15 20:38:15', '34', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (40.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Estonie', '2010-11-15 20:38:15', '372', '2010-11-15 20:38:15')[0m
+  [4;35;1mSQL (39.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('États-Unis', '2010-11-15 20:38:15', '11', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (39.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Éthiopie', '2010-11-15 20:38:15', '251', '2010-11-15 20:38:15')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Îles Féro', '2010-11-15 20:38:15', '298', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Fidji', '2010-11-15 20:38:15', '679', '2010-11-15 20:38:15')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Finlande', '2010-11-15 20:38:15', '358', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.7ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('France', '2010-11-15 20:38:15', '33', '2010-11-15 20:38:15')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Gabon', '2010-11-15 20:38:15', '241', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Gambie', '2010-11-15 20:38:15', '220', '2010-11-15 20:38:15')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Géorgie', '2010-11-15 20:38:15', '995', '2010-11-15 20:38:15')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Ghana', '2010-11-15 20:38:16', '233', '2010-11-15 20:38:16')[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Gibraltar', '2010-11-15 20:38:16', '350', '2010-11-15 20:38:16')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Grèce', '2010-11-15 20:38:16', '30', '2010-11-15 20:38:16')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Grenade', '2010-11-15 20:38:16', '11', '2010-11-15 20:38:16')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.7ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Groenland', '2010-11-15 20:38:16', '299', '2010-11-15 20:38:16')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Guadeloupe', '2010-11-15 20:38:16', '590', '2010-11-15 20:38:16')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Guam', '2010-11-15 20:38:16', '11', '2010-11-15 20:38:16')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Guatemala', '2010-11-15 20:38:16', '502', '2010-11-15 20:38:16')[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Guinée', '2010-11-15 20:38:16', '224', '2010-11-15 20:38:16')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Guinée équatoriale', '2010-11-15 20:38:16', '240', '2010-11-15 20:38:16')[0m
+  [4;36;1mSQL (49.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Guinée-Bissau', '2010-11-15 20:38:16', '245', '2010-11-15 20:38:16')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Guyana', '2010-11-15 20:38:16', '592', '2010-11-15 20:38:16')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Guyane', '2010-11-15 20:38:16', '594', '2010-11-15 20:38:16')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Haïti', '2010-11-15 20:38:16', '509', '2010-11-15 20:38:16')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Honduras', '2010-11-15 20:38:16', '504', '2010-11-15 20:38:16')[0m
+  [4;35;1mSQL (44.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Hong Kong', '2010-11-15 20:38:16', '852', '2010-11-15 20:38:16')[0m
+  [4;36;1mSQL (38.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Hongrie', '2010-11-15 20:38:17', '36', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (37.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Inde', '2010-11-15 20:38:17', '91', '2010-11-15 20:38:17')[0m
+  [4;36;1mSQL (38.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Indonésie', '2010-11-15 20:38:17', '62', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (38.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Irak', '2010-11-15 20:38:17', '964', '2010-11-15 20:38:17')[0m
+  [4;36;1mSQL (38.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Iran', '2010-11-15 20:38:17', '98', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (40.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.7ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Irlande', '2010-11-15 20:38:17', '353', '2010-11-15 20:38:17')[0m
+  [4;36;1mSQL (49.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Islande', '2010-11-15 20:38:17', '354', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.6ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Israël', '2010-11-15 20:38:17', '972', '2010-11-15 20:38:17')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Italie', '2010-11-15 20:38:17', '39', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Jamaïque', '2010-11-15 20:38:17', '11', '2010-11-15 20:38:17')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Japon', '2010-11-15 20:38:17', '81', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Jordanie', '2010-11-15 20:38:17', '962', '2010-11-15 20:38:17')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Kazakhstan', '2010-11-15 20:38:17', '7', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Kenya', '2010-11-15 20:38:17', '254', '2010-11-15 20:38:17')[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Kirghizistan', '2010-11-15 20:38:17', '996', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Kiribati', '2010-11-15 20:38:17', '686', '2010-11-15 20:38:17')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Kosovo', '2010-11-15 20:38:17', '386', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Koweït', '2010-11-15 20:38:17', '965', '2010-11-15 20:38:17')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Laos', '2010-11-15 20:38:17', '856', '2010-11-15 20:38:17')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Lesotho', '2010-11-15 20:38:18', '266', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Lettonie', '2010-11-15 20:38:18', '371', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (49.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Liban', '2010-11-15 20:38:18', '961', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Liberia', '2010-11-15 20:38:18', '231', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Libye', '2010-11-15 20:38:18', '218', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Liechtenstein', '2010-11-15 20:38:18', '423', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Lituanie', '2010-11-15 20:38:18', '370', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Luxembourg', '2010-11-15 20:38:18', '352', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (39.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Macao', '2010-11-15 20:38:18', '853', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (39.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Macédoine', '2010-11-15 20:38:18', '389', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (38.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Madagascar', '2010-11-15 20:38:18', '261', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (38.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Malaisie', '2010-11-15 20:38:18', '60', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (38.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Malawi', '2010-11-15 20:38:18', '265', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (39.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Maldives', '2010-11-15 20:38:18', '960', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (39.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Mali', '2010-11-15 20:38:18', '223', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (38.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Îles Malouines', '2010-11-15 20:38:18', '500', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (39.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Malte', '2010-11-15 20:38:18', '356', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (51.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Îles Mariannes du Nord', '2010-11-15 20:38:18', '11', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (48.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Maroc', '2010-11-15 20:38:18', '212', '2010-11-15 20:38:18')[0m
+  [4;36;1mSQL (49.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.8ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Marshall', '2010-11-15 20:38:18', '692', '2010-11-15 20:38:18')[0m
+  [4;35;1mSQL (49.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Martinique', '2010-11-15 20:38:19', '596', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (49.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Maurice', '2010-11-15 20:38:19', '230', '2010-11-15 20:38:19')[0m
+  [4;35;1mSQL (49.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Mauritanie', '2010-11-15 20:38:19', '222', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Mayotte', '2010-11-15 20:38:19', '262', '2010-11-15 20:38:19')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Mexique', '2010-11-15 20:38:19', '52', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Micronésie', '2010-11-15 20:38:19', '691', '2010-11-15 20:38:19')[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Moldavie', '2010-11-15 20:38:19', '373', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Monaco', '2010-11-15 20:38:19', '377', '2010-11-15 20:38:19')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Mongolie', '2010-11-15 20:38:19', '976', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Monténégro', '2010-11-15 20:38:19', '382', '2010-11-15 20:38:19')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Montserrat', '2010-11-15 20:38:19', '11', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Mozambique', '2010-11-15 20:38:19', '258', '2010-11-15 20:38:19')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Namibie', '2010-11-15 20:38:19', '264', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (49.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Nauru', '2010-11-15 20:38:19', '674', '2010-11-15 20:38:19')[0m
+  [4;35;1mSQL (49.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Népal', '2010-11-15 20:38:19', '977', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (38.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.8ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Nicaragua', '2010-11-15 20:38:19', '505', '2010-11-15 20:38:19')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Niger', '2010-11-15 20:38:19', '227', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (39.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Nigeria', '2010-11-15 20:38:19', '234', '2010-11-15 20:38:19')[0m
+  [4;35;1mSQL (39.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Niue', '2010-11-15 20:38:19', '683', '2010-11-15 20:38:19')[0m
+  [4;36;1mSQL (39.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Norvège', '2010-11-15 20:38:20', '47', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (39.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.6ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Nouvelle-Calédonie', '2010-11-15 20:38:20', '687', '2010-11-15 20:38:20')[0m
+  [4;36;1mSQL (38.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Nouvelle-Zélande', '2010-11-15 20:38:20', '64', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (39.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Oman', '2010-11-15 20:38:20', '968', '2010-11-15 20:38:20')[0m
+  [4;36;1mSQL (38.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Ouganda', '2010-11-15 20:38:20', '256', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (49.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Ouzbékistan', '2010-11-15 20:38:20', '998', '2010-11-15 20:38:20')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Pakistan', '2010-11-15 20:38:20', '92', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Palaos', '2010-11-15 20:38:20', '680', '2010-11-15 20:38:20')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.9ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Panam', '2010-11-15 20:38:20', '507', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Papouasie-Nouvelle-Guinée', '2010-11-15 20:38:20', '675', '2010-11-15 20:38:20')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Paraguay', '2010-11-15 20:38:20', '595', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Pays-Bas', '2010-11-15 20:38:20', '31', '2010-11-15 20:38:20')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Pérou', '2010-11-15 20:38:20', '51', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.6ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Philippines', '2010-11-15 20:38:20', '63', '2010-11-15 20:38:20')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Pologne', '2010-11-15 20:38:20', '48', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Polynésie française', '2010-11-15 20:38:20', '689', '2010-11-15 20:38:20')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Porto Rico', '2010-11-15 20:38:20', '11', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Portugal', '2010-11-15 20:38:20', '351', '2010-11-15 20:38:20')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Qatar', '2010-11-15 20:38:20', '974', '2010-11-15 20:38:20')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Réunion', '2010-11-15 20:38:21', '262', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (49.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Roumanie', '2010-11-15 20:38:21', '40', '2010-11-15 20:38:21')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Royaume-Uni', '2010-11-15 20:38:21', '44', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Russie', '2010-11-15 20:38:21', '7', '2010-11-15 20:38:21')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Rwanda', '2010-11-15 20:38:21', '250', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (38.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Saint-Christophe-et-Niévès', '2010-11-15 20:38:21', '11', '2010-11-15 20:38:21')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sainte-Hélène, île', '2010-11-15 20:38:21', '290', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (39.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sainte-Lucie', '2010-11-15 20:38:21', '11', '2010-11-15 20:38:21')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Saint-Marin', '2010-11-15 20:38:21', '378', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (39.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Saint-Pierre-et-Miquelon', '2010-11-15 20:38:21', '508', '2010-11-15 20:38:21')[0m
+  [4;35;1mSQL (39.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Saint-Vincent-et-les Grenadines', '2010-11-15 20:38:21', '11', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (39.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Salomon', '2010-11-15 20:38:21', '677', '2010-11-15 20:38:21')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Salvador', '2010-11-15 20:38:21', '503', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (49.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Samoa', '2010-11-15 20:38:21', '685', '2010-11-15 20:38:21')[0m
+  [4;35;1mSQL (39.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Samoa américaines', '2010-11-15 20:38:21', '11', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sao Tomé-et-Principe', '2010-11-15 20:38:21', '239', '2010-11-15 20:38:21')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sénégal', '2010-11-15 20:38:21', '221', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Serbie', '2010-11-15 20:38:21', '381', '2010-11-15 20:38:21')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (1.0ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Seychelles', '2010-11-15 20:38:21', '248', '2010-11-15 20:38:21')[0m
+  [4;36;1mSQL (49.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.6ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sierra Leone', '2010-11-15 20:38:22', '232', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (51.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Singapour', '2010-11-15 20:38:22', '65', '2010-11-15 20:38:22')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Slovaquie', '2010-11-15 20:38:22', '421', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Slovénie', '2010-11-15 20:38:22', '386', '2010-11-15 20:38:22')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Somalie', '2010-11-15 20:38:22', '252', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Soudan', '2010-11-15 20:38:22', '249', '2010-11-15 20:38:22')[0m
+  [4;36;1mSQL (50.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sri Lanka', '2010-11-15 20:38:22', '94', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Suède', '2010-11-15 20:38:22', '46', '2010-11-15 20:38:22')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Suisse', '2010-11-15 20:38:22', '41', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Suriname', '2010-11-15 20:38:22', '597', '2010-11-15 20:38:22')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Swaziland', '2010-11-15 20:38:22', '268', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Syrie', '2010-11-15 20:38:22', '963', '2010-11-15 20:38:22')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tadjikistan', '2010-11-15 20:38:22', '992', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tanzanie', '2010-11-15 20:38:22', '255', '2010-11-15 20:38:22')[0m
+  [4;36;1mSQL (39.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Taïwan', '2010-11-15 20:38:22', '886', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tchad', '2010-11-15 20:38:22', '235', '2010-11-15 20:38:22')[0m
+  [4;36;1mSQL (39.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('République tchèque', '2010-11-15 20:38:22', '420', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (38.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Thaïlande', '2010-11-15 20:38:22', '66', '2010-11-15 20:38:22')[0m
+  [4;36;1mSQL (38.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Timor oriental', '2010-11-15 20:38:22', '670', '2010-11-15 20:38:22')[0m
+  [4;35;1mSQL (39.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Togo', '2010-11-15 20:38:23', '228', '2010-11-15 20:38:23')[0m
+  [4;36;1mSQL (38.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tokelau', '2010-11-15 20:38:23', '690', '2010-11-15 20:38:23')[0m
+  [4;35;1mSQL (38.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tonga', '2010-11-15 20:38:23', '676', '2010-11-15 20:38:23')[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Trinité-et-Tobago', '2010-11-15 20:38:23', '11', '2010-11-15 20:38:23')[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tunisie', '2010-11-15 20:38:23', '216', '2010-11-15 20:38:23')[0m
+  [4;36;1mSQL (52.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (39.8ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Turkménistan', '2010-11-15 20:38:23', '993', '2010-11-15 20:38:23')[0m
+  [4;35;1mSQL (53.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Îles Turques-et-Caïques', '2010-11-15 20:38:23', '11', '2010-11-15 20:38:23')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (40.8ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Turquie', '2010-11-15 20:38:23', '90', '2010-11-15 20:38:23')[0m
+  [4;35;1mSQL (99.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.7ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tuvalu', '2010-11-15 20:38:23', '688', '2010-11-15 20:38:23')[0m
+  [4;36;1mSQL (61.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.5ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Ukraine', '2010-11-15 20:38:23', '380', '2010-11-15 20:38:23')[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Uruguay', '2010-11-15 20:38:23', '598', '2010-11-15 20:38:23')[0m
+  [4;36;1mSQL (49.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (1.0ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Vanuatu', '2010-11-15 20:38:23', '678', '2010-11-15 20:38:23')[0m
+  [4;35;1mSQL (49.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Vatican', '2010-11-15 20:38:23', '379', '2010-11-15 20:38:23')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Venezuela', '2010-11-15 20:38:23', '58', '2010-11-15 20:38:23')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Îles Vierges américaines', '2010-11-15 20:38:23', '11', '2010-11-15 20:38:23')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Îles Vierges britanniques', '2010-11-15 20:38:23', '11', '2010-11-15 20:38:23')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Viêt Nam', '2010-11-15 20:38:24', '84', '2010-11-15 20:38:24')[0m
+  [4;36;1mSQL (56.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Wallis-et-Futuna', '2010-11-15 20:38:24', '681', '2010-11-15 20:38:24')[0m
+  [4;35;1mSQL (52.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Yémen', '2010-11-15 20:38:24', '967', '2010-11-15 20:38:24')[0m
+  [4;36;1mSQL (49.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Zambie', '2010-11-15 20:38:24', '260', '2010-11-15 20:38:24')[0m
+  [4;35;1mSQL (38.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `created_at`, `code`, `updated_at`) VALUES('Zimbabwe', '2010-11-15 20:38:24', '263', '2010-11-15 20:38:24')[0m
+  [4;36;1mSQL (38.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (43.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100210000000')[0m
+Migrating to CreateCities (20100213213202)
+  [4;36;1mSQL (112.5ms)[0m   [0;1mCREATE TABLE `cities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `code` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mCity Columns (1.0ms)[0m   [0mSHOW FIELDS FROM cities[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Aiglun', '2010-11-15 20:38:24', '06910', '2010-11-15 20:38:24')[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Amirat', '2010-11-15 20:38:24', '06910', '2010-11-15 20:38:24')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Andon', '2010-11-15 20:38:24', '06750', '2010-11-15 20:38:24')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Antibes', '2010-11-15 20:38:24', '06600', '2010-11-15 20:38:24')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Antibes', '2010-11-15 20:38:24', '06160', '2010-11-15 20:38:24')[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (1.9ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Ascros', '2010-11-15 20:38:24', '06260', '2010-11-15 20:38:24')[0m
+  [4;35;1mSQL (48.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Aspremont', '2010-11-15 20:38:24', '06790', '2010-11-15 20:38:24')[0m
+  [4;36;1mSQL (83.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Auribeau Sur Siagne', '2010-11-15 20:38:25', '06810', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Auron', '2010-11-15 20:38:25', '06660', '2010-11-15 20:38:25')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Auvare', '2010-11-15 20:38:25', '06260', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bairols', '2010-11-15 20:38:25', '06420', '2010-11-15 20:38:25')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Beaulieu Sur Mer', '2010-11-15 20:38:25', '06310', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (63.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Beausoleil', '2010-11-15 20:38:25', '06240', '2010-11-15 20:38:25')[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Belvedere', '2010-11-15 20:38:25', '06450', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bendejun', '2010-11-15 20:38:25', '06390', '2010-11-15 20:38:25')[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Berre Des Alpes', '2010-11-15 20:38:25', '06390', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (38.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Beuil', '2010-11-15 20:38:25', '06470', '2010-11-15 20:38:25')[0m
+  [4;36;1mSQL (39.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bezaudun Les Alpes', '2010-11-15 20:38:25', '06510', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (39.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Biot', '2010-11-15 20:38:25', '06410', '2010-11-15 20:38:25')[0m
+  [4;36;1mSQL (61.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Blausasc', '2010-11-15 20:38:25', '06440', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (39.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bonson', '2010-11-15 20:38:25', '06830', '2010-11-15 20:38:25')[0m
+  [4;36;1mSQL (39.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Bouyon', '2010-11-15 20:38:25', '06510', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (39.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Breil Sur Roya', '2010-11-15 20:38:25', '06540', '2010-11-15 20:38:25')[0m
+  [4;36;1mSQL (39.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Brianconnet', '2010-11-15 20:38:25', '06850', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cabris', '2010-11-15 20:38:25', '06530', '2010-11-15 20:38:25')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.5ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cagnes Sur Mer', '2010-11-15 20:38:25', '06800', '2010-11-15 20:38:25')[0m
+  [4;35;1mSQL (49.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Caille', '2010-11-15 20:38:26', '06750', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cannes', '2010-11-15 20:38:26', '06150', '2010-11-15 20:38:26')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cannes', '2010-11-15 20:38:26', '06400', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (49.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cantaron', '2010-11-15 20:38:26', '06340', '2010-11-15 20:38:26')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cap D\'Ail', '2010-11-15 20:38:26', '06320', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cap D\'Antibes', '2010-11-15 20:38:26', '06160', '2010-11-15 20:38:26')[0m
+  [4;35;1mSQL (49.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Carnoles', '2010-11-15 20:38:26', '06190', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Carros', '2010-11-15 20:38:26', '06510', '2010-11-15 20:38:26')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Castagniers', '2010-11-15 20:38:26', '06670', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Castellar', '2010-11-15 20:38:26', '06500', '2010-11-15 20:38:26')[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Castillon', '2010-11-15 20:38:26', '06500', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.6ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Caussols', '2010-11-15 20:38:26', '06460', '2010-11-15 20:38:26')[0m
+  [4;35;1mSQL (49.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.6ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Chateauneuf D\'Entraunes', '2010-11-15 20:38:26', '06470', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (49.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Chateauneuf Grasse', '2010-11-15 20:38:26', '06740', '2010-11-15 20:38:26')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Chateauneuf Villevieille', '2010-11-15 20:38:26', '06390', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (51.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.5ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cipieres', '2010-11-15 20:38:26', '06620', '2010-11-15 20:38:26')[0m
+  [4;35;1mSQL (38.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Clans', '2010-11-15 20:38:26', '06420', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (39.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Coaraze', '2010-11-15 20:38:26', '06390', '2010-11-15 20:38:26')[0m
+  [4;35;1mSQL (39.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Collongues', '2010-11-15 20:38:26', '06910', '2010-11-15 20:38:26')[0m
+  [4;36;1mSQL (39.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.5ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Colomars', '2010-11-15 20:38:27', '06670', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (39.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Consegudes', '2010-11-15 20:38:27', '06510', '2010-11-15 20:38:27')[0m
+  [4;36;1mSQL (39.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Contes', '2010-11-15 20:38:27', '06390', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (39.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Courmes', '2010-11-15 20:38:27', '06620', '2010-11-15 20:38:27')[0m
+  [4;36;1mSQL (39.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Coursegoules', '2010-11-15 20:38:27', '06140', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (38.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cros De Cagnes', '2010-11-15 20:38:27', '06800', '2010-11-15 20:38:27')[0m
+  [4;36;1mSQL (49.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Cuebris', '2010-11-15 20:38:27', '06910', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Daluis', '2010-11-15 20:38:27', '06470', '2010-11-15 20:38:27')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Drap', '2010-11-15 20:38:27', '06340', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Duranus', '2010-11-15 20:38:27', '06670', '2010-11-15 20:38:27')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Entraunes', '2010-11-15 20:38:27', '06470', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Escragnolles', '2010-11-15 20:38:27', '06460', '2010-11-15 20:38:27')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Esteing', '2010-11-15 20:38:27', '06470', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Eze', '2010-11-15 20:38:27', '06360', '2010-11-15 20:38:27')[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.6ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Falicon', '2010-11-15 20:38:27', '06950', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Fontan', '2010-11-15 20:38:27', '06540', '2010-11-15 20:38:27')[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Gars', '2010-11-15 20:38:27', '06850', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Gattieres', '2010-11-15 20:38:27', '06510', '2010-11-15 20:38:27')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Gilette', '2010-11-15 20:38:27', '06830', '2010-11-15 20:38:27')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Gorbio', '2010-11-15 20:38:28', '06500', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Gourdon', '2010-11-15 20:38:28', '06620', '2010-11-15 20:38:28')[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Grasse', '2010-11-15 20:38:28', '06130', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Grasse', '2010-11-15 20:38:28', '06520', '2010-11-15 20:38:28')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Greolieres', '2010-11-15 20:38:28', '06620', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Guillaumes', '2010-11-15 20:38:28', '06470', '2010-11-15 20:38:28')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Ilonse', '2010-11-15 20:38:28', '06420', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (51.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Isola', '2010-11-15 20:38:28', '06420', '2010-11-15 20:38:28')[0m
+  [4;35;1mSQL (39.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Juan Les Pins', '2010-11-15 20:38:28', '06160', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (38.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('L\'Escarene', '2010-11-15 20:38:28', '06440', '2010-11-15 20:38:28')[0m
+  [4;35;1mSQL (38.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Bocca', '2010-11-15 20:38:28', '06150', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (39.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Bollene Vesubie', '2010-11-15 20:38:28', '06450', '2010-11-15 20:38:28')[0m
+  [4;35;1mSQL (39.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Brigue', '2010-11-15 20:38:28', '06430', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (39.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Colle Sur Loup', '2010-11-15 20:38:28', '06480', '2010-11-15 20:38:28')[0m
+  [4;35;1mSQL (39.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.6ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Croix Sur Roudoule', '2010-11-15 20:38:28', '06260', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Fontonne', '2010-11-15 20:38:28', '06600', '2010-11-15 20:38:28')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Gaude', '2010-11-15 20:38:28', '06610', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (49.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.5ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Grave De Peille', '2010-11-15 20:38:28', '06440', '2010-11-15 20:38:28')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.7ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Napoule', '2010-11-15 20:38:28', '06210', '2010-11-15 20:38:28')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Penne', '2010-11-15 20:38:29', '06260', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Rochette', '2010-11-15 20:38:29', '06260', '2010-11-15 20:38:29')[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Roquette Sur Siagne', '2010-11-15 20:38:29', '06550', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Roquette Sur Var', '2010-11-15 20:38:29', '06670', '2010-11-15 20:38:29')[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Tour', '2010-11-15 20:38:29', '06710', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Trinite', '2010-11-15 20:38:29', '06340', '2010-11-15 20:38:29')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('La Turbie', '2010-11-15 20:38:29', '06320', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Lantosque', '2010-11-15 20:38:29', '06450', '2010-11-15 20:38:29')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Bar Sur Loup', '2010-11-15 20:38:29', '06620', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Boreon', '2010-11-15 20:38:29', '06450', '2010-11-15 20:38:29')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Broc', '2010-11-15 20:38:29', '06510', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Cannet', '2010-11-15 20:38:29', '06110', '2010-11-15 20:38:29')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Golfe Juan', '2010-11-15 20:38:29', '06220', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Logis Du Pin', '2010-11-15 20:38:29', '06750', '2010-11-15 20:38:29')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Mas', '2010-11-15 20:38:29', '06910', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (39.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Plan De Grasse', '2010-11-15 20:38:29', '06130', '2010-11-15 20:38:29')[0m
+  [4;36;1mSQL (39.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Rouret', '2010-11-15 20:38:29', '06650', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (40.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Le Tignet', '2010-11-15 20:38:29', '06530', '2010-11-15 20:38:29')[0m
+  [4;36;1mSQL (39.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.5ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Les Ferres', '2010-11-15 20:38:29', '06510', '2010-11-15 20:38:29')[0m
+  [4;35;1mSQL (39.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Les Mujouls', '2010-11-15 20:38:30', '06910', '2010-11-15 20:38:30')[0m
+  [4;36;1mSQL (39.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Levens', '2010-11-15 20:38:30', '06670', '2010-11-15 20:38:30')[0m
+  [4;35;1mSQL (39.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Lieuche', '2010-11-15 20:38:30', '06260', '2010-11-15 20:38:30')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Luceram', '2010-11-15 20:38:30', '06440', '2010-11-15 20:38:30')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.7ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Magagnosc', '2010-11-15 20:38:30', '06520', '2010-11-15 20:38:30')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Malaussene', '2010-11-15 20:38:30', '06710', '2010-11-15 20:38:30')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Mandelieu La Napoule', '2010-11-15 20:38:30', '06210', '2010-11-15 20:38:30')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Marie', '2010-11-15 20:38:30', '06420', '2010-11-15 20:38:30')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Massoins', '2010-11-15 20:38:30', '06710', '2010-11-15 20:38:30')[0m
+  [4;36;1mSQL (50.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Menton', '2010-11-15 20:38:30', '06500', '2010-11-15 20:38:30')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Miramar', '2010-11-15 20:38:30', '06590', '2010-11-15 20:38:30')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Mouans Sartoux', '2010-11-15 20:38:30', '06370', '2010-11-15 20:38:30')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Mougins', '2010-11-15 20:38:30', '06250', '2010-11-15 20:38:30')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Moulinet', '2010-11-15 20:38:30', '06380', '2010-11-15 20:38:30')[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.7ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Nice', '2010-11-15 20:38:30', '06100', '2010-11-15 20:38:30')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Nice', '2010-11-15 20:38:30', '06000', '2010-11-15 20:38:30')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Nice', '2010-11-15 20:38:30', '06300', '2010-11-15 20:38:30')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Nice', '2010-11-15 20:38:30', '06200', '2010-11-15 20:38:30')[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Opio', '2010-11-15 20:38:31', '06650', '2010-11-15 20:38:31')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Pegomas', '2010-11-15 20:38:31', '06580', '2010-11-15 20:38:31')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Peille', '2010-11-15 20:38:31', '06440', '2010-11-15 20:38:31')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Peillon', '2010-11-15 20:38:31', '06440', '2010-11-15 20:38:31')[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Peira Cava', '2010-11-15 20:38:31', '06440', '2010-11-15 20:38:31')[0m
+  [4;36;1mSQL (39.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Peone', '2010-11-15 20:38:31', '06470', '2010-11-15 20:38:31')[0m
+  [4;35;1mSQL (39.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Peymeinade', '2010-11-15 20:38:31', '06530', '2010-11-15 20:38:31')[0m
+  [4;36;1mSQL (39.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Pierlas', '2010-11-15 20:38:31', '06260', '2010-11-15 20:38:31')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Pierrefeu', '2010-11-15 20:38:31', '06910', '2010-11-15 20:38:31')[0m
+  [4;36;1mSQL (40.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Plan Du Var', '2010-11-15 20:38:31', '06670', '2010-11-15 20:38:31')[0m
+  [4;35;1mSQL (39.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Plascassier', '2010-11-15 20:38:31', '06130', '2010-11-15 20:38:31')[0m
+  [4;36;1mSQL (39.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.5ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Puget Rostang', '2010-11-15 20:38:31', '06260', '2010-11-15 20:38:31')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Puget Theniers', '2010-11-15 20:38:31', '06260', '2010-11-15 20:38:31')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Revest Les Roches', '2010-11-15 20:38:31', '06830', '2010-11-15 20:38:31')[0m
+  [4;35;1mSQL (41.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Rigaud', '2010-11-15 20:38:31', '06260', '2010-11-15 20:38:31')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Rimplas', '2010-11-15 20:38:31', '06420', '2010-11-15 20:38:31')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Rocheville', '2010-11-15 20:38:31', '06110', '2010-11-15 20:38:31')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Roquebilliere', '2010-11-15 20:38:31', '06450', '2010-11-15 20:38:31')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Roquebrune Cap Martin', '2010-11-15 20:38:32', '06190', '2010-11-15 20:38:32')[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.5ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Roquefort Les Pins', '2010-11-15 20:38:32', '06330', '2010-11-15 20:38:32')[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Roquesteron', '2010-11-15 20:38:32', '06910', '2010-11-15 20:38:32')[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Roquesteron Grasse', '2010-11-15 20:38:32', '06910', '2010-11-15 20:38:32')[0m
+  [4;35;1mSQL (54.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Roubion', '2010-11-15 20:38:32', '06420', '2010-11-15 20:38:32')[0m
+  [4;36;1mSQL (47.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Roure', '2010-11-15 20:38:32', '06420', '2010-11-15 20:38:32')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sallagriffon', '2010-11-15 20:38:32', '06910', '2010-11-15 20:38:32')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Saorge', '2010-11-15 20:38:32', '06540', '2010-11-15 20:38:32')[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sauze', '2010-11-15 20:38:32', '06470', '2010-11-15 20:38:32')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Seranon', '2010-11-15 20:38:32', '06750', '2010-11-15 20:38:32')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sigale', '2010-11-15 20:38:32', '06910', '2010-11-15 20:38:32')[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sophia Antipolis', '2010-11-15 20:38:32', '06560', '2010-11-15 20:38:32')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Sospel', '2010-11-15 20:38:32', '06380', '2010-11-15 20:38:32')[0m
+  [4;36;1mSQL (39.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Speracedes', '2010-11-15 20:38:32', '06530', '2010-11-15 20:38:32')[0m
+  [4;35;1mSQL (39.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Andre', '2010-11-15 20:38:32', '06730', '2010-11-15 20:38:32')[0m
+  [4;36;1mSQL (39.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Antonin', '2010-11-15 20:38:32', '06260', '2010-11-15 20:38:32')[0m
+  [4;35;1mSQL (82.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Auban', '2010-11-15 20:38:32', '06850', '2010-11-15 20:38:32')[0m
+  [4;36;1mSQL (61.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Blaise', '2010-11-15 20:38:32', '06670', '2010-11-15 20:38:32')[0m
+  [4;35;1mSQL (61.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Cezaire Sur Siagne', '2010-11-15 20:38:33', '06530', '2010-11-15 20:38:33')[0m
+  [4;36;1mSQL (62.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Dalmas De Tende', '2010-11-15 20:38:33', '06430', '2010-11-15 20:38:33')[0m
+  [4;35;1mSQL (71.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Dalmas Le Selvage', '2010-11-15 20:38:33', '06660', '2010-11-15 20:38:33')[0m
+  [4;36;1mSQL (72.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Etienne De Tinee', '2010-11-15 20:38:33', '06660', '2010-11-15 20:38:33')[0m
+  [4;35;1mSQL (71.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.9ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Isidore', '2010-11-15 20:38:33', '06200', '2010-11-15 20:38:33')[0m
+  [4;36;1mSQL (60.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Jean Cap Ferrat', '2010-11-15 20:38:33', '06230', '2010-11-15 20:38:33')[0m
+  [4;35;1mSQL (61.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Jean La Riviere', '2010-11-15 20:38:33', '06450', '2010-11-15 20:38:33')[0m
+  [4;36;1mSQL (63.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.6ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Jeannet', '2010-11-15 20:38:33', '06640', '2010-11-15 20:38:33')[0m
+  [4;35;1mSQL (59.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Laurent Du Var', '2010-11-15 20:38:33', '06700', '2010-11-15 20:38:33')[0m
+  [4;36;1mSQL (49.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Leger', '2010-11-15 20:38:33', '06260', '2010-11-15 20:38:33')[0m
+  [4;35;1mSQL (49.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Martin D\'Entraunes', '2010-11-15 20:38:33', '06470', '2010-11-15 20:38:33')[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Martin Du Var', '2010-11-15 20:38:33', '06670', '2010-11-15 20:38:33')[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Martin Vesubie', '2010-11-15 20:38:33', '06450', '2010-11-15 20:38:33')[0m
+  [4;36;1mSQL (52.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Paul', '2010-11-15 20:38:33', '06570', '2010-11-15 20:38:33')[0m
+  [4;35;1mSQL (48.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (52.1ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Pierre', '2010-11-15 20:38:33', '06260', '2010-11-15 20:38:33')[0m
+  [4;36;1mSQL (99.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (40.9ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Roman De Bellet', '2010-11-15 20:38:34', '06200', '2010-11-15 20:38:34')[0m
+  [4;35;1mSQL (65.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Sauveur Sur Tinee', '2010-11-15 20:38:34', '06420', '2010-11-15 20:38:34')[0m
+  [4;36;1mSQL (61.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('St Vallier De Thiey', '2010-11-15 20:38:34', '06460', '2010-11-15 20:38:34')[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Ste Agnes', '2010-11-15 20:38:34', '06500', '2010-11-15 20:38:34')[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tende', '2010-11-15 20:38:34', '06430', '2010-11-15 20:38:34')[0m
+  [4;35;1mSQL (39.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Theoule Sur Mer', '2010-11-15 20:38:34', '06590', '2010-11-15 20:38:34')[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Thiery', '2010-11-15 20:38:34', '06710', '2010-11-15 20:38:34')[0m
+  [4;35;1mSQL (39.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Thorenc', '2010-11-15 20:38:34', '06750', '2010-11-15 20:38:34')[0m
+  [4;36;1mSQL (38.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Toudon', '2010-11-15 20:38:34', '06830', '2010-11-15 20:38:34')[0m
+  [4;35;1mSQL (39.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Touet De L\'Escarene', '2010-11-15 20:38:34', '06440', '2010-11-15 20:38:34')[0m
+  [4;36;1mSQL (38.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Touet Sur Var', '2010-11-15 20:38:34', '06710', '2010-11-15 20:38:34')[0m
+  [4;35;1mSQL (39.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tourette Du Chateau', '2010-11-15 20:38:34', '06830', '2010-11-15 20:38:34')[0m
+  [4;36;1mSQL (39.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tournefort', '2010-11-15 20:38:34', '06710', '2010-11-15 20:38:34')[0m
+  [4;35;1mSQL (51.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tourrette Levens', '2010-11-15 20:38:34', '06690', '2010-11-15 20:38:34')[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.7ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Tourrettes Sur Loup', '2010-11-15 20:38:34', '06140', '2010-11-15 20:38:34')[0m
+  [4;35;1mSQL (49.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Utelle', '2010-11-15 20:38:34', '06450', '2010-11-15 20:38:34')[0m
+  [4;36;1mSQL (95.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Valberg', '2010-11-15 20:38:35', '06470', '2010-11-15 20:38:35')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Valbonne', '2010-11-15 20:38:35', '06560', '2010-11-15 20:38:35')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.6ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Valdeblore', '2010-11-15 20:38:35', '06420', '2010-11-15 20:38:35')[0m
+  [4;35;1mSQL (52.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Valderoure', '2010-11-15 20:38:35', '06750', '2010-11-15 20:38:35')[0m
+  [4;36;1mSQL (51.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Vallauris', '2010-11-15 20:38:35', '06220', '2010-11-15 20:38:35')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Venanson', '2010-11-15 20:38:35', '06450', '2010-11-15 20:38:35')[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Vence', '2010-11-15 20:38:35', '06140', '2010-11-15 20:38:35')[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Villars Sur Var', '2010-11-15 20:38:35', '06710', '2010-11-15 20:38:35')[0m
+  [4;36;1mSQL (49.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Villefranche Sur Mer', '2010-11-15 20:38:35', '06230', '2010-11-15 20:38:35')[0m
+  [4;35;1mSQL (52.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Villeneuve D\'Entraunes', '2010-11-15 20:38:35', '06470', '2010-11-15 20:38:35')[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `created_at`, `code`, `updated_at`) VALUES('Villeneuve Loubet', '2010-11-15 20:38:35', '06270', '2010-11-15 20:38:35')[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (55.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100213213202')[0m
+Migrating to CreateCharges (20100215201520)
+  [4;35;1mSQL (125.5ms)[0m   [0mCREATE TABLE `charges` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type_de_charge` enum('Loyer','Dettes','Pension Alimentaire','Autres') NOT NULL, `valeur` float, `foyer_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (43.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100215201520')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM charges[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `charges`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `charges`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM cities[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `cities`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `cities`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `countries`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `countries`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `distributions`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `distributions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `elements`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `elements`[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mdescribe `foyers`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `foyers`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM membres[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `membres`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `membres`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM revenus[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `revenus`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `revenus`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RevenusController#new (for 127.0.0.1 at 2010-11-15 21:39:00) [GET]
+  Parameters: {"foyer_id"=>"3"}
+  [4;36;1mFoyer Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.5ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 3) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Foyer with ID=3):
+  app/controllers/revenus_controller.rb:94:in `find_foyer'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:39:07) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (5.1ms)
+Rendered home/_search (3.6ms)
+Completed in 72ms (View: 67, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-11-15 21:39:11) [GET]
+  [4;36;1mFoyer Load (0.6ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (1.0ms)
+Completed in 34ms (View: 19, DB: 1) | 200 OK [http://localhost/foyers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:39:13) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.5ms)
+Rendered home/_search (2.5ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-11-15 21:39:14) [GET]
+  [4;35;1mFoyer Columns (1.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+  [4;36;1mCountry Load (1.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.1ms)[0m   [0mSHOW FIELDS FROM countries[0m
+Rendered foyers/_form (283.6ms)
+Rendered foyers/_links (1.7ms)
+Completed in 320ms (View: 302, DB: 4) | 200 OK [http://localhost/foyers/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-15 21:39:23) [GET]
+
+ActionController::RoutingError (No route matches "/foyers//revenus/new" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#create (for 127.0.0.1 at 2010-11-15 21:40:24) [POST]
+  Parameters: {"commit"=>"Ok", "authenticity_token"=>"3kBaU2tXGfjxanp4ev5lywnQ0Ofz0oDd4TwHFiGjFGo=", "foyer"=>{"adresse_rue"=>"rue du Grand Mur", "mis_a_jour"=>"0", "adresse_additionel"=>"", "inscription_complete"=>"0", "telephone_fixe"=>"", "telephone_portable"=>"", "adresse_code_postal"=>"06250", "chef_date_naissance(1i)"=>"1980", "chef_email"=>"", "adresse_chez"=>"", "adresse_numero"=>"13", "chef_date_naissance(2i)"=>"12", "diabetique"=>"0", "handicape"=>"0", "adresse_ville"=>"Mougins", "chef_date_naissance(3i)"=>"8", "chef_sex"=>"M", "sans_papier"=>"0", "hallal"=>"0", "pays_id"=>"34", "chef_ville_de_naissance"=>"Pirassununga", "chef_prenom"=>"Leonardo", "lettre_AS"=>"0", "situation_familiale"=>"Celibataire", "sans_porc"=>"0", "nbr_colis_a_distribuer"=>"", "information_additionnelle"=>"", "demandeur_asile"=>"0", "sdf"=>"0", "revenu_impossable"=>"", "chef_nom"=>"FREITAS GOMES"}}
+  [4;36;1mFoyer Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFoyer Create (0.5ms)[0m   [0;1mINSERT INTO `foyers` (`adresse_rue`, `adresse_additionel`, `mis_a_jour`, `created_at`, `inscription_complete`, `adresse_code_postal`, `telephone_portable`, `telephone_fixe`, `chef_email`, `adresse_numero`, `adresse_chez`, `updated_at`, `chef_sex`, `chef_date_naissance`, `adresse_ville`, `handicape`, `diabetique`, `sans_papier`, `chef_prenom`, `chef_ville_de_naissance`, `pays_id`, `hallal`, `situation_familiale`, `lettre_AS`, `nbr_colis_a_distribuer`, `sans_porc`, `information_additionnelle`, `chef_nom`, `revenu_impossable`, `sdf`, `demandeur_asile`) VALUES('rue du Grand Mur', '', 0, '2010-11-15 20:40:24', 0, '06250', '', '', '', '13', '', '2010-11-15 20:40:24', 'M', '1980-12-08', 'Mougins', 0, 0, 0, 'Leonardo', 'Pirassununga', 34, 0, 'Celibataire', 0, NULL, 0, '', 'FREITAS GOMES', NULL, 0, 0)[0m
+  [4;35;1mSQL (69.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/1
+Completed in 104ms (DB: 72) | 302 Found [http://localhost/foyers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#show (for 127.0.0.1 at 2010-11-15 21:40:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mFoyer Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.6ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/show
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (0.9ms)[0m   [0mSHOW FIELDS FROM countries[0m
+  [4;36;1mMembre Load (0.4ms)[0m   [0;1mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 1) [0m
+  [4;35;1mDistribution Load (0.4ms)[0m   [0mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 1) [0m
+  [4;36;1mRevenu Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 1) [0m
+  [4;36;1mCharge Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM charges[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `charges` WHERE (`charges`.foyer_id = 1) [0m
+Rendered foyers/_form (110.3ms)
+Rendered foyers/_links (0.8ms)
+Completed in 268ms (View: 119, DB: 7) | 200 OK [http://localhost/foyers/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RevenusController#new (for 127.0.0.1 at 2010-11-15 21:40:37) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.4ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+  [4;36;1mRevenu Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+Rendering template within layouts/brasouverts
+Rendering revenus/new
+Rendered revenus/_form (7.5ms)
+Completed in 50ms (View: 22, DB: 4) | 200 OK [http://localhost/foyers/1/revenus/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RevenusController#index (for 127.0.0.1 at 2010-11-15 21:43:04) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (2.3ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Rendering template within layouts/brasouverts
+Rendering revenus/index
+Rendered foyers/_nav (0.6ms)
+  [4;35;1mRevenu Load (0.4ms)[0m   [0mSELECT * FROM `revenus` WHERE (`revenus`.foyer_id = 1) [0m
+Completed in 140ms (View: 26, DB: 3) | 200 OK [http://localhost/foyers/1/revenus]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#show (for 127.0.0.1 at 2010-11-15 21:43:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Rendering template within layouts/brasouverts
+Rendering foyers/show
+  [4;36;1mCountry Load (0.3ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mCountry Columns (1.4ms)[0m   [0mSHOW FIELDS FROM countries[0m
+  [4;36;1mMembre Load (0.2ms)[0m   [0;1mSELECT * FROM `membres` WHERE (`membres`.foyer_id = 1) [0m
+  [4;35;1mDistribution Load (0.2ms)[0m   [0mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 1) [0m
+  [4;36;1mRevenu Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM revenus[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `revenus` WHERE (`revenus`.foyer_id = 1) [0m
+  [4;36;1mCharge Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM charges[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `charges` WHERE (`charges`.foyer_id = 1) [0m
+Rendered foyers/_form (110.0ms)
+Rendered foyers/_links (0.8ms)
+Completed in 135ms (View: 112, DB: 7) | 200 OK [http://localhost/foyers/1]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#search (for 127.0.0.1 at 2010-11-15 21:43:22) [GET]
+Rendering template within layouts/brasouverts
+Rendering distributions/search
+Rendered distributions/_nav (1.1ms)
+Completed in 31ms (View: 27, DB: 1) | 200 OK [http://localhost/distributions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:43:24) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.5ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-11-15 21:43:26) [GET]
+  [4;36;1mFoyer Load (0.7ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.3ms)
+  [4;35;1mFoyer Columns (1.8ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 36ms (View: 19, DB: 3) | 200 OK [http://localhost/foyers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 21:43:28) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.4ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (31.3ms)
+Completed in 80ms (View: 44, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:43:46) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.5ms)
+Rendered home/_search (2.3ms)
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#search (for 127.0.0.1 at 2010-11-15 21:45:36) [GET]
+Rendering template within layouts/brasouverts
+Rendering distributions/search
+Rendered distributions/_nav (0.3ms)
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://localhost/distributions]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:45:40) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.3ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-11-15 21:45:42) [GET]
+  [4;35;1mFoyer Load (0.3ms)[0m   [0mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.5ms)
+  [4;36;1mFoyer Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Completed in 122ms (View: 24, DB: 3) | 200 OK [http://localhost/foyers]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#index (for 127.0.0.1 at 2010-11-15 21:45:48) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+Rendering template within layouts/brasouverts
+Rendering distributions/index
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mDistribution Load (0.2ms)[0m   [0mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 1) [0m
+Completed in 46ms (View: 15, DB: 2) | 200 OK [http://localhost/foyers/1/distributions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:45:50) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.9ms)
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-11-15 21:45:52) [GET]
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.4ms)
+  [4;35;1mFoyer Columns (2.3ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 34ms (View: 19, DB: 3) | 200 OK [http://localhost/foyers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 21:45:53) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.1ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (31.5ms)
+Completed in 74ms (View: 34, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:45:56) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (4.5ms)
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#search (for 127.0.0.1 at 2010-11-15 21:45:59) [GET]
+Rendering template within layouts/brasouverts
+Rendering distributions/search
+Rendered distributions/_nav (0.3ms)
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/distributions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:46:03) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.3ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-11-15 21:46:05) [GET]
+  [4;35;1mFoyer Load (0.3ms)[0m   [0mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.5ms)
+  [4;36;1mFoyer Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Completed in 36ms (View: 19, DB: 2) | 200 OK [http://localhost/foyers]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 21:46:06) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.8ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.5ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.2ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (2.6ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (31.2ms)
+Completed in 73ms (View: 32, DB: 7) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:46:24) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.5ms)
+Rendered home/_search (2.2ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#search (for 127.0.0.1 at 2010-11-15 21:46:27) [GET]
+Rendering template within layouts/brasouverts
+Rendering distributions/search
+Rendered distributions/_nav (0.4ms)
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/distributions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:47:32) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.5ms)
+Rendered home/_search (2.5ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-11-15 21:47:34) [GET]
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.3ms)
+  [4;35;1mFoyer Columns (1.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 35ms (View: 20, DB: 2) | 200 OK [http://localhost/foyers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:47:36) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (11.4ms)
+Completed in 97ms (View: 93, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#new (for 127.0.0.1 at 2010-11-15 21:47:37) [GET]
+  [4;36;1mFoyer Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/new
+  [4;35;1mCountry Load (0.3ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mCountry Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM countries[0m
+Rendered foyers/_form (96.8ms)
+Rendered foyers/_links (0.8ms)
+Completed in 119ms (View: 100, DB: 3) | 200 OK [http://localhost/foyers/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 21:47:40) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (3.1ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-11-15 21:47:42) [GET]
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.4ms)
+  [4;36;1mFoyer Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+Completed in 38ms (View: 22, DB: 2) | 200 OK [http://localhost/foyers]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 21:47:44) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (2.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.0ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.1ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (0.9ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (34.9ms)
+Completed in 81ms (View: 43, DB: 4) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 21:51:41) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.2ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (113.9ms)
+Completed in 157ms (View: 121, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 21:51:52) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.9ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.3ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.0ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.2ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (0.9ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (29.2ms)
+Completed in 70ms (View: 32, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 21:58:20) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.2ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (123.1ms)
+Completed in 167ms (View: 130, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:00:18) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.4ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.2ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (1.4ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (34.1ms)
+Completed in 81ms (View: 42, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 22:00:41) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.3ms)
+Rendered home/_search (2.4ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FoyersController#index (for 127.0.0.1 at 2010-11-15 22:00:43) [GET]
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (chef_nom LIKE '%%') ORDER BY chef_nom ASC[0m
+Rendering template within layouts/brasouverts
+Rendering foyers/index
+Rendered foyers/_nav (0.3ms)
+  [4;35;1mFoyer Columns (2.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+Completed in 37ms (View: 19, DB: 3) | 200 OK [http://localhost/foyers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:00:45) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.1ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (30.4ms)
+Completed in 71ms (View: 33, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:01:35) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.1ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.2ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (0.9ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (114.7ms)
+Completed in 160ms (View: 123, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:03:48) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.2ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (33.3ms)
+Completed in 81ms (View: 42, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-15 22:08:06) [GET]
+Rendering template within layouts/brasouverts
+Rendering home/index
+Rendered home/_nav (0.4ms)
+Rendered home/_search (2.6ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:08:12) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.9ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.2ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.1ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (1.0ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (33.7ms)
+Completed in 82ms (View: 42, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:11:51) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.1ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (32.5ms)
+Completed in 78ms (View: 41, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:16:44) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (2.0ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.3ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.4ms)
+  [4;36;1mElement Load (0.1ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (1.0ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (36.4ms)
+Completed in 90ms (View: 46, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:17:12) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.1ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (33.5ms)
+Completed in 79ms (View: 41, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:17:16) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.0ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.2ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (1.0ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (29.9ms)
+Completed in 70ms (View: 33, DB: 4) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:17:22) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.2ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (28.5ms)
+Completed in 68ms (View: 31, DB: 4) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:17:30) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.8ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.0ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.2ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (0.8ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (30.7ms)
+Completed in 73ms (View: 34, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:18:24) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.4ms)
+  [4;35;1mElement Load (0.2ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (33.2ms)
+Completed in 77ms (View: 41, DB: 6) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:19:15) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.7ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.4ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.1ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.4ms)
+  [4;36;1mElement Load (0.2ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (0.9ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (32.6ms)
+Completed in 81ms (View: 41, DB: 4) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:20:12) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.2ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (32.7ms)
+Completed in 77ms (View: 41, DB: 4) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:20:50) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.8ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.1ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.1ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (0.9ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (32.3ms)
+Completed in 77ms (View: 40, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#create (for 127.0.0.1 at 2010-11-15 22:21:43) [POST]
+  Parameters: {"commit"=>"Ok", "authenticity_token"=>"3kBaU2tXGfjxanp4ev5lywnQ0Ofz0oDd4TwHFiGjFGo=", "foyer_id"=>"1", "distribution"=>{"date(1i)"=>"2010", "date(2i)"=>"11", "donation_bras_ouverts"=>"0", "date(3i)"=>"15", "dette"=>"0.0", "prix"=>"0.40", "nombre_distribue"=>"4", "element_id"=>"2"}}
+  [4;36;1mFoyer Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mDistribution Create (0.4ms)[0m   [0;1mINSERT INTO `distributions` (`created_at`, `donation_bras_ouverts`, `updated_at`, `dette`, `date`, `foyer_id`, `prix`, `nombre_distribue`, `element_id`) VALUES('2010-11-15 21:21:43', 0, '2010-11-15 21:21:43', 0.0, '2010-11-15', 1, 0.4, 4, 2)[0m
+  [4;35;1mSQL (61.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/foyers/1/distributions
+Completed in 107ms (DB: 65) | 302 Found [http://localhost/foyers/1/distributions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#index (for 127.0.0.1 at 2010-11-15 22:21:43) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+Rendering template within layouts/brasouverts
+Rendering distributions/index
+Rendered distributions/_nav (0.4ms)
+  [4;36;1mDistribution Load (0.5ms)[0m   [0;1mSELECT * FROM `distributions` WHERE (`distributions`.foyer_id = 1) [0m
+  [4;35;1mDistribution Columns (0.9ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+  [4;36;1mElement Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+  [4;35;1mElement Load (0.4ms)[0m   [0mSELECT * FROM `elements` WHERE (`elements`.`id` = 2) [0m
+Completed in 148ms (View: 30, DB: 5) | 200 OK [http://localhost/foyers/1/distributions]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:21:48) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;35;1mElement Load (0.1ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (33.9ms)
+Completed in 79ms (View: 42, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:25:14) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.8ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.1ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.3ms)
+  [4;36;1mElement Load (0.1ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (0.9ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (33.1ms)
+Completed in 78ms (View: 40, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:25:15) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;36;1mFoyer Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM foyers[0m
+  [4;35;1mFoyer Load (0.2ms)[0m   [0mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;36;1mDistribution Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.4ms)
+  [4;35;1mElement Load (0.2ms)[0m   [0mSELECT * FROM `elements` [0m
+  [4;36;1mElement Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (31.2ms)
+Completed in 76ms (View: 34, DB: 5) | 200 OK [http://localhost/foyers/1/distributions/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DistributionsController#new (for 127.0.0.1 at 2010-11-15 22:25:15) [GET]
+  Parameters: {"foyer_id"=>"1"}
+  [4;35;1mFoyer Columns (1.8ms)[0m   [0mSHOW FIELDS FROM foyers[0m
+  [4;36;1mFoyer Load (0.2ms)[0m   [0;1mSELECT * FROM `foyers` WHERE (`foyers`.`id` = 1) [0m
+Foyer found
+FREITAS GOMES
+  [4;35;1mDistribution Columns (1.1ms)[0m   [0mSHOW FIELDS FROM distributions[0m
+Rendering template within layouts/brasouverts
+Rendering distributions/new
+Rendered distributions/_nav (0.4ms)
+  [4;36;1mElement Load (0.1ms)[0m   [0;1mSELECT * FROM `elements` [0m
+  [4;35;1mElement Columns (0.9ms)[0m   [0mSHOW FIELDS FROM elements[0m
+Rendered distributions/_form (29.6ms)
+Completed in 68ms (View: 32, DB: 4) | 200 OK [http://localhost/foyers/1/distributions/new]

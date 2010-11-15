@@ -4,10 +4,19 @@
   
   $().ready(function(){
 
-    $("input#distribution_nombre_distribue,input#distribution_prix").change(function() {
+    $("select#distribution_element_id").change(function() {
+      var value = '1.50';
+      if($("#distribution_element_id option:selected").text() == '1L de lait') {
+        value = '0.40';
+      }
+      $("input#distribution_prix").val(value)
+    });
+
+    $("input#distribution_nombre_distribue,input#distribution_prix,select#distribution_element_id").change(function() {
       var total = 0;
       total = $("input#distribution_nombre_distribue").val() * $("input#distribution_prix").val();
-      $("input#total").val(Math.round(total*100)/100)
+      total = Math.round(total*100)/100;
+      $("input#total").val(total.toFixed(2))
     });
   });
 </script>
@@ -26,7 +35,7 @@
     <%= f.text_field :nombre_distribue %><br />
 
     <%= f.label 'Prix Unitaire' %>
-    <%= f.text_field :prix, :value => '1.5' %><br />
+    <%= f.text_field :prix, :value => '1.50' %><br />
 
     <label for="total">Total</label>
     <input type="text" size="30" id="total" disabled="disabled"/> <br />

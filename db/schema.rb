@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20100215201520) do
   create_table "distributions", :force => true do |t|
     t.integer  "element_id"
     t.integer  "foyer_id",                                        :null => false
-    t.date     "date",                  :default => '2010-02-21'
+    t.date     "date",                  :default => '2010-11-15'
     t.integer  "nombre_distribue"
     t.float    "prix",                                            :null => false
     t.float    "dette",                 :default => 0.0
@@ -101,7 +101,7 @@ ActiveRecord::Schema.define(:version => 20100215201520) do
   end
 
   create_table "revenus", :force => true do |t|
-    t.enum     "type_de_revenu", :limit => [:"Allocation Sp\303\251cifique Solidarit\303\251", :"Allocation Parent Isol\303\251", :"Allocation Logement", :"Allocation Familiale", :"Prestation d''Accueil du Jeune Enfant", :"Allocation Handicap", :"Pension de Reversion", :"Pension Alimentaire", :Salaire, :"Autres Revenus"], :null => false
+    t.enum     "type_de_revenu", :limit => [:"Allocation Familiale", :"Allocation Handicap", :"Allocation Logement", :"Allocation Parent Isol\303\251", :"Allocation de Soutien Familliale", :"Allocation Sp\303\251cifique Solidarit\303\251", :ASSEDIC, :"Complement Libre Choix", :"Pension Alimentaire", :"Pension de Reversion", :"Prestation d''Accueil du Jeune Enfant", :Retraite, :RSA, :Salaire, :"Autres Revenus"], :null => false
     t.float    "valeur"
     t.integer  "foyer_id"
     t.datetime "created_at"
