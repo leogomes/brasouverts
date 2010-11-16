@@ -24,6 +24,6 @@ production:
   encoding: utf8
   database: brasouverts_production
   pool: 5
-  username: rails
-  password: rails
+  username: root
+  password: 
   socket: /var/run/mysqld/mysqld.sock

@@ -35,10 +35,10 @@ ActiveRecord::Schema.define(:version => 20100215201520) do
 
   create_table "distributions", :force => true do |t|
     t.integer  "element_id"
-    t.integer  "foyer_id",                                        :null => false
-    t.date     "date",                  :default => '2010-11-15'
+    t.integer  "foyer_id",                               :null => false
+    t.date     "date"
     t.integer  "nombre_distribue"
-    t.float    "prix",                                            :null => false
+    t.float    "prix",                                   :null => false
     t.float    "dette",                 :default => 0.0
     t.boolean  "donation_bras_ouverts"
     t.datetime "created_at"

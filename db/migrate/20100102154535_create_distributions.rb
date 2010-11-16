@@ -4,7 +4,7 @@ class CreateDistributions < ActiveRecord::Migration
       t.references :element
       t.references :foyer, :null => false
 
-      t.date :date, :default => Time.now
+      t.date :date
       t.integer :nombre_distribue
       t.float :prix, :null => false
       t.float :dette,  :default => 0
